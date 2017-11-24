@@ -1,0 +1,52 @@
+body{
+	margin: 0;
+	width: 100%;
+	font-family:
+	color:
+	padding-top:
+}
+
+/*HEADER*/
+
+.header{
+	height: 80px;
+	width: 100%;
+	margin: 0;
+	top: 0;
+	left: 0;
+	background: #E7ECED;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.burger {
+	width: 200px;
+	height: 100px;
+}
+
+.burger ul li{
+	list-style: none;
+}
+
+.burger ul li a{
+	text-decoration: none;
+	color: #424A5F;
+}
+
+.list-burger{
+	display: block;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.logo{
+	display: block;
+	padding-right: 20px;
+	width: 200px;
+	width: 100px;
+}
