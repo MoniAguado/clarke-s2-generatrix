@@ -6,7 +6,7 @@ body {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
 	box-sizing: border-box;
 	font-family: color:
 }
@@ -106,7 +106,12 @@ footer {
 	align-self: center;
 }
 
-.elementos-lista {
+.footer-list {
+	list-style-type: none;
+	align-self: center;
+}
+
+.list-element {
 	display: block;
 	margin-right: 20px;
 }
