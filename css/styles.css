@@ -13,6 +13,7 @@ body {
 
 main {
 	flex: 1;
+	padding-top: 80px;
 }
 
 /*HEADER*/
@@ -56,8 +57,8 @@ main {
 .logo {
 	display: block;
 	padding-right: 20px;
-	width: 200px;
-	width: 100px;
+	width: 120px;
+	height: 80px;
 }
 
 /* SECTION DESIGN*/
@@ -88,6 +89,33 @@ main {
 	border-color: #EAB931;
 	border-width: 1px;
 	border-style: solid;
+}
+
+/*FORM*/
+
+/*personal information*/
+
+.personal-data {
+	background: #55607F;
+}
+
+.personal-information {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-self: center;
+}
+
+input {
+	display: block;
+	border-radius: 5px;
+	background: #E7ECED;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 5px;
+	margin: 5px;
+	width: 80%
 }
 
 /*FOOTER*/
