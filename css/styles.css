@@ -1,0 +1,20 @@
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	background-color: #55607F;
+	color: white;
+}
+.lista-footer {
+	list-style-type: none;
+	align-self: center;
+}
+.elementos-lista {
+	display: inline-block;
+	margin-right: 20px;
+}
+.mini-logo {
+	margin-right: 20px;
+}
