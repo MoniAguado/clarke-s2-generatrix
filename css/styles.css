@@ -63,7 +63,7 @@ main {
 
 /* SECTION DESIGN*/
 
-.design {
+.section2design {
 	height: 200px;
 	background: #E7ECED;
 	padding: 3%;
@@ -78,7 +78,7 @@ main {
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	justify-content: space-between;
+	justify-content: space-around;
 	height: 150px;
 }
 
@@ -98,14 +98,15 @@ main {
 .personal-data {
 	background: #55607F;
 }
-
+.experience{
+	background: #55607F;
+}
 .personal-information {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-self: center;
 }
-
 input {
 	display: block;
 	border-radius: 5px;
@@ -117,7 +118,17 @@ input {
 	margin: 5px;
 	width: 80%
 }
-
+textarea {
+display: block;
+border-radius: 5px;
+background: #E7ECED;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+padding: 5px;
+margin: 5px;
+width: 80%
+}
 /*FOOTER*/
 
 footer {
