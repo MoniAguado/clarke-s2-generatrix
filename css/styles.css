@@ -118,6 +118,10 @@ input {
 	width: 80%
 }
 
+input[type=button] {
+	display: inline-block;
+}
+
 /*FOOTER*/
 
 footer {

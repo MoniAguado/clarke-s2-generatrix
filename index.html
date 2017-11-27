@@ -99,9 +99,9 @@
 			<section class="section section5form">
 
 				<form class="personal-information" action="index.html" method="post">
-					<fieldset class="personal-data">
+					<fieldset class="personal-data"
 						<legend>Datos personales</legend>
-							<div class="dropdown" onclick=""
+							<input type="buttom" value="abrir" onclick="open('personal-information')" img src="images/plus.png"> <!--oculto-->
 							<input id="name" type="text" name="name" placeholder="Nombre*"required>
 							<input id="surname" type="text" name="surname" placeholder="Apellidos*"required>
 							<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
@@ -115,6 +115,7 @@
 									<input id="RRSS" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
 									<input id="RRSS" type="text" name="Otros" placeholder="Otros">
 							</div>
+							<input type="buttom" value="cerrar" onclick="close('personal-information')" img src="images/plus.png">
 					</fieldset>
 
 					<fieldset class="experience">
