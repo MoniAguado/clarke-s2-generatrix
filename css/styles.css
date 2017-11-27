@@ -95,8 +95,8 @@ main {
 
 /*personal information*/
 
-.personal-data {
-	background: #55607F;
+.personal-data, .formation {
+	background-color: #55607F;
 }
 
 .personal-information {
@@ -106,7 +106,7 @@ main {
 	align-self: center;
 }
 
-input {
+input, .description{
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -115,9 +115,14 @@ input {
 	appearance: none;
 	padding: 5px;
 	margin: 5px;
-	width: 80%
+	width: 80%;
 }
 
+.description {
+	resize: vertical;
+	font: 13.3333px Arial;
+	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
+}
 /*FOOTER*/
 
 footer {
