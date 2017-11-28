@@ -65,11 +65,12 @@ main {
 /* SECTION DESIGN*/
 
 .design {
-	height: 100px;
+	height: 200px;
 	background: #E7ECED;
-	padding: 1%;
+	padding: 3%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .design-options {
@@ -79,16 +80,15 @@ main {
 	margin: 0;
 	padding: 0;
 	justify-content: space-between;
-	width: 100%;
-	height: 100%;
+	height: 150px;
 }
 
 .design-options li {
-	width: 80%;
-	height: 100%;
 	background: #31B89A;
 	border-color: #EAB931;
 	border-width: 1px;
+	height: 100%;
+	width: 150px;
 	border-style: solid;
 }
 
@@ -125,8 +125,16 @@ main {
 }
 /*FORM*/
 /*personal information*/
+<<<<<<< HEAD
 .personal-data {
 	background: #55607F;
+=======
+
+.personal-data,
+.formation,
+.experience {
+	background-color: #55607F;
+>>>>>>> 1f38318b48e5e17f72936ce6fd8e72b607606afc
 }
 
 .personal-information {
@@ -136,17 +144,28 @@ main {
 	align-self: center;
 	background: #55607F;
 }
+#datos-personales {
+	overflow: hidden;
+}
 
-input {
+input,
+.description,
+.experience-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
+	font-family: inherit;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	padding: 5px;
 	margin: 5px;
-	width: 80%
+	width: 80%;
+}
+.description {
+	resize: vertical;
+	font-size: 13.3333px;
+	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
 }
 
 /*FOOTER*/

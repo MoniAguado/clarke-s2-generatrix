@@ -17,7 +17,7 @@
 						<li><a href="index.html#diseño">Diseño</a></li>
 						<li><a href="index.html#form">Completa tu CV</a></li>
 						<li><a href="index.html#previo">Previsualización</a></li>
-						<li><button class="button">SIGN IN</a></li>
+						<li><button class="button">SIGN IN</button></li>
 	<!-- Esta es la parte de Sign in, por si queremos añadirlo más tarde
 							<div class="register">
 								<form class="form-sign">
@@ -46,7 +46,11 @@
 	</header>
 
 	<main>
+<<<<<<< HEAD
 		<section class="section section1info"><!--///////////////-->
+=======
+		<section class="section section1info">
+>>>>>>> 1f38318b48e5e17f72936ce6fd8e72b607606afc
 			<div class="cover">
 				<img class="main-img-section1" src="img/bike.jpg" alt="Imagen de portada">
 				<h1 class="title-on-cover main">Título principal</h1>
@@ -73,13 +77,17 @@
 			</div>
 		</section>
 
-		<section class="design">
+		<section class="section section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
-					<a href="" title="Fuente"></a>
+					<article title="fuente">
+						<img src="images/text.svg" title="fuente" alt="fuente">
+					</article>
 				</li>
 				<li class="design-options-palette">
-					<a href="" title="Color"></a>
+					<article title="color">
+						<img src="images/paint-palette.svg" title="paleta" alt="paleta">
+					</article>
 				</li>
 				<li class="design-options-back">
 					<a href="" title="Estilo"></a>
@@ -87,10 +95,10 @@
 			</ul>
 		</section>
 
-			<section class="section section3photo"> <!--//////////////////////////-->
+			<section class="section section3photo">
 			</section>
 
-			<section class="section section4preview"><!--//////////////////////////-->
+			<section class="section section4preview">
 			</section>
 
 			<section class="section section5form">
@@ -98,28 +106,44 @@
 				<form class="personal-information" action="index.html" method="post">
 					<fieldset class="personal-data">
 						<legend>Datos personales</legend>
-							<input id="name" type="text" name="name" placeholder="Nombre*"required>
-							<input id="surname" type="text" name="surname" placeholder="Apellidos*"required>
-							<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
-							<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
-							<input id="email" type="email" name="email" placeholder="Email*" required>
-							<input id="address" type="text" name="address" placeholder="Dirección">
-							<div class="rrss">
-								<p>RRSS</p>
-									<input id="RRSS" type="text" name="Twitter" placeholder="@Twitter">
-									<input id="RRSS" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-									<input id="RRSS" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-									<input id="RRSS" type="text" name="Otros" placeholder="Otros">
-							</div>
-					</fieldset>
+							<img src="images/plus.png" onclick="abrir('personal-information')" alt="">
+							<img src="images/plus.png" onclick="cerrar('personal-information')" alt=""> <!--oculto-->
+							<div id="datos-personales">
+								<input id="name" type="text" name="name" placeholder="Nombre*" required>
+								<input id="surname" type="text" name="surname" placeholder="Apellidos*" required>
+								<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
+								<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
+								<input id="email" type="email" name="email" placeholder="Email*" required>
+								<input id="address" type="text" name="address" placeholder="Dirección">
+								<div class="rrss">
+									<p>RRSS</p>
+										<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+										<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+										<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+										<input id="Otros" type="text" name="Otros" placeholder="Otros">
+									</div>
+								</div>
 
+					</fieldset>
 					<fieldset class="experience">
-						<legend>Experiencia</legend>
+						<legend>Experiencia Profesional</legend>
+						<input id="puesto" type="text" name="puesto" placeholder="Puesto">
+						<input id="desde" type="date" name="desde">
+						<input id="hasta" type="date" name="hasta">
+						<input id="actualidad" type="checkbox" name="actualidad"> Hasta la actualidad<br>
+						<input id="lugar" type="text" name="lugar" placeholder="Lugar">
+						<textarea name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
 					</fieldset>
-
 
 					<fieldset class="formation">
 						<legend>Formación</legend>
+						<input id="titulo" type="text" name="titulation" placeholder="Título*" required>
+						<div class="dates">
+							<input id="inicio" type="text" name="date" placeholder="Fecha de inicio*" required>
+							<input id="fin" type="tel" name="date" placeholder="Fecha de finalización*" required>
+						</div>
+						<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
+						<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
 					</fieldset>
 
 					<fieldset class="skills-fieldset">
@@ -174,7 +198,7 @@
 				</form>
 			</section>
 
-			<section class="section section6buttons"><!--//////////////////////////-->
+			<section class="section section6buttons">
 			</section>
 	</main>
 
