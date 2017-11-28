@@ -95,8 +95,17 @@ main {
 
 /*personal information*/
 
+<<<<<<< HEAD
 .personal-data, .formation {
 	background-color: #55607F;
+=======
+.personal-data {
+	background: #55607F;
+}
+
+.experience {
+	background: #55607F;
+>>>>>>> cae2a68dcfb7e6ca948c232bc711ef0c7cd3831c
 }
 
 .personal-information {
@@ -106,7 +115,15 @@ main {
 	align-self: center;
 }
 
+<<<<<<< HEAD
 input, .description{
+=======
+#datos-personales {
+	overflow: hidden;
+}
+
+input {
+>>>>>>> cae2a68dcfb7e6ca948c232bc711ef0c7cd3831c
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -115,7 +132,23 @@ input, .description{
 	appearance: none;
 	padding: 5px;
 	margin: 5px;
+<<<<<<< HEAD
 	width: 80%;
+=======
+	width: 80%
+}
+
+.experience-text {
+	display: block;
+	border-radius: 5px;
+	background: #E7ECED;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 5px;
+	margin: 5px;
+	width: 80%
+>>>>>>> cae2a68dcfb7e6ca948c232bc711ef0c7cd3831c
 }
 
 .description {
@@ -123,6 +156,10 @@ input, .description{
 	font: 13.3333px Arial;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> cae2a68dcfb7e6ca948c232bc711ef0c7cd3831c
 /*FOOTER*/
 
 footer {
