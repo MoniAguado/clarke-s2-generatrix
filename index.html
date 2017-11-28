@@ -101,10 +101,14 @@
 
 				<form class="personal-information" action="index.html" method="post">
 					<fieldset class="personal-data">
-						<legend>Datos personales</legend>
-							<img src="images/plus.png" onclick="abrir('personal-information')" alt="">
-							<img src="images/plus.png" onclick="cerrar('personal-information')" alt=""> <!--oculto-->
-							<div id="datos-personales">
+						<div class="botones-personal">
+							<legend>Datos personales</legend>
+							<!--botones colapsable-->
+								<img src="images/plus.png" class="boton-abrir"onclick="abrir('personal-information')" alt="abrir">
+								<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
+							</div>
+						<!--oculto-->
+							<div id="personal-information">
 								<input id="name" type="text" name="name" placeholder="Nombre*" required>
 								<input id="surname" type="text" name="surname" placeholder="Apellidos*" required>
 								<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
@@ -162,6 +166,6 @@
 			</ul>
 		<img class="mini-logo" src="http://placehold.it/80x80" alt="logo">
 	</footer>
-
+ <script src="js/main.js"></script>
 </body>
 </html>
