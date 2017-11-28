@@ -1,15 +1,12 @@
 //función para desplegar sección
 
-
-function open(idContent){
+function abrir(idContent){
 
 document.getElementById(idContent).style.display = 'block';
-
 }
 
-
 //función para cerrar sección
-function close(idContent){
+function cerrar(idContent){
 	document.getElementById(idContent).style.display = 'none';
 
 

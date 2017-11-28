@@ -101,20 +101,23 @@
 				<form class="personal-information" action="index.html" method="post">
 					<fieldset class="personal-data"
 						<legend>Datos personales</legend>
-							<input type="buttom" value="abrir" onclick="open('personal-information')" img src="images/plus.png"> <input type="buttom" value="cerrar" onclick="close('personal-information')" img src="images/plus.png"><!--oculto-->
-							<input id="name" type="text" name="name" placeholder="Nombre*"required>
-							<input id="surname" type="text" name="surname" placeholder="Apellidos*"required>
-							<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
-							<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
-							<input id="email" type="email" name="email" placeholder="Email*" required>
-							<input id="address" type="text" name="address" placeholder="Dirección">
-							<div class="rrss">
-								<p>RRSS</p>
-									<input id="RRSS" type="text" name="Twitter" placeholder="@Twitter">
-									<input id="RRSS" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-									<input id="RRSS" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-									<input id="RRSS" type="text" name="Otros" placeholder="Otros">
-							</div>
+							<input class="boton1" type="buttom" value="abrir" onclick="abrir('personal-information')" img src="images/plus.png">
+							<input class="boton2" type="buttom" value="cerrar" onclick="cerrar('personal-information')" img src="images/plus.png"> <!--oculto-->
+							<div id="datos-personales">
+								<input id="name" type="text" name="name" placeholder="Nombre*"required>
+								<input id="surname" type="text" name="surname" placeholder="Apellidos*"required>
+								<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
+								<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
+								<input id="email" type="email" name="email" placeholder="Email*" required>
+								<input id="address" type="text" name="address" placeholder="Dirección">
+								<div class="rrss">
+									<p>RRSS</p>
+										<input id="RRSS" type="text" name="Twitter" placeholder="@Twitter">
+										<input id="RRSS" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+										<input id="RRSS" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+										<input id="RRSS" type="text" name="Otros" placeholder="Otros">
+									</div>
+								</div>
 
 					</fieldset>
 
