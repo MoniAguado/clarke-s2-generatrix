@@ -118,8 +118,8 @@ input {
 	margin: 5px;
 	width: 80%
 }
-<<<<<<< HEAD
-textarea {
+
+.experience-text {
 display: block;
 border-radius: 5px;
 background: #E7ECED;
@@ -130,13 +130,13 @@ padding: 5px;
 margin: 5px;
 width: 80%
 }
-=======
+
 
 input[type=button] {
 	display: inline-block;
 }
 
->>>>>>> b131fbec1c3024ef5ae8f02481f2137a12d0e9d0
+
 /*FOOTER*/
 
 footer {
