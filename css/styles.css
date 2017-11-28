@@ -10,14 +10,11 @@ body {
 	box-sizing: border-box;
 	font-family: color:
 }
-
 main {
 	flex: 1;
 	padding-top: 80px;
 }
-
 /*HEADER*/
-
 .header {
 	height: 80px;
 	width: 100%;
@@ -34,36 +31,29 @@ main {
 	padding: 0 20px;
 	z-index: 1;
 }
-
 .burger {
 	width: 200px;
 	height: 100px;
 }
-
 .burger ul li {
 	list-style: none;
 }
-
 .burger ul li a {
 	text-decoration: none;
 	color: #424A5F;
 }
-
 .list-burger {
 	display: block;
 	padding-left: 10px;
 	padding-top: 10px;
 }
-
 .logo {
 	display: block;
 	padding-right: 20px;
 	width: 120px;
 	height: 80px;
 }
-
 /* SECTION DESIGN*/
-
 .design {
 	height: 200px;
 	background: #E7ECED;
@@ -72,7 +62,6 @@ main {
 	align-items: center;
 	justify-content: center;
 }
-
 .design-options {
 	list-style: none;
 	display: flex;
@@ -82,7 +71,6 @@ main {
 	justify-content: space-between;
 	height: 150px;
 }
-
 .design-options li {
 	background: #31B89A;
 	border-color: #EAB931;
@@ -91,7 +79,6 @@ main {
 	width: 150px;
 	border-style: solid;
 }
-
 /* SECTION2 INFO*/
 .main-img-section1 {
 	width: 100%;
@@ -104,18 +91,14 @@ main {
 }
 .steps-band {
 	display: flex;
-	/*flex-direction: row;*/
 	justify-content: space-around;
 	width: 100%;
 }
 .step-element {
-	/*display: block;*/
 	background-color: #EAB931;
 	border-color: black;
 	border-width: 1px;
 	border-style: solid;
-	/*justify-content: center;
-	align-items: center;*/
 }
 .img-step-element {
 	display: block;
@@ -125,16 +108,10 @@ main {
 }
 /*FORM*/
 /*personal information*/
-<<<<<<< HEAD
-.personal-data {
-	background: #55607F;
-=======
-
 .personal-data,
 .formation,
 .experience {
 	background-color: #55607F;
->>>>>>> 1f38318b48e5e17f72936ce6fd8e72b607606afc
 }
 
 .personal-information {
@@ -167,7 +144,6 @@ input,
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
 }
-
 /*FOOTER*/
 footer {
 	display: flex;
@@ -177,22 +153,18 @@ footer {
 	background-color: #55607F;
 	color: white;
 }
-
-.lista-footer {
-	list-style-type: none;
-	align-self: center;
-}
-
 .footer-list {
 	list-style-type: none;
 	align-self: center;
 }
-
+.footer-list {
+	list-style-type: none;
+	align-self: center;
+}
 .list-element {
 	display: block;
 	margin-right: 20px;
 }
-
 .mini-logo {
 	margin-right: 20px;
 }
