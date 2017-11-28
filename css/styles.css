@@ -32,6 +32,7 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
+	z-index: 1;
 }
 
 .burger {
@@ -91,10 +92,39 @@ main {
 	border-style: solid;
 }
 
+/* SECTION2 INFO*/
+.main-img-section1 {
+	width: 100%;
+	height: auto;
+	filter: opacity(0.7);
+}
+.instructions-paragraph {
+	padding: 3%;
+	text-align: justify;
+}
+.steps-band {
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: space-around;
+	width: 100%;
+}
+.step-element {
+	/*display: block;*/
+	background-color: #EAB931;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	/*justify-content: center;
+	align-items: center;*/
+}
+.img-step-element {
+	display: block;
+}
+.span-step {
+	display: block;
+}
 /*FORM*/
-
 /*personal information*/
-
 .personal-data {
 	background: #55607F;
 }
@@ -104,6 +134,7 @@ main {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-self: center;
+	background: #55607F;
 }
 
 input {
@@ -119,7 +150,6 @@ input {
 }
 
 /*FOOTER*/
-
 footer {
 	display: flex;
 	justify-content: space-between;
