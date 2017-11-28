@@ -46,7 +46,7 @@
 	</header>
 
 	<main>
-		<section class="section section1info"><!--/////////////////////////////-->
+		<section class="section section1info">
 			<div class="cover">
 				<h1>Título principal de la portada</h1>
 				<h2>Título secundario de la portada</h2>
@@ -73,7 +73,7 @@
 			</div>
 		</section>
 
-		<section class="design">
+		<section class="section section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
 					<article title="fuente">
@@ -90,10 +90,10 @@
 			</ul>
 		</section>
 
-			<section class="section section3photo"> <!--//////////////////////////-->
+			<section class="section section3photo">
 			</section>
 
-			<section class="section section4preview"><!--//////////////////////////-->
+			<section class="section section4preview">
 			</section>
 
 			<section class="section section5form">
@@ -104,7 +104,7 @@
 							<input id="name" type="text" name="name" placeholder="Nombre*"required>
 							<input id="surname" type="text" name="surname" placeholder="Apellidos*"required>
 							<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
-							<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
+							<input id="date" type="date" name="date" placeholder="Fecha de nacimiento">
 							<input id="email" type="email" name="email" placeholder="Email*" required>
 							<input id="address" type="text" name="address" placeholder="Dirección">
 							<div class="rrss">
@@ -115,9 +115,14 @@
 									<input id="RRSS" type="text" name="Otros" placeholder="Otros">
 							</div>
 					</fieldset>
-
 					<fieldset class="experience">
-						<legend>Experiencia</legend>
+						<legend>Experiencia Profesional</legend>
+						<input id="puesto"type="text" name="puesto" placeholder="Puesto">
+						<input id="desde" type="date" name="desde" placeholder="Desde">
+						<input id="hasta" type="date" name="hasta" placeholder="Hasta">
+						<input id="actualidad" type="checkbox" name="actualidad" placeholder="Actualidad"> Hasta la actualidad<br>
+						<input id="lugar" type="text" name="lugar" placeholder="Lugar">
+						<textarea name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
 					</fieldset>
 
 					<fieldset class="formation">
@@ -137,7 +142,7 @@
 				</form>
 			</section>
 
-			<section class="section section6buttons"><!--//////////////////////////-->
+			<section class="section section6buttons">
 			</section>
 
 	</main>
