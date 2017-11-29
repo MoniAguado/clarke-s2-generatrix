@@ -129,7 +129,9 @@ height: 100px;
 	margin: 0;
 	list-style: none;
 }
-
+#font, #colour, #style {
+	display: none;
+}
 
 /* SECTION2 INFO*/
 
@@ -229,7 +231,9 @@ input, .description, .experience-text {
 .experience-text {
 resize: vertical;
 }
-
+#experience {
+	display: none;
+}
 /*FOOTER*/
 
 footer {
