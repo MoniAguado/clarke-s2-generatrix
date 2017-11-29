@@ -32,7 +32,7 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .burger {
@@ -63,7 +63,6 @@ main {
 }
 
 /* SECTION DESIGN*/
-
 
 .section2design {
 	background: #424A5F;
@@ -166,11 +165,9 @@ height: 110px;
 	display: block;
 }
 
-
 /*FORM*/
 
 /*personal information*/
-
 
 .personal-data, .formation, .experience {
 	background-color: #55607F;
@@ -211,36 +208,12 @@ input, .description, .experience-text {
 	margin: 5px;
 	width: 80%;
 }
-.experience-dates {
-	background-color: pink;
-	display: flex;
-	width: 80%;
-	align-items: center;
-}
-.experience-button {
-	width: auto;
-}
-.experience-dates p {
-	font-size: 8px;
-}
-
-
-.experience-text {
-resize: vertical;
-}
-
-input[type=button] {
-	display: inline-block;
-}
-
-
 
 .description {
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
 }
-
 
 /*FOOTER*/
 
