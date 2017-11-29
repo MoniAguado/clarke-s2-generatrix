@@ -73,31 +73,35 @@
 			</div>
 		</section>
 
+<!-- DESING SECTION -->
 		<section class="section section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
-					<img src="images/text.svg" title="fuente" alt="fuente" onclick="choose('font')">
-					<ul class="font">
-						<li class="font-1">j</li>
-						<li class="font-2">n</li>
-						<li class="font-3">o</li>
+					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font')">
+					<!-- hidden -->
+					<ul id="font">
+						<li class="font-1" onclick="cerrar('font')">j</li>
+						<li class="font-2" onclick="cerrar('font')">n</li>
+						<li class="font-3" onclick="cerrar('font')">o</li>
 					</ul>
 				</li>
 				<li class="design-options-palette">
-					<img src="images/paint-palette.svg" title="color" alt="color" onclick="choose('colour')">
-					<ul class="colour">
-						<li class="colour-1">j</li>
-						<li class="colour-2">n</li>
-						<li class="colour-3">o</li>
+					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour')">
+					<!-- hidden -->
+					<ul id="colour">
+						<li class="colour-1" onclick="cerrar('colour')">j</li>
+						<li class="colour-2" onclick="cerrar('colour')">n</li>
+						<li class="colour-3" onclick="cerrar('colour')">o</li>
 					</ul>
 				</li>
 				<li class="design-options-back">
 					<img src="images/menu.svg" title="estilo" alt="estilo"
-					onclick="choose('style')">
-					<ul class="style">
-						<li class="style-1">j</li>
-						<li class="style-2">n</li>
-						<li class="style-3">o</li>
+					onclick="abrir('style')">
+					<!-- hidden -->
+					<ul id="style">
+						<li class="style-1" onclick="cerrar('style')">j</li>
+						<li class="style-2" onclick="cerrar('style')">n</li>
+						<li class="style-3" onclick="cerrar('style')">o</li>
 					</ul>
 				</li>
 			</ul>
