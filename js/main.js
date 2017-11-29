@@ -1,17 +1,24 @@
-//función para desplegar sección
 
 
-function open(idContent){
-
-document.getElementById(idContent).style.display = 'block';
-
+//Función para menu diseño
+function choose(){
+	document.getElementById(choose).style.display = 'block';
 }
 
+//función para seleccionar fecha de fin en la experiencia laboral
+
+// function hasta(endDate){
+// 	document.getElementById(endDate).styles;
+// }
+
+
+-------------------------------------
+//función para desplegar sección
+function editar(idContent){
+document.getElementById(idContent).style.display = 'block';
+}
 
 //función para cerrar sección
-function close(idContent){
-	document.getElementById(idContent).style.display = 'none';
-
-
-
-var name = document.querySelector('#name');
+function cerrar(idContent){
+    document.getElementById(idContent).style.display = 'none';
+}

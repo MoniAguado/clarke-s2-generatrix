@@ -32,6 +32,7 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
+	z-index: 2;
 }
 
 .burger {
@@ -64,33 +65,68 @@ main {
 /* SECTION DESIGN*/
 
 .section2design {
-	height: 200px;
-	background: #E7ECED;
-	padding: 3%;
+	background: #424A5F;
+	height: 130px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .design-options {
+	position: relative;
 	list-style: none;
 	display: flex;
-	align-items: center;
 	margin: 0;
 	padding: 0;
-	justify-content: space-around;
-	height: 150px;
+	height: 110px;
 }
 
 .design-options li {
-	background: #31B89A;
-	border-color: #EAB931;
-	border-width: 1px;
-	height: 100%;
-	width: 150px;
+	border-color: #424A5F;
+	border-width: 3px;
 	border-style: solid;
 }
-
+.design-options li img {
+width: 110px;
+height: 110px;
+}
+.font, .colour, .style {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 110px;
+	height: auto;
+}
+.font li {
+	border-color: white;
+	border-width: 1px;
+	width: 110px;
+	height: 50px;
+	background-color: pink;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.colour li {
+	border-color: white;
+	border-width: 1px;
+	width: 110px;
+	height: 50px;
+	background-color: pink;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+.style li {
+	border-color: white;
+	border-width: 1px;
+	width: 110px;
+	height: 50px;
+	background-color: pink;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
 /*FORM*/
 
 /*personal information*/
@@ -98,16 +134,17 @@ main {
 .personal-data {
 	background: #55607F;
 }
-.experience{
-	background: #55607F;
+.experience {
+	background: #E7ECED;
 }
+
 .personal-information {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-self: center;
 }
-input {
+input, .experience-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -118,19 +155,22 @@ input {
 	margin: 5px;
 	width: 80%
 }
-
-.experience-text {
-display: block;
-border-radius: 5px;
-background: #E7ECED;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-padding: 5px;
-margin: 5px;
-width: 80%
+.experience-dates {
+	background-color: pink;
+	display: flex;
+	width: 80%;
+	align-items: center;
+}
+.experience-button {
+	width: auto;
+}
+.experience-dates p {
+	font-size: 8px;
 }
 
+.experience-text {
+resize: vertical;
+}
 
 input[type=button] {
 	display: inline-block;

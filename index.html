@@ -76,16 +76,29 @@
 		<section class="section section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
-					<article title="fuente">
-						<img src="images/text.svg" title="fuente" alt="fuente">
-					</article>
+					<img src="images/text.svg" title="fuente" alt="fuente" onclick="choose('font')">
+					<ul class="font">
+						<li class="font-1">j</li>
+						<li class="font-2">n</li>
+						<li class="font-3">o</li>
+					</ul>
 				</li>
 				<li class="design-options-palette">
-					<article title="color">
-						<img src="images/paint-palette.svg" title="paleta" alt="paleta">
+					<img src="images/paint-palette.svg" title="color" alt="color" onclick="choose('colour')">
+					<ul class="colour">
+						<li class="colour-1">j</li>
+						<li class="colour-2">n</li>
+						<li class="colour-3">o</li>
+					</ul>
 				</li>
 				<li class="design-options-back">
-					<a href="" title="Estilo"></a>
+					<img src="images/menu.svg" title="estilo" alt="estilo"
+					onclick="choose('style')">
+					<ul class="style">
+						<li class="style-1">j</li>
+						<li class="style-2">n</li>
+						<li class="style-3">o</li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -116,13 +129,19 @@
 							</div>
 					</fieldset>
 					<fieldset class="experience">
-						<legend>Experiencia Profesional</legend>
+						<legend> <h2>Experiencia Profesional</h2></legend>
 						<input id="puesto"type="text" name="puesto" placeholder="Puesto">
-						<input id="desde" type="date" name="desde" placeholder="Desde">
-						<input id="hasta" type="date" name="hasta" placeholder="Hasta">
-						<input id="actualidad" type="checkbox" name="actualidad" placeholder="Actualidad"> Hasta la actualidad<br>
+						<section class="experience-dates">
+							<input id="desde" type="date" name="desde">
+							<input id="hasta" type="date" name="hasta">
+							<div>
+								<input class="experience-button" id="actualidad" type="checkbox" name="actualidad">
+								<p>Hasta la actualidad</p>
+						</div>
+
+						</section>
 						<input id="lugar" type="text" name="lugar" placeholder="Lugar">
-						<textarea name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
+						<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
 					</fieldset>
 
 
