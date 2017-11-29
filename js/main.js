@@ -1,8 +1,8 @@
 
 
 //Función para menu diseño
-function choose(){
-	document.getElementById(choose).style.display = 'block';
+function choose(design){
+	document.getElementById(design).style.display = 'block';
 }
 
 //función para seleccionar fecha de fin en la experiencia laboral
@@ -12,13 +12,13 @@ function choose(){
 // }
 
 
--------------------------------------
-//función para desplegar sección
-function editar(idContent){
-document.getElementById(idContent).style.display = 'block';
-}
-
-//función para cerrar sección
-function cerrar(idContent){
-    document.getElementById(idContent).style.display = 'none';
-}
+// -------------------------------------
+// //función para desplegar sección
+// function editar(idContent){
+// document.getElementById(idContent).style.display = 'block';
+// }
+//
+// //función para cerrar sección
+// function cerrar(idContent){
+//     document.getElementById(idContent).style.display = 'none';
+// }
