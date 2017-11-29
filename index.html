@@ -113,11 +113,13 @@
 			<section class="section section5form">
 
 				<form class="personal-information" action="index.html" method="post">
+
+<!-- PERSONAL DATA -->
 					<fieldset class="personal-data">
 						<div class="botones-personal">
 							<legend>Datos personales</legend>
 							<!--botones colapsable-->
-								<img src="images/plus.png" class="boton-abrir"onclick="abrir('personal-information')" alt="abrir">
+								<img src="images/plus.png" class="boton-abrir" onclick="abrir('personal-information')" alt="abrir">
 								<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
 							</div>
 						<!--oculto-->
@@ -136,22 +138,30 @@
 										<input id="Otros" type="text" name="Otros" placeholder="Otros">
 									</div>
 								</div>
-
 							</fieldset>
-<!-- Experiencia -->
+
+<!-- EXPERIENCIA -->
 							<fieldset class="experience">
-								<legend> <h2>Experiencia Profesional</h2></legend>
-								<input id="puesto"type="text" name="puesto" placeholder="Puesto">
-								<section class="experience-dates">
-									<input id="desde" type="date" name="desde">
-									<input id="hasta" type="date" name="hasta">
-									<!-- <div class="experience-button> -->
-										<input class="experience-button" id="actualidad" type="checkbox" name="actualidad">
-										<p class="experience-button-p">Hasta la actualidad</p>
-								<!-- </div> -->
-								</section>
-								<input id="lugar" type="text" name="lugar" placeholder="Lugar">
-								<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
+								<div class="experience-buttons">
+									<legend>Experiencia Profesional</legend>
+									<!--botones colapsable-->
+										<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
+										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
+									</div>
+								<!--oculto-->
+								<div id="experience">
+									<input id="puesto"type="text" name="puesto" placeholder="Puesto">
+									<section class="experience-dates">
+										<input id="desde" type="date" name="desde">
+										<input id="hasta" type="date" name="hasta">
+										<!-- <div class="experience-button> -->
+											<input class="experience-button" id="actualidad" type="checkbox" name="actualidad">
+											<p class="experience-button-p">Hasta la actualidad</p>
+									<!-- </div> -->
+									</section>
+									<input id="lugar" type="text" name="lugar" placeholder="Lugar">
+									<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
+								</div>
 							</fieldset>
 
 					<fieldset class="formation">
