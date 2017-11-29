@@ -13,7 +13,8 @@
 	<header>
 			<div class="header">
 				<nav class="burger">
-					<ul class="list-burger">
+					<img src="images/menu.png" class="buttom-burger" onclick="openClose ('list-burger')" alt="menu">
+					<ul class="list-burger" id="list-burger">
 						<li><a href="index.html#diseño">Diseño</a></li>
 						<li><a href="index.html#form">Completa tu CV</a></li>
 						<li><a href="index.html#previo">Previsualización</a></li>
@@ -37,9 +38,6 @@
 							</div>
 -->
 					</ul>
-		<!-- Burger
- 					<a href="#" id="pull">Menú</a>
-		-->
 				</nav>
 			<img src="http://placehold.it/120x80" alt="Generatrix" class="logo">
 		</div>
@@ -134,12 +132,12 @@
 								<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
 								<input id="email" type="email" name="email" placeholder="Email*" required>
 								<input id="address" type="text" name="address" placeholder="Dirección">
-								<div class="rrss">
-									<p>RRSS</p>
-										<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
-										<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-										<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-										<input id="Otros" type="text" name="Otros" placeholder="Otros">
+									<div class="rrss">
+										<p>RRSS</p>
+											<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+											<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+											<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+											<input id="Otros" type="text" name="Otros" placeholder="Otros">
 									</div>
 								</div>
 							</fieldset>
@@ -168,66 +166,85 @@
 								</div>
 							</fieldset>
 
-					<fieldset class="formation">
-						<legend>Formación</legend>
-						<input id="titulo" type="text" name="titulation" placeholder="Título*" required>
-						<div class="dates">
-							<input id="inicio" type="text" name="date" placeholder="Fecha de inicio*" required>
-							<input id="fin" type="tel" name="date" placeholder="Fecha de finalización*" required>
-						</div>
-						<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
-						<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
-					</fieldset>
+		<!-- FORMATION -->
 
-					<fieldset class="skills-fieldset">
-						<legend>Habilidades</legend>
-						<div class="skills">
-							<div class="languages">
-								<p>Idiomas</p>
-								<div class="language-element">
-									<input class="language-name" type="text" name="language-name" placeholder="Idioma 1">
-									<input class=""type="text" name="" placeholder="Nivel de idioma 1">
+							<fieldset class="formation">
+								<div class="formation-buttom">
+									<legend>Formación</legend>
+										<!--botones colapsable-->
+									<img src="images/plus.png" class="boton-abrir" onclick="abrir('formation')" alt="abrir">
+									<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('formation')" alt="cerrar">
 								</div>
-								<div class="language-element">
-									<input class="language-name" type="text" name="language-name" placeholder="Idioma 2">
-									<input class=""type="text" name="" placeholder="Nivel de idioma 2">
+								<!--oculto-->
+								<div id="formation">
+									<input id="titulo" type="text" name="titulation" placeholder="Título*" required>
+									<div class="dates">
+										<input id="inicio" type="text" name="date" placeholder="Fecha de inicio*" required>
+										<input id="fin" type="tel" name="date" placeholder="Fecha de finalización*" required>
+									</div>
+									<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
+									<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
 								</div>
-								<div class="language-element">
-									<input class="language-name" type="text" name="language-name" placeholder="Idioma 3">
-									<input class=""type="text" name="" placeholder="Nivel de idioma 3">
-								</div>
-								<div class="language-element">
-									<input class="language-name" type="text" name="language-name" placeholder="Idioma 4">
-									<input class=""type="text" name="" placeholder="Nivel de idioma 4">
-								</div>
-							</div>
-							<div class="it">
-								<p>Programas informáticos</p>
-								<div class="it-element">
-									<input class="it-name" type="text" name="it-name" placeholder="Tecnología 1">
-									<input class=""type="text" name="" placeholder="Nivel de tecnología 1">
-								</div>
-								<div class="it-element">
-									<input class="it-name" type="text" name="it-name" placeholder="Tecnología 2">
-									<input class=""type="text" name="" placeholder="Nivel de tecnología 2">
-								</div>
-								<div class="it-element">
-									<input class="it-name" type="text" name="it-name" placeholder="Tecnología 3">
-									<input class=""type="text" name="" placeholder="Nivel de tecnología 3">
-								</div>
-								<div class="it-element">
-									<input class="it-name" type="text" name="it-name" placeholder="Tecnología 4">
-									<input class=""type="text" name="" placeholder="Nivel de tecnología 4">
-								</div>
-							<div class="various-skills">
-								<p>Destrezas</p>
-								<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 1">
-								<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 2">
-								<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 3">
-								<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 4">
-							</div>
-						</div>
-					</fieldset>
+							</fieldset>
+
+				<!-- SKILLS -->
+
+							<fieldset class="skills-fieldset">
+								<div class ="skills-buttom">
+								<legend>Habilidades</legend>
+								<!--botones colapsable-->
+										<img src="images/plus.png" class="boton-abrir" onclick="abrir('skills')" alt="abrir">
+										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('skills')" alt="cerrar">
+									</div>
+							<!--oculto-->
+							<div id="skills">
+									<div class="skills">
+										<div class="languages">
+											<p>Idiomas</p>
+											<div class="language-element">
+												<input class="language-name" type="text" name="language-name" placeholder="Idioma 1">
+												<input class=""type="text" name="" placeholder="Nivel de idioma 1">
+											</div>
+											<div class="language-element">
+												<input class="language-name" type="text" name="language-name" placeholder="Idioma 2">
+												<input class=""type="text" name="" placeholder="Nivel de idioma 2">
+											</div>
+											<div class="language-element">
+												<input class="language-name" type="text" name="language-name" placeholder="Idioma 3">
+												<input class=""type="text" name="" placeholder="Nivel de idioma 3">
+											</div>
+											<div class="language-element">
+												<input class="language-name" type="text" name="language-name" placeholder="Idioma 4">
+												<input class=""type="text" name="" placeholder="Nivel de idioma 4">
+											</div>
+										</div>
+										<div class="it">
+											<p>Programas informáticos</p>
+											<div class="it-element">
+												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 1">
+												<input class=""type="text" name="" placeholder="Nivel de tecnología 1">
+											</div>
+											<div class="it-element">
+												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 2">
+												<input class=""type="text" name="" placeholder="Nivel de tecnología 2">
+											</div>
+											<div class="it-element">
+												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 3">
+												<input class=""type="text" name="" placeholder="Nivel de tecnología 3">
+											</div>
+											<div class="it-element">
+												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 4">
+												<input class=""type="text" name="" placeholder="Nivel de tecnología 4">
+											</div>
+										<div class="various-skills">
+											<p>Destrezas</p>
+											<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 1">
+											<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 2">
+											<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 3">
+											<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 4">
+										</div>
+									</div>
+								</fieldset>
 				</form>
 			</section>
 

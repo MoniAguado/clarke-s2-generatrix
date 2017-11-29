@@ -1,3 +1,11 @@
+// burger
+
+function openClose(idContent){
+
+document.getElementById(idContent).style.display = 'block';
+}
+
+
 //función para desplegar sección
 
 function abrir(idContent){
