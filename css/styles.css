@@ -217,6 +217,12 @@ input, .description, .experience-text {
 }
 
 /*EXPERIENCE*/
+.experience-buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 .experience-dates input, p {
 	width: 20%;
 	display: inline;

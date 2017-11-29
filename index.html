@@ -77,7 +77,7 @@
 		<section class="section section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
-					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font')">
+					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font')" onclick="cerrar('colour')" onclick="cerrar('style')">
 					<!-- hidden -->
 					<ul id="font">
 						<li class="font-1" onclick="cerrar('font')">j</li>
@@ -86,7 +86,7 @@
 					</ul>
 				</li>
 				<li class="design-options-palette">
-					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour')">
+					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour')" onclick="cerrar('font')" onclick="cerrar('style')">
 					<!-- hidden -->
 					<ul id="colour">
 						<li class="colour-1" onclick="cerrar('colour')">j</li>
@@ -96,7 +96,7 @@
 				</li>
 				<li class="design-options-back">
 					<img src="images/menu.svg" title="estilo" alt="estilo"
-					onclick="abrir('style')">
+					onclick="abrir('style')" onclick="cerrar('font')" onclick="cerrar('colour')">
 					<!-- hidden -->
 					<ul id="style">
 						<li class="style-1" onclick="cerrar('style')">j</li>
