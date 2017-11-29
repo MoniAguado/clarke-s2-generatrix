@@ -10,11 +10,14 @@ body {
 	box-sizing: border-box;
 	font-family: color:
 }
+
 main {
 	flex: 1;
 	padding-top: 80px;
 }
+
 /*HEADER*/
+
 .header {
 	height: 80px;
 	width: 100%;
@@ -31,29 +34,36 @@ main {
 	padding: 0 20px;
 	z-index: 1;
 }
+
 .burger {
 	width: 200px;
 	height: 100px;
 }
+
 .burger ul li {
 	list-style: none;
 }
+
 .burger ul li a {
 	text-decoration: none;
 	color: #424A5F;
 }
+
 .list-burger {
 	display: block;
 	padding-left: 10px;
 	padding-top: 10px;
 }
+
 .logo {
 	display: block;
 	padding-right: 20px;
 	width: 120px;
 	height: 80px;
 }
+
 /* SECTION DESIGN*/
+
 .design {
 	height: 200px;
 	background: #E7ECED;
@@ -62,6 +72,7 @@ main {
 	align-items: center;
 	justify-content: center;
 }
+
 .design-options {
 	list-style: none;
 	display: flex;
@@ -71,6 +82,7 @@ main {
 	justify-content: space-between;
 	height: 150px;
 }
+
 .design-options li {
 	background: #31B89A;
 	border-color: #EAB931;
@@ -79,43 +91,46 @@ main {
 	width: 150px;
 	border-style: solid;
 }
+
 /* SECTION2 INFO*/
+
 .main-img-section1 {
 	width: 100%;
 	height: auto;
 	filter: opacity(0.7);
 }
+
 .instructions-paragraph {
 	padding: 3%;
 	text-align: justify;
 }
+
 .steps-band {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
 }
+
 .step-element {
 	background-color: #EAB931;
 	border-color: black;
 	border-width: 1px;
 	border-style: solid;
 }
+
 .img-step-element {
 	display: block;
 }
+
 .span-step {
 	display: block;
 }
+
 /*FORM*/
+
 /*personal information*/
-<<<<<<< HEAD
 
 .personal-data, .formation, .experience {
-=======
-.personal-data,
-.formation,
-.experience {
->>>>>>> 05f2caa758759a503b06490390e1503c8db4b549
 	background-color: #55607F;
 }
 
@@ -160,7 +175,9 @@ input, .description, .experience-text {
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
 }
+
 /*FOOTER*/
+
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -169,18 +186,22 @@ footer {
 	background-color: #55607F;
 	color: white;
 }
+
 .footer-list {
 	list-style-type: none;
 	align-self: center;
 }
+
 .footer-list {
 	list-style-type: none;
 	align-self: center;
 }
+
 .list-element {
 	display: block;
 	margin-right: 20px;
 }
+
 .mini-logo {
 	margin-right: 20px;
 }
