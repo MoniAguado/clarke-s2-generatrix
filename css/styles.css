@@ -66,7 +66,7 @@ main {
 
 .section2design {
 	background: #424A5F;
-	height: 130px;
+	height: 110px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -78,7 +78,7 @@ main {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	height: 110px;
+	height: 100px;
 
 }
 
@@ -89,20 +89,20 @@ main {
 }
 
 .design-options li img {
-width: 110px;
-height: 110px;
+width: 100px;
+height: 100px;
 }
 .font, .colour, .style {
 	position: absolute;
 	padding: 0;
 	margin: 0;
-	width: 110px;
+	width: 100px;
 	height: auto;
 }
 .font li {
 	border-color: white;
 	border-width: 1px;
-	width: 110px;
+	width: 100px;
 	height: 50px;
 	background-color: pink;
 	padding: 0;
@@ -112,7 +112,7 @@ height: 110px;
 .colour li {
 	border-color: white;
 	border-width: 1px;
-	width: 110px;
+	width: 100px;
 	height: 50px;
 	background-color: pink;
 	padding: 0;
@@ -122,7 +122,7 @@ height: 110px;
 .style li {
 	border-color: white;
 	border-width: 1px;
-	width: 110px;
+	width: 100px;
 	height: 50px;
 	background-color: pink;
 	padding: 0;
@@ -213,6 +213,21 @@ input, .description, .experience-text {
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
+}
+
+/*EXPERIENCE*/
+.experience-dates input, p {
+	width: 20%;
+	display: inline;
+	font-size: 10px;
+	color: #E7ECED;
+}
+.experience-button {
+	width: auto;
+	height: auto;
+}
+.experience-text {
+resize: vertical;
 }
 
 /*FOOTER*/
