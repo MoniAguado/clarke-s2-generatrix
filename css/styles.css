@@ -92,14 +92,15 @@ main {
 width: 100px;
 height: 100px;
 }
-.font, .colour, .style {
+#font, #colour, #style {
+	display: none;
 	position: absolute;
 	padding: 0;
 	margin: 0;
 	width: 100px;
 	height: auto;
 }
-.font li {
+#font li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
@@ -109,7 +110,7 @@ height: 100px;
 	margin: 0;
 	list-style: none;
 }
-.colour li {
+#colour li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
@@ -119,7 +120,7 @@ height: 100px;
 	margin: 0;
 	list-style: none;
 	}
-.style li {
+#style li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
@@ -129,9 +130,7 @@ height: 100px;
 	margin: 0;
 	list-style: none;
 }
-#font, #colour, #style {
-	display: none;
-}
+
 
 /* SECTION2 INFO*/
 
