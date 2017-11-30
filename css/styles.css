@@ -8,7 +8,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	box-sizing: border-box;
-	font-family: color:
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 main {
@@ -172,6 +172,15 @@ main {
 }
 
 /*FORM*/
+
+.h3-form {
+	color: #31B89A;
+	font-size: 15px;
+}
+
+.legend {
+	display: none;
+}
 
 /*personal information*/
 
