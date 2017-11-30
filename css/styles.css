@@ -113,7 +113,7 @@ main {
 /* SECTION DESIGN*/
 
 .section2design {
-	background: #424A5F;
+	background: #31B89A;
 	height: 110px;
 	display: flex;
 	align-items: center;
@@ -126,11 +126,11 @@ main {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	height: 100px;
+	height: 106px;
 }
 
 .design-options li {
-	border-color: #424A5F;
+	border-color: #31B89A;
 	border-width: 3px;
 	border-style: solid;
 }
