@@ -175,7 +175,9 @@ main {
 
 /*personal information*/
 
-.personal-data, .formation, .experience {
+.personal-data,
+.formation,
+.experience {
 	background-color: #55607F;
 }
 
@@ -197,12 +199,15 @@ main {
 	align-content: space-around;
 }
 
-.boton-abrir, .boton-cerrar {
+.boton-abrir,
+.boton-cerrar {
 	height: 20px;
 	width: 20px;
 }
 
-input, .description, .experience-text {
+input,
+.description,
+.experience-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -215,7 +220,8 @@ input, .description, .experience-text {
 	width: 80%;
 }
 
-.description {
+.description,
+.experience-text {
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
@@ -230,20 +236,18 @@ input, .description, .experience-text {
 	align-items: center;
 }
 
-.experience-dates input, p {
+.experience-dates input,
+.formation-dates input,
+p {
 	width: 20%;
 	display: inline;
 	font-size: 10px;
 	color: #E7ECED;
 }
 
-.experience-button {
+.present-button {
 	width: auto;
 	height: auto;
-}
-
-.experience-text {
-	resize: vertical;
 }
 
 #experience {
@@ -259,11 +263,6 @@ footer {
 	width: 100%;
 	background-color: #55607F;
 	color: white;
-}
-
-.footer-list {
-	list-style-type: none;
-	align-self: center;
 }
 
 .footer-list {

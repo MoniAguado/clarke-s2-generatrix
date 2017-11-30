@@ -164,8 +164,8 @@
 										<input id="desde" type="date" name="desde">
 										<input id="hasta" type="date" name="hasta">
 										<!-- <div class="experience-button> -->
-											<input class="experience-button" id="actualidad" type="checkbox" name="actualidad">
-											<p class="experience-button-p">Hasta la actualidad</p>
+											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+											<p class="present-button-p">Actualidad</p>
 									<!-- </div> -->
 									</section>
 									<input id="lugar" type="text" name="lugar" placeholder="Lugar">
@@ -184,12 +184,20 @@
 								</div>
 								<!--oculto-->
 								<div id="formation">
+									<label class="label" for="titulo"></label>
 									<input id="titulo" type="text" name="titulation" placeholder="Título*" required>
-									<div class="dates">
-										<input id="inicio" type="text" name="date" placeholder="Fecha de inicio*" required>
-										<input id="fin" type="tel" name="date" placeholder="Fecha de finalización*" required>
+									<div class="formation-dates">
+										<label class="label" for="desde"></label>
+										<input id="desde" type="date" name="desde">
+										<label class="label" for="hasta"></label>
+										<input id="hasta" type="date" name="hasta">
+										<label class="label" for="actualidad"></label>
+										<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+										<p class="present-button-p">Actualidad</p>
 									</div>
+									<label class="label" for="centro"></label>
 									<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
+									<label class="label" for="description"></label>
 									<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
 								</div>
 							</fieldset>
