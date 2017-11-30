@@ -76,7 +76,7 @@
 		<section class="section section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
-					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font')" onclick="cerrar('colour')" onclick="cerrar('style')">
+					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font'); cerrar('colour'); cerrar('style')">
 					<!-- hidden -->
 					<ul id="font">
 						<li class="font-1" onclick="cerrar('font')">j</li>
@@ -85,7 +85,7 @@
 					</ul>
 				</li>
 				<li class="design-options-palette">
-					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour')" onclick="cerrar('font')" onclick="cerrar('style')">
+					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour'); cerrar('font'); cerrar('style')">
 					<!-- hidden -->
 					<ul id="colour">
 						<li class="colour-1" onclick="cerrar('colour')">j</li>
@@ -95,7 +95,7 @@
 				</li>
 				<li class="design-options-back">
 					<img src="images/menu.svg" title="estilo" alt="estilo"
-					onclick="abrir('style')" onclick="cerrar('font')" onclick="cerrar('colour')">
+					onclick="abrir('style'); cerrar('font'); cerrar('colour')">
 					<!-- hidden -->
 					<ul id="style">
 						<li class="style-1" onclick="cerrar('style')">j</li>
@@ -153,13 +153,15 @@
 
 <!-- EXPERIENCIA -->
 							<fieldset class="experience">
-								<legend class="legend">Experiencia Profesional</legend>
-									<div class="experience-buttons">
+								<div class="experience-header">
 										<h3 class="h3-form">Experiencia Profesional</h3>
-									<!--botones colapsable-->
-										<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
-										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
-									</div>
+										<div class="experience-buttons">
+										<!--botones colapsable-->
+											<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
+											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
+										</div>
+								</div>
+
 								<!--oculto-->
 								<div id="experience">
 									<input id="puesto" type="text" name="puesto" placeholder="Puesto">

@@ -238,13 +238,14 @@ input,
 
 /*EXPERIENCE*/
 
-.experience-buttons {
+.experience-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	width: auto;
+	height: auto;
 }
-
 .experience-dates input,
 .formation-dates input,
 p {
