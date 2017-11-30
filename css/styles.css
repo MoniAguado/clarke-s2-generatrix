@@ -223,11 +223,6 @@ fieldset {
 	display: none;
 }
 
-.botones-personal {
-	display: flex;
-	flex-direction: row;
-	align-content: space-around;
-}
 
 .boton-abrir, .boton-cerrar {
 	height: 20px;
@@ -255,7 +250,7 @@ input, .description, .experience-text {
 
 /*EXPERIENCE*/
 
-.experience-header {
+.form-section-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -263,18 +258,14 @@ input, .description, .experience-text {
 	width: auto;
 	height: auto;
 }
-<<<<<<< HEAD
-.experience-dates input,
-.formation-dates input,
-p {
-=======
 
-.experience-dates input, .formation-dates input, p {
->>>>>>> a307d31db823d67ff4418f154367067e47c8cecb
+.experience-dates input,
+.experience-dates p,
+.formation-dates input {
 	width: 20%;
 	display: inline;
 	font-size: 10px;
-	color: #E7ECED;
+	color: red;
 }
 
 .present-button {
