@@ -65,6 +65,51 @@ main {
 	width: 20%;
 }
 
+/* SECTION2 INFO*/
+
+.title-on-cover-main {
+	color: #EAB931;
+	text-align: center;
+	background-color: #424A5F;
+}
+
+.main-img-section1 {
+	width: 100%;
+	height: auto;
+}
+
+.instructions-paragraph {
+	padding: 3%;
+	text-align: center;
+	background-color: #E7ECED;
+}
+
+.instructions-paragraph p {
+	color: #424A5F;
+	font-size: 15px;
+}
+
+.steps-band {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.step-element {
+	background-color: #EAB931;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.img-step-element {
+	display: block;
+}
+
+.span-step {
+	display: block;
+}
+
 /* SECTION DESIGN*/
 
 .section2design {
@@ -137,40 +182,6 @@ main {
 	list-style: none;
 }
 
-/* SECTION2 INFO*/
-
-.main-img-section1 {
-	width: 100%;
-	height: auto;
-	filter: opacity(0.7);
-}
-
-.instructions-paragraph {
-	padding: 3%;
-	text-align: justify;
-}
-
-.steps-band {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-}
-
-.step-element {
-	background-color: #EAB931;
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;
-}
-
-.img-step-element {
-	display: block;
-}
-
-.span-step {
-	display: block;
-}
-
 /*FORM*/
 
 .h3-form {
@@ -182,10 +193,19 @@ main {
 	display: none;
 }
 
+fieldset {
+	border: none;
+	margin: 0;
+}
+
 /*personal information*/
 
-.personal-data, .formation, .experience {
+.personal-data, .formation, {
 	background-color: #55607F;
+}
+
+.experience, .skills-fieldset {
+	background-color: #E7ECED;
 }
 
 .personal-information {
