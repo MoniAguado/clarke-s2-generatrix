@@ -265,10 +265,11 @@ input, .description, .experience-text {
 	width: 20%;
 	display: inline;
 	font-size: 10px;
-	color: red;
+	color: rgb(117, 117, 117);
 }
 
 .present-button {
+	color: rgb(117, 117, 117);
 	width: auto;
 	height: auto;
 }
