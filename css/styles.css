@@ -216,13 +216,9 @@ fieldset {
 	background: #55607F;
 }
 
-#personal-information,
-#experience,
-#formation,
-#skills {
+#personal-information, #experience, #formation, #skills {
 	display: none;
 }
-
 
 .boton-abrir, .boton-cerrar {
 	height: 20px;
@@ -259,9 +255,7 @@ input, .description, .experience-text {
 	height: auto;
 }
 
-.experience-dates input,
-.experience-dates p,
-.formation-dates input {
+.experience-dates input, .experience-dates p, .formation-dates input {
 	width: 20%;
 	display: inline;
 	font-size: 10px;
@@ -279,10 +273,10 @@ input, .description, .experience-text {
 }
 
 /*PREVIEW*/
+
 .showpreview {
 	margin: 0 20px 20px 20px;
 }
-
 
 .preview-title {
 	text-align: center;
