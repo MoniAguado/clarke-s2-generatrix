@@ -13,7 +13,7 @@
 	<header>
 			<div class="header">
 				<nav class="burger">
-					<img src="images/menu.png" class="buttom-burger" onclick="openClose ('list-burger')" alt="menu">
+					<img src="images/menu.png" class="button-burger" onclick="openClose ('list-burger')" alt="menu">
 					<ul class="list-burger" id="list-burger">
 						<li><a href="index.html#diseño">Diseño</a></li>
 						<li><a href="index.html#form">Completa tu CV</a></li>
@@ -46,7 +46,7 @@
 	<main>
 		<section class="section section1info">
 			<div class="cover">
-				<img class="main-img-section1" src="img/bike.jpg" alt="Imagen de portada">
+				<img class="main-img-section1" src="images/bike.jpg" alt="Imagen de portada">
 				<h1 class="title-on-cover main">Título principal</h1>
 				<h4 class="title-on-cover secondary">Título secundario</h4>
 			</div>
@@ -60,11 +60,11 @@
 						<span class="span-step">Step1</span>
 					</div>
 					<div class="step-element">
-						<img "img-step-element" src="http://via.placeholder.com/80x80" alt="Introduce tus datos">
+						<img class="img-step-element" src="http://via.placeholder.com/80x80" alt="Introduce tus datos">
 						<span class="span-step">Step2</span>
 					</div>
 					<div class="step-element">
-						<img "img-step-element" src="http://via.placeholder.com/80x80" alt="Obtén tu CV personalizado">
+						<img class="img-step-element" src="http://via.placeholder.com/80x80" alt="Obtén tu CV personalizado">
 						<span class="span-step">Step3</span>
 					</div>
 				</div>
@@ -158,7 +158,7 @@
 									</div>
 								<!--oculto-->
 								<div id="experience">
-									<input id="puesto"type="text" name="puesto" placeholder="Puesto">
+									<input id="puesto" type="text" name="puesto" placeholder="Puesto">
 									<section class="experience-dates">
 										<input id="desde" type="date" name="desde">
 										<input id="hasta" type="date" name="hasta">
@@ -175,7 +175,7 @@
 		<!-- FORMATION -->
 
 							<fieldset class="formation">
-								<div class="formation-buttom">
+								<div class="formation-button">
 									<legend>Formación</legend>
 										<!--botones colapsable-->
 									<img src="images/plus.png" class="boton-abrir" onclick="abrir('formation')" alt="abrir">
@@ -196,7 +196,7 @@
 				<!-- SKILLS -->
 
 							<fieldset class="skills-fieldset">
-								<div class ="skills-buttom">
+								<div class ="skills-button">
 								<legend>Habilidades</legend>
 								<!--botones colapsable-->
 										<img src="images/plus.png" class="boton-abrir" onclick="abrir('skills')" alt="abrir">
@@ -209,38 +209,38 @@
 											<p>Idiomas</p>
 											<div class="language-element">
 												<input class="language-name" type="text" name="language-name" placeholder="Idioma 1">
-												<input class=""type="text" name="" placeholder="Nivel de idioma 1">
+												<input class="language-level" type="text" name="language-level" placeholder="Nivel de idioma 1">
 											</div>
 											<div class="language-element">
 												<input class="language-name" type="text" name="language-name" placeholder="Idioma 2">
-												<input class=""type="text" name="" placeholder="Nivel de idioma 2">
+												<input class="language-level" type="text" name="language-level" placeholder="Nivel de idioma 2">
 											</div>
 											<div class="language-element">
 												<input class="language-name" type="text" name="language-name" placeholder="Idioma 3">
-												<input class=""type="text" name="" placeholder="Nivel de idioma 3">
+												<input class="language-level" type="text" name="language-level" placeholder="Nivel de idioma 3">
 											</div>
 											<div class="language-element">
 												<input class="language-name" type="text" name="language-name" placeholder="Idioma 4">
-												<input class=""type="text" name="" placeholder="Nivel de idioma 4">
+												<input class="language-level" type="text" name="language-level" placeholder="Nivel de idioma 4">
 											</div>
 										</div>
 										<div class="it">
 											<p>Programas informáticos</p>
 											<div class="it-element">
 												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 1">
-												<input class=""type="text" name="" placeholder="Nivel de tecnología 1">
+												<input class="it-level" type="text" name="it-level" placeholder="Nivel de tecnología 1">
 											</div>
 											<div class="it-element">
 												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 2">
-												<input class=""type="text" name="" placeholder="Nivel de tecnología 2">
+												<input class="it-level" type="text" name="it-level" placeholder="Nivel de tecnología 2">
 											</div>
 											<div class="it-element">
 												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 3">
-												<input class=""type="text" name="" placeholder="Nivel de tecnología 3">
+												<input class="it-level" type="text" name="it-level" placeholder="Nivel de tecnología 3">
 											</div>
 											<div class="it-element">
 												<input class="it-name" type="text" name="it-name" placeholder="Tecnología 4">
-												<input class=""type="text" name="" placeholder="Nivel de tecnología 4">
+												<input class="it-level" type="text" name="it-level" placeholder="Nivel de tecnología 4">
 											</div>
 										<div class="various-skills">
 											<p>Destrezas</p>
@@ -250,7 +250,9 @@
 											<input class="skill-element" type="text" name="skill-element" placeholder="Habilidad 4">
 										</div>
 									</div>
-								</fieldset>
+								</div>
+							</div>
+						</fieldset>
 				</form>
 			</section>
 

@@ -17,3 +17,5 @@ document.getElementById(idContent).style.display = 'block';
 function cerrar(idContent){
 document.getElementById(idContent).style.display = 'none';
 }
+
+// función para completar los campos del formulario
