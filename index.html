@@ -119,15 +119,15 @@
 <!-- PERSONAL DATA -->
 					<fieldset class="personal-data">
 						<legend class="legend">Datos personales</legend>
-						<div class="form-section-header">
-									<h3 class="h3-form">Datos personales</h3>
-							<!--botones colapsable-->
+							<div class="form-section-header">
+								<h3 class="h3-form">Datos personales</h3>
+								<!--botones colapsable-->
 								<div class="form-section-button">
 									<img src="images/plus.png" class="boton-abrir" onclick="abrir('personal-information')" alt="abrir">
 									<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
 								</div>
 							</div>
-						<!--oculto-->
+							<!--oculto-->
 							<div id="personal-information">
 								<label class="label" for="name"></label>
 								<input id="name" type="text" name="name" placeholder="Nombre*" required>
@@ -141,39 +141,36 @@
 								<input id="email" type="email" name="email" placeholder="Email*" required>
 								<label class="label" for="address"></label>
 								<input id="address" type="text" name="address" placeholder="Dirección">
-								<div class="rrss">
-									<p>RRSS</p>
-									<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
-									<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-									<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-									<input id="Otros" type="text" name="Otros" placeholder="Otros">
+									<div class="rrss">
+										<p>RRSS</p>
+										<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+										<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+										<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+										<input id="Otros" type="text" name="Otros" placeholder="Otros">
+									</div>
+									<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
 								</div>
-								<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
-						</div>
-					</fieldset>
+						</fieldset>
 
-<!-- EXPERIENCIA -->
-							<fieldset class="experience">
-								<legend class="legend">Experiencia</legend>
+<!-- EXPERIENCE -->
+						<fieldset class="experience">
+							<legend class="legend">Experiencia</legend>
 								<div class="form-section-header">
-										<h3 class="h3-form">Experiencia Profesional</h3>
-										<!--botones colapsable-->
-										<div class="form-section-buttons">
-											<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
-											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
-										</div>
+									<h3 class="h3-form">Experiencia Profesional</h3>
+									<!--botones colapsable-->
+									<div class="form-section-buttons">
+										<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
+										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
+									</div>
 								</div>
-
 								<!--oculto-->
 								<div id="experience">
 									<input id="puesto" type="text" name="puesto" placeholder="Puesto">
 									<section class="experience-dates">
 										<input id="desde" type="date" name="desde">
 										<input id="hasta" type="date" name="hasta">
-										<!-- <div class="experience-button> -->
-											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
-											<p class="present-button-p">Actualidad</p>
-									<!-- </div> -->
+										<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+										<p class="present-button-p">Actualidad</p>
 									</section>
 									<input id="lugar" type="text" name="lugar" placeholder="Lugar">
 									<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
@@ -181,10 +178,9 @@
 							</fieldset>
 
 		<!-- FORMATION -->
-
 							<fieldset class="formation">
 								<legend class="legend">Formación</legend>
-								<div class="form-section-header">
+									<div class="form-section-header">
 										<h3 class="h3-form">Formación</h3>
 										<!--botones colapsable-->
 										<div class="form-section-buttons">
@@ -213,7 +209,6 @@
 							</fieldset>
 
 				<!-- SKILLS -->
-
 							<fieldset class="skills-fieldset">
 								<legend class="legend">Habilidades</legend>
 									<div class="form-section-header">
