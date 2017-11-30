@@ -20,7 +20,7 @@ document.getElementById(idContent).style.display = 'none';
 
 // función para completar los campos del formulario
 function completar () {
-	var namePrompt = prompt("Introduce tu nombre de pila");
+	var namePrompt = prompt("Introduce tu nombre");
 	var surnamesPrompt = prompt("Introduce tus apellidos");
 	var telephonePrompt = prompt("Introduce tu número de teléfono");
 	var dateBirthPrompt = prompt("Introduce tu fecha de nacimiento");
