@@ -138,15 +138,16 @@
 								<input id="email" type="email" name="email" placeholder="Email*" required>
 								<label class="label" for="address"></label>
 								<input id="address" type="text" name="address" placeholder="Dirección">
-									<div class="rrss">
-										<p>RRSS</p>
-											<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
-											<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-											<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-											<input id="Otros" type="text" name="Otros" placeholder="Otros">
-									</div>
+								<div class="rrss">
+									<p>RRSS</p>
+									<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+									<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+									<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+									<input id="Otros" type="text" name="Otros" placeholder="Otros">
 								</div>
-							</fieldset>
+								<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
+						</div>
+					</fieldset>
 
 <!-- EXPERIENCIA -->
 							<fieldset class="experience">
@@ -254,6 +255,17 @@
 							</div>
 						</fieldset>
 				</form>
+			</section>
+
+			<section class="section 5bpreview">
+				<div class="showpreview">
+					<div><span>Nombre: </span><span id="nombrePrompt"></span></div>
+					<div><span>Apellido: </span><span id="apellidoPrompt"></span></div>
+					<div><span>Teléfono: </span><span id="telefonoPrompt"></span></div>
+					<div><span>Fecha de nacimiento: </span><span id="nacimientoPrompt"></span></div>
+					<div><span>Email: </span><span id="correoElectronicoPrompt"></span></div>
+					<div><span>Dirección: </span><span id="direccionPrompt"></span></div>
+				</div>
 			</section>
 
 			<section class="section section6buttons">
