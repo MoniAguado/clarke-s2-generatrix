@@ -63,6 +63,8 @@ main {
 	display: block;
 	padding-right: 30px;
 	width: 20%;
+	width: 57px;
+	height: 86px;
 }
 
 /* SECTION2 INFO*/
@@ -200,12 +202,12 @@ fieldset {
 
 /*personal information*/
 
-.personal-data, .formation, {
+.personal-data, .formation {
 	background-color: #55607F;
 }
 
 .experience, .skills-fieldset {
-	background-color: #E7ECED;
+	background-color: #55607F;
 }
 
 .personal-information {
@@ -255,7 +257,7 @@ input, .description, .experience-text {
 	height: auto;
 }
 
-.experience-dates input, .experience-dates p, .formation-dates input {
+.experience-dates input, .experience-dates p, .formation-dates input, .formation-dates p {
 	width: 20%;
 	display: inline;
 	font-size: 10px;
@@ -273,14 +275,19 @@ input, .description, .experience-text {
 }
 
 /*PREVIEW*/
-
-.showpreview {
-	margin: 0 20px 20px 20px;
+.section5bpreview {
+	background-color: #E7ECED;
+}
+.showpreview div {
+	margin: 0 20px 0 20px;
+	padding-bottom: 20px;
 }
 
 .preview-title {
 	text-align: center;
 	color: #31B89A;
+	margin-top: 0;
+	padding-top: 1em;
 }
 
 /*FOOTER*/
@@ -290,7 +297,7 @@ footer {
 	justify-content: space-between;
 	position: relative;
 	width: 100%;
-	background-color: #55607F;
+	background-color:  #31B89A;
 	color: white;
 }
 
@@ -302,8 +309,13 @@ footer {
 .list-element {
 	display: block;
 	margin-right: 20px;
+	font-size: 14px;
 }
 
 .mini-logo {
+	display: block;
 	margin-right: 20px;
+	padding-top: 8px;
+	width: 57px;
+	height: 86px;
 }
