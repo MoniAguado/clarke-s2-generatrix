@@ -48,6 +48,21 @@ main {
 	z-index: 3;
 }
 
+.form-section-header {
+	border-bottom: 5px;
+}
+
+.logo {
+	display: block;
+	padding-right: 30px;
+	width: 20%;
+	width: 57px;
+	height: auto;
+	/*86px;*/
+}
+
+/*burger*/
+
 .button-burger {
 	width: 40px;
 	height: 40px;
@@ -59,7 +74,14 @@ main {
 
 .burger ul li a {
 	text-decoration: none;
-	color: #424A5F;
+	color: #E7ECED;
+	border-bottom: 1px solid #31B89A;
+	border: none;
+	width: 90px;
+	height: 30px;
+	background-color: #424A5F;
+	padding: 4px 10px;
+	margin: 0;
 }
 
 .list-burger {
@@ -68,27 +90,14 @@ main {
 	padding-top: 10px;
 }
 
-/*.line {
-	border: 2px solid;
-	border-bottom
-}*/
-
-.form-section-header {
-	border-bottom: 5px;
-}
-
 #list-burger {
 	display: none;
 }
 
-.logo {
-	display: block;
-	padding-right: 30px;
-	width: 20%;
-	width: 57px;
-	height: auto;
-	/*86px;*/
-}
+/*.line {
+	border: 2px solid;
+	border-bottom
+}*/
 
 /* SECTION2 INFO*/
 
@@ -215,6 +224,13 @@ main {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+/*SECTION IMAGE*/
+
+.foto {
+	width: 100px;
+	height: 100px;
 }
 
 /*FORM*/

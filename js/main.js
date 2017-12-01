@@ -1,13 +1,12 @@
 // burger
 
-
- function openClose(id) {
-    var burger = document.getElementById(id);
-    if (burger.style.display == 'block'){
-				burger.style.display ='none';
-		} else {
-			burger.style.display = 'block';
-		}
+function openClose(id) {
+  var burger = document.getElementById(id);
+  if (burger.style.display == 'block'){
+			burger.style.display ='none';
+	} else {
+		burger.style.display = 'block';
+	}
 }
 
 
@@ -39,4 +38,25 @@ function completar () {
 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
+}
+
+
+//subir imagen
+function archivo(evt) {
+      var files = evt.target.files; // FileList object
+        // imagen del campo "file".
+      for (var i = 0, f; f = files[i]; i++) {
+           //Solo admitimos imágenes.
+           if (!f.type.match('image.*')) {
+                continue;
+           }
+      //      var reader = new FileReader();
+      //      reader.onload = (function(theFile) {
+      //          return function(e) {
+      //          // Creamos la imagen.
+      //                 document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+      //          };
+      //      })(f);
+      //      reader.readAsDataURL(f);
+      //  }
 }
