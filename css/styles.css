@@ -63,12 +63,77 @@ main {
 	display: block;
 	padding-right: 30px;
 	width: 20%;
+	width: 57px;
+	height: 86px;
 }
+
+
+
+
+
+
+
+/* SECTION2 INFO*/
+
+.title-on-cover-main {
+	color: #EAB931;
+	text-align: center;
+	background-color: #424A5F;
+}
+
+.main-img-section1 {
+	width: 100%;
+	height: auto;
+}
+
+.instructions-paragraph {
+	padding: 3%;
+	text-align: center;
+	background-color: #E7ECED;
+}
+
+.instructions-paragraph p {
+	color: #424A5F;
+	font-size: 15px;
+}
+
+.steps-band {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 10px;
+}
+.step-element {
+	/*background-color: #EAB931;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;*/
+	display: block;
+	text-align: center;
+}
+.img-step-element {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin:auto;
+	filter: opacity(0.7);
+}
+.span-step {
+	display: block;
+	align-items: center;
+	font-size: 14px;
+}
+
+
+
+
+
 
 /* SECTION DESIGN*/
 
 .section2design {
-	background: #424A5F;
+	background: #31B89A;
 	height: 110px;
 	display: flex;
 	align-items: center;
@@ -81,11 +146,11 @@ main {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	height: 100px;
+	height: 106px;
 }
 
 .design-options li {
-	border-color: #424A5F;
+	border-color: #31B89A;
 	border-width: 3px;
 	border-style: solid;
 }
@@ -137,50 +202,6 @@ main {
 	list-style: none;
 }
 
-/* SECTION2 INFO*/
-
-.main-img-section1 {
-	width: 100%;
-	height: auto;
-	/*filter: opacity(0.7);*/
-}
-
-.instructions-paragraph {
-	padding: 3%;
-	text-align: justify;
-}
-
-.steps-band {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 10px;
-}
-
-.step-element {
-	/*background-color: #EAB931;
-	border-color: black;
-	border-width: 1px;
-	border-style: solid;*/
-	display: block;
-	text-align: center;
-}
-
-.img-step-element {
-	display: block;
-	width: 80px;
-	height: 80px;
-	margin:auto;
-	filter: opacity(0.7);
-
-}
-
-.span-step {
-	display: block;
-	align-items: center;
-	font-size: 14px;
-}
 
 /*FORM*/
 
@@ -193,11 +214,18 @@ main {
 	display: none;
 }
 
+fieldset {
+	border: none;
+	margin: 0;
+}
+
 /*personal information*/
 
-.personal-data,
-.formation,
-.experience {
+.personal-data, .formation {
+	background-color: #55607F;
+}
+
+.experience, .skills-fieldset {
 	background-color: #55607F;
 }
 
@@ -213,21 +241,12 @@ main {
 	display: none;
 }
 
-.botones-personal {
-	display: flex;
-	flex-direction: row;
-	align-content: space-around;
-}
-
-.boton-abrir,
-.boton-cerrar {
+.boton-abrir, .boton-cerrar {
 	height: 20px;
 	width: 20px;
 }
 
-input,
-.description,
-.experience-text {
+input, .description, .experience-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -240,8 +259,7 @@ input,
 	width: 80%;
 }
 
-.description,
-.experience-text {
+.description, .experience-text {
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
@@ -249,29 +267,46 @@ input,
 
 /*EXPERIENCE*/
 
-.experience-buttons {
+.form-section-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	width: auto;
+	height: auto;
 }
 
-.experience-dates input,
-.formation-dates input,
-p {
+.experience-dates input, .experience-dates p, .formation-dates input, .formation-dates p {
 	width: 20%;
 	display: inline;
 	font-size: 10px;
-	color: #E7ECED;
+	color: rgb(117, 117, 117);
 }
 
 .present-button {
+	color: rgb(117, 117, 117);
 	width: auto;
 	height: auto;
 }
 
 #experience {
 	display: none;
+}
+
+/*PREVIEW*/
+.section5bpreview {
+	background-color: #E7ECED;
+}
+.showpreview div {
+	margin: 0 20px 0 20px;
+	padding-bottom: 20px;
+}
+
+.preview-title {
+	text-align: center;
+	color: #31B89A;
+	margin-top: 0;
+	padding-top: 1em;
 }
 
 /*FOOTER*/
@@ -281,7 +316,7 @@ footer {
 	justify-content: space-between;
 	position: relative;
 	width: 100%;
-	background-color: #55607F;
+	background-color:  #31B89A;
 	color: white;
 }
 
@@ -293,8 +328,13 @@ footer {
 .list-element {
 	display: block;
 	margin-right: 20px;
+	font-size: 14px;
 }
 
 .mini-logo {
+	display: block;
 	margin-right: 20px;
+	padding-top: 8px;
+	width: 57px;
+	height: 86px;
 }

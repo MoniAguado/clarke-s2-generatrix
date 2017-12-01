@@ -14,7 +14,7 @@
 	<header>
 			<div class="header">
 				<nav class="burger">
-					<img src="images/menu.png" class="button-burger" onclick="openClose ('list-burger')" alt="menu">
+					<img src="images/menu-color.png" class="button-burger" onclick="openClose ('list-burger')" alt="menu">
 					<ul class="list-burger" id="list-burger">
 						<li><a href="index.html#diseño">Diseño</a></li>
 						<li><a href="index.html#form">Completa tu CV</a></li>
@@ -39,16 +39,16 @@
 							</div>
 -->
 					</ul>
-				</nav>
-			<img src="images/untitled.png" alt="Generatrix" class="logo">
+				</nav><a href="index.html">
+			<img src="images/untitled.png" alt="Generatrix" class="logo"> </a>
 		</div>
 	</header>
 
 	<main>
-		<section class="section section1info">
+		<section class="section1info">
 			<div class="cover">
-				<img class="main-img-section1" src="images/portada-mobile.svg" alt="Imagen de portada">
-				<h4 class="title-on-cover">Título</h4>
+				<img class="main-img-section1" src="images/portada-mobile-new.svg" alt="Imagen de portada">
+				<h1 class="title-on-cover-main">Diseña tu cv sin perder tiempo</h1>
 			</div>
 			<div class="steps-band">
 				<div class="step-element">
@@ -66,17 +66,31 @@
 			</div>
 			<div class="instructions">
 				<div class="instructions-paragraph">
-					<p>Generatrix CV es un generador de currículums vitae con diseños muy estudiados para conseguir trabajo o cambiar el que ya tienes por uno mejor. ¡Es muy sencillo! Elige los colores, el tipo de letra y un fondo, añade una foto si lo deseas y rellena los datos para hacer un CV de 10. Después podrás guardarlo e imprimirlo.</p>
+					<p>Generatrix CV es un generador de currículums vitae con diseños muy estudiados para conseguir trabajo o cambiar el que ya tienes por uno mejor. ¡Es muy sencillo! Elige los colores, el tipo de letra y un fondo, añade una foto si lo deseas y rellena los datos para hacer un CV de 10. Después podrás guardarlo e imprimirlo. ¡Comienza a diseñarlo!</p>
+				</div>
+				<div class="steps-band">
+					<div class="step-element">
+						<img class="img-step-element" src="http://via.placeholder.com/80x80" alt="Elige tu diseño">
+						<span class="span-step">Step1</span>
+					</div>
+					<div class="step-element">
+						<img class="img-step-element" src="http://via.placeholder.com/80x80" alt="Introduce tus datos">
+						<span class="span-step">Step2</span>
+					</div>
+					<div class="step-element">
+						<img class="img-step-element" src="http://via.placeholder.com/80x80" alt="Obtén tu CV personalizado">
+						<span class="span-step">Step3</span>
+					</div>
 				</div>
 
 			</div>
 		</section>
 
 <!-- DESING SECTION -->
-		<section class="section section2design">
+		<section class="section2design">
 			<ul class="design-options">
 				<li class="design-options-font">
-					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font')" onclick="cerrar('colour')" onclick="cerrar('style')">
+					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font'); cerrar('colour'); cerrar('style')">
 					<!-- hidden -->
 					<ul id="font">
 						<li class="font-1" onclick="cerrar('font')">j</li>
@@ -85,7 +99,7 @@
 					</ul>
 				</li>
 				<li class="design-options-palette">
-					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour')" onclick="cerrar('font')" onclick="cerrar('style')">
+					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour'); cerrar('font'); cerrar('style')">
 					<!-- hidden -->
 					<ul id="colour">
 						<li class="colour-1" onclick="cerrar('colour')">j</li>
@@ -95,7 +109,7 @@
 				</li>
 				<li class="design-options-back">
 					<img src="images/menu.svg" title="estilo" alt="estilo"
-					onclick="abrir('style')" onclick="cerrar('font')" onclick="cerrar('colour')">
+					onclick="abrir('style'); cerrar('font'); cerrar('colour')">
 					<!-- hidden -->
 					<ul id="style">
 						<li class="style-1" onclick="cerrar('style')">j</li>
@@ -107,26 +121,28 @@
 		</section>
 
 
-			<section class="section section3photo">
+			<section class="section3photo">
 			</section>
 
-			<section class="section section4preview">
+			<section class="section4preview">
 			</section>
 
-			<section class="section section5form">
+			<section class="section5form">
 
 				<form class="personal-information" action="index.html" method="post">
 
 <!-- PERSONAL DATA -->
 					<fieldset class="personal-data">
-							<legend class="legend">Datos personales</legend>
-								<div class="botones-personal">
-									<h3 class="h3-form">Datos personales</h3>
-							<!--botones colapsable-->
+						<legend class="legend">Datos personales</legend>
+							<div class="form-section-header">
+								<h3 class="h3-form">Datos personales</h3>
+								<!--botones colapsable-->
+								<div class="form-section-button">
 									<img src="images/plus.png" class="boton-abrir" onclick="abrir('personal-information')" alt="abrir">
 									<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
 								</div>
-						<!--oculto-->
+							</div>
+							<!--oculto-->
 							<div id="personal-information">
 								<label class="label" for="name"></label>
 								<input id="name" type="text" name="name" placeholder="Nombre*" required>
@@ -140,36 +156,36 @@
 								<input id="email" type="email" name="email" placeholder="Email*" required>
 								<label class="label" for="address"></label>
 								<input id="address" type="text" name="address" placeholder="Dirección">
-								<div class="rrss">
-									<p>RRSS</p>
-									<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
-									<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-									<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-									<input id="Otros" type="text" name="Otros" placeholder="Otros">
+									<div class="rrss">
+										<p>RRSS</p>
+										<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+										<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+										<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+										<input id="Otros" type="text" name="Otros" placeholder="Otros">
+									</div>
+									<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
 								</div>
-								<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
-						</div>
-					</fieldset>
+						</fieldset>
 
-<!-- EXPERIENCIA -->
-							<fieldset class="experience">
-								<legend class="legend">Experiencia Profesional</legend>
-									<div class="experience-buttons">
-										<h3 class="h3-form">Experiencia Profesional</h3>
+<!-- EXPERIENCE -->
+						<fieldset class="experience">
+							<legend class="legend">Experiencia</legend>
+								<div class="form-section-header">
+									<h3 class="h3-form">Experiencia Profesional</h3>
 									<!--botones colapsable-->
+									<div class="form-section-buttons">
 										<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
 										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
 									</div>
+								</div>
 								<!--oculto-->
 								<div id="experience">
 									<input id="puesto" type="text" name="puesto" placeholder="Puesto">
 									<section class="experience-dates">
 										<input id="desde" type="date" name="desde">
 										<input id="hasta" type="date" name="hasta">
-										<!-- <div class="experience-button> -->
-											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
-											<p class="present-button-p">Actualidad</p>
-									<!-- </div> -->
+										<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+										<p class="present-button-p">Actualidad</p>
 									</section>
 									<input id="lugar" type="text" name="lugar" placeholder="Lugar">
 									<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
@@ -177,15 +193,16 @@
 							</fieldset>
 
 		<!-- FORMATION -->
-
 							<fieldset class="formation">
 								<legend class="legend">Formación</legend>
-									<div class="formation-button">
+									<div class="form-section-header">
 										<h3 class="h3-form">Formación</h3>
 										<!--botones colapsable-->
+										<div class="form-section-buttons">
 											<img src="images/plus.png" class="boton-abrir" onclick="abrir('formation')" alt="abrir">
 											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('formation')" alt="cerrar">
 										</div>
+									</div>
 								<!--oculto-->
 								<div id="formation">
 									<label class="label" for="titulo"></label>
@@ -207,15 +224,16 @@
 							</fieldset>
 
 				<!-- SKILLS -->
-
 							<fieldset class="skills-fieldset">
 								<legend class="legend">Habilidades</legend>
-									<div class ="skills-button">
+									<div class="form-section-header">
 										<h3 class="h3-form">Habilidades</h3>
 								<!--botones colapsable-->
+									<div class="form-section-buttons">
 										<img src="images/plus.png" class="boton-abrir" onclick="abrir('skills')" alt="abrir">
 										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('skills')" alt="cerrar">
 									</div>
+								</div>
 							<!--oculto-->
 							<div id="skills">
 									<div class="skills">
@@ -291,8 +309,9 @@
 				</form>
 			</section>
 
-			<section class="section 5bpreview">
+			<section class="section5bpreview">
 				<div class="showpreview">
+					<h3 class="preview-title"> Previsualización </h3>
 					<div><span>Nombre: </span><span id="nombrePrompt"></span></div>
 					<div><span>Apellido: </span><span id="apellidoPrompt"></span></div>
 					<div><span>Teléfono: </span><span id="telefonoPrompt"></span></div>
@@ -313,7 +332,8 @@
 				<li class="list-element">Contacto</li>
 				<li class="list-element">Generatrix &copy; 2017</li>
 			</ul>
-		<img class="mini-logo" src="images/untitled.png" alt="logo">
+			<a href="index.html">
+		<img class="mini-logo" src="images/untitled.png" alt="logo" alt="Generatrix"></a>
 	</footer>
  <script src="js/main.js"></script>
 </body>
