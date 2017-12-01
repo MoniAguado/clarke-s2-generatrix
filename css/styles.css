@@ -142,7 +142,7 @@ main {
 .main-img-section1 {
 	width: 100%;
 	height: auto;
-	filter: opacity(0.7);
+	/*filter: opacity(0.7);*/
 }
 
 .instructions-paragraph {
@@ -152,23 +152,34 @@ main {
 
 .steps-band {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	align-items: center;
 	width: 100%;
+	padding: 10px;
 }
 
 .step-element {
-	background-color: #EAB931;
+	/*background-color: #EAB931;
 	border-color: black;
 	border-width: 1px;
-	border-style: solid;
+	border-style: solid;*/
+	display: block;
+	text-align: center;
 }
 
 .img-step-element {
 	display: block;
+	width: 80px;
+	height: 80px;
+	margin:auto;
+	filter: opacity(0.7);
+
 }
 
 .span-step {
 	display: block;
+	align-items: center;
+	font-size: 14px;
 }
 
 /*FORM*/
