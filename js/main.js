@@ -1,9 +1,15 @@
 // burger
 
-function openClose(idContent){
 
-document.getElementById(idContent).style.display = 'block';
+ function openClose(id) {
+    var burger = document.getElementById(id);
+    if (burger.style.display == 'block'){
+				burger.style.display ='none';
+		} else {
+			burger.style.display = 'block';
+		}
 }
+
 
 
 //función para desplegar sección
