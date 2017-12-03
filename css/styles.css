@@ -397,9 +397,6 @@ footer {
 		font-size: 25px;
 		padding-top: 2em;
 	}
-	.section2design {
-		padding: 5em 0;
-	}
 	.footer-list {
 		display: flex;
 		flex-direction: row;
@@ -418,5 +415,31 @@ footer {
 	.boton-abrir, .boton-cerrar {
 		width: 30px;
 		height: auto;
+	}
+	.section2design {
+		height: 220px;
+	}
+	.design-options {
+		height: 212px;
+	}
+	.design-options li img {
+		width: 200px;
+		height: 200px;
+	}
+	#font, #colour, #style {
+		width: 200px;
+		height: auto;
+	}
+	#font li {
+		width: 200px;
+		height: 100px;
+	}
+	#colour li {
+		width: 200px;
+		height: 100px;
+	}
+	#style li {
+		width: 100px;
+		height: 50px;
 	}
 }
