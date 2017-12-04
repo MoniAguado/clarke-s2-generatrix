@@ -327,16 +327,26 @@ input, .description, .experience-text {
 	height: auto;
 }
 
-.experience-dates input, .experience-dates p, .formation-dates input, .formation-dates p {
+/*ANTES PARA LAS OTRAS FECHAS.AHORA NO NECESARIO*/
+/*.experience-dates input, .experience-dates p, .formation-dates input
 	width: 20%;
 	display: inline;
 	font-size: 10px;
 	color: rgb(117, 117, 117);
+}*/
+ .formation-dates p, .experience-dates p{
+	display: inline;
+	color: black;
+	font-size: 14px;
+ }
+.desde, .hasta, .level {
+	display: block;
+	margin: 4px 0 4px 6px;
 }
-
 .present-button {
+	display: inline;
 	color: rgb(117, 117, 117);
-	width: auto;
+	width: 50%;
 	height: auto;
 }
 
