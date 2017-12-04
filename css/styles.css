@@ -287,7 +287,6 @@ input, .description, .experience-text {
 	font-family: inherit;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
 	padding: 5px;
 	margin: 5px;
 	width: 80%;

@@ -59,4 +59,3 @@ function archivo(evt) {
       //      })(f);
       //      reader.readAsDataURL(f);
       //  }
-}
