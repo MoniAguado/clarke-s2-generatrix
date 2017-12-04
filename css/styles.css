@@ -19,7 +19,12 @@ main {
 	flex: 1;
 	padding-top: 80px;
 }
-
+.main-block {
+	display: flex;
+	padding: 0 3%;
+	justify-content: space-between;
+	background-color: #E7ECED;
+}
 .personal-data {
 	margin-top: 1.2em;
 }
@@ -384,11 +389,12 @@ input, .description, .experience-text {
 	margin-left: 5%;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 .preview-photo{
 	width: 150px;
 	height: 200px;
-	background-color: pink;
+	background-color: #EAB931;
 }
 .preview-data {
 	display: flex;
