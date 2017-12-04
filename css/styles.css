@@ -246,6 +246,8 @@ main {
 	padding: 3%;
 	text-align: center;
 	background-color: #E7ECED;
+	display: flex;
+	flex-direction: column;
 }
 
 .foto {
@@ -256,7 +258,9 @@ main {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	background: pink;
+	background: #424A5F;
+	border-radius: 100px;
+	border-color: #424A5F;
 }
 
 /*FORM*/
@@ -332,21 +336,25 @@ input, .description, .experience-text {
 }
 
 /*ANTES PARA LAS OTRAS FECHAS.AHORA NO NECESARIO*/
+
 /*.experience-dates input, .experience-dates p, .formation-dates input
 	width: 20%;
 	display: inline;
 	font-size: 10px;
 	color: rgb(117, 117, 117);
 }*/
- .formation-dates p, .experience-dates p{
+
+.formation-dates p, .experience-dates p {
 	display: inline;
 	color: black;
 	font-size: 14px;
- }
+}
+
 .desde, .hasta, .level {
 	display: block;
 	margin: 4px 0 4px 6px;
 }
+
 .present-button {
 	display: inline;
 	color: rgb(117, 117, 117);
