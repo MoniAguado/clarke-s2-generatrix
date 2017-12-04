@@ -357,20 +357,44 @@ input, .description, .experience-text {
 
 .section5bpreview {
 	background-color: #E7ECED;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
-.showpreview div {
-	margin: 0 20px 0 20px;
-	padding-bottom: 20px;
-}
-
 .preview-title {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
 	padding-top: 1em;
 }
-
+.theme {
+	position: relative;
+	font-size: 80%;
+	margin-bottom: 5%;
+}
+.showpreview {
+	position: absolute;
+	z-index: 1;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+.preview-header{
+	margin-top: 20%;
+	margin-left: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+.preview-photo{
+	width: 150px;
+	height: 200px;
+	background-color: pink;
+}
+.preview-data {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
 /*FOOTER*/
 
 footer {
@@ -432,9 +456,7 @@ footer {
 		font-size: 20px;
 		padding-right: 10px;
 	}
-	.showpreview {
-		font-size: 26px;
-	}
+
 	input, .h3-form {
 		font-size: 30px;
 	}
