@@ -49,626 +49,625 @@
 	</header>
 
 	<main>
-		<section class="section1info">
-			<div class="cover">
-				<img class="main-img-section1" src="images/cover_mobile2.png" alt="Imagen de portada">
-				<h1 class="title-on-cover-main">Diseña tu CV sin perder tiempo</h1>
-			</div>
-			<div class="steps-band">
-				<div class="step-element">
-					<img class="img-step-element" src="images/designer.svg" alt="Elige tu diseño">
-					<span class="span-step">Elige tu diseño</span>
+		<div class="cover">
+			<img class="main-img-section1" src="images/cover_mobile2.png" alt="Imagen de portada">
+			<h1 class="title-on-cover-main">Diseña tu CV sin perder tiempo</h1>
+		</div>
+			<section class="section1info">
+				<div class="steps-band">
+					<div class="step-element">
+						<img class="img-step-element" src="images/designer.svg" alt="Elige tu diseño">
+						<span class="span-step">Elige tu diseño</span>
+					</div>
+					<div class="step-element">
+						<img class="img-step-element" src="images/writing.svg" alt="Introduce tus datos">
+						<span class="span-step">Introduce tus datos</span>
+					</div>
+					<div class="step-element">
+						<img class="img-step-element" src="images/download.svg" alt="Obtén tu CV personalizado">
+						<span class="span-step">Obtén tu CV</span>
+					</div>
 				</div>
-				<div class="step-element">
-					<img class="img-step-element" src="images/writing.svg" alt="Introduce tus datos">
-					<span class="span-step">Introduce tus datos</span>
+				<div class="instructions">
+					<div class="instructions-paragraph">
+						<p>Generatrix CV es un generador de currículums vitae con diseños muy estudiados para conseguir trabajo o cambiar el que ya tienes por uno mejor. ¡Es muy sencillo! Elige los colores, el tipo de letra y un fondo, añade una foto si lo deseas y rellena los datos para hacer un CV de 10. Después podrás guardarlo e imprimirlo. ¡Comienza a diseñarlo!</p>
+					</div>
 				</div>
-				<div class="step-element">
-					<img class="img-step-element" src="images/download.svg" alt="Obtén tu CV personalizado">
-					<span class="span-step">Obtén tu CV</span>
-				</div>
-			</div>
-			<div class="instructions">
-				<div class="instructions-paragraph">
-					<p>Generatrix CV es un generador de currículums vitae con diseños muy estudiados para conseguir trabajo o cambiar el que ya tienes por uno mejor. ¡Es muy sencillo! Elige los colores, el tipo de letra y un fondo, añade una foto si lo deseas y rellena los datos para hacer un CV de 10. Después podrás guardarlo e imprimirlo. ¡Comienza a diseñarlo!</p>
-				</div>
-			</div>
-		</section>
+			</section>
 
-<!-- DESING SECTION -->
-		<section class="section2design">
-			<ul class="design-options">
-				<li class="design-options-font">
-					<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font'); cerrar('colour'); cerrar('style')">
-					<!-- hidden -->
-					<ul id="font">
-						<li class="font-1" onclick="cerrar('font')">j</li>
-						<li class="font-2" onclick="cerrar('font')">n</li>
-						<li class="font-3" onclick="cerrar('font')">o</li>
-					</ul>
-				</li>
-				<li class="design-options-palette">
-					<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour'); cerrar('font'); cerrar('style')">
-					<!-- hidden -->
-					<ul id="colour">
-						<li class="colour-1" onclick="cerrar('colour')">j</li>
-						<li class="colour-2" onclick="cerrar('colour')">n</li>
-						<li class="colour-3" onclick="cerrar('colour')">o</li>
-					</ul>
-				</li>
-				<li class="design-options-back">
-					<img src="images/menu.svg" title="estilo" alt="estilo"
-					onclick="abrir('style'); cerrar('font'); cerrar('colour')">
-					<!-- hidden -->
-					<ul id="style">
-						<li class="style-1" onclick="cerrar('style')">j</li>
-						<li class="style-2" onclick="cerrar('style')">n</li>
-						<li class="style-3" onclick="cerrar('style')">o</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-
+	<!-- DESING SECTION -->
+	<section class="main-block">
+	<section class="column1">
+			<section class="section2design">
+				<ul class="design-options">
+					<li class="design-options-font">
+						<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font'); cerrar('colour'); cerrar('style')">
+						<!-- hidden -->
+						<ul id="font">
+							<li class="font-1" onclick="cerrar('font')">j</li>
+							<li class="font-2" onclick="cerrar('font')">n</li>
+							<li class="font-3" onclick="cerrar('font')">o</li>
+						</ul>
+					</li>
+					<li class="design-options-palette">
+						<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour'); cerrar('font'); cerrar('style')">
+						<!-- hidden -->
+						<ul id="colour">
+							<li class="colour-1" onclick="cerrar('colour')">j</li>
+							<li class="colour-2" onclick="cerrar('colour')">n</li>
+							<li class="colour-3" onclick="cerrar('colour')">o</li>
+						</ul>
+					</li>
+					<li class="design-options-back">
+						<img src="images/menu.svg" title="estilo" alt="estilo"
+						onclick="abrir('style'); cerrar('font'); cerrar('colour')">
+						<!-- hidden -->
+						<ul id="style">
+							<li class="style-1" onclick="cerrar('style')">j</li>
+							<li class="style-2" onclick="cerrar('style')">n</li>
+							<li class="style-3" onclick="cerrar('style')">o</li>
+						</ul>
+					</li>
+				</ul>
 <!-- ADD FILES -->
 			<section class="section3photo">
 				<label class="label" for="files">Sube tu foto</label>
 				<input type="file" id="file" name="file[]" class="foto"/></input>
 				<div class="trigger"></div>
 			</section>
+		</section>
+				<section class="section5form">
+					<form class="personal-information" action="index.html" method="post">
 
-			<section class="section5form">
-
-				<form class="personal-information" action="index.html" method="post">
-
-<!-- PERSONAL DATA -->
-					<fieldset class="personal-data">
-						<legend class="legend">Datos personales</legend>
-							<div class="form-section-header">
-								<h3 class="h3-form">Datos personales</h3>
-								<!--botones colapsable-->
-								<div class="form-section-button">
-									<img src="images/plus.png" class="boton-abrir" onclick="abrir('personal-information')" alt="abrir">
-									<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
-								</div>
-							</div>
-							<!--oculto-->
-							<div id="personal-information">
-								<label class="label" for="name"></label>
-								<input id="name" type="text" name="name" placeholder="Nombre*" required>
-								<label class="label" for="surname"></label>
-								<input id="surname" type="text" name="surname" placeholder="Apellidos*" required>
-								<label class="label" for="telephone"></label>
-								<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
-								<label class="label" for="date"></label>
-								<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
-								<label class="label" for="email"></label>
-								<input id="email" type="email" name="email" placeholder="Email*" required>
-								<label class="label" for="address"></label>
-								<input id="address" type="text" name="address" placeholder="Dirección">
-									<div class="rrss">
-										<p>RRSS</p>
-										<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
-										<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-										<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-										<input id="Otros" type="text" name="Otros" placeholder="Otros">
-									</div>
-									<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
-								</div>
-								<hr class="line">
-						</fieldset>
-
-<!-- EXPERIENCE -->
-						<fieldset class="experience">
-							<legend class="legend">Experiencia</legend>
+	<!-- PERSONAL DATA -->
+						<fieldset class="personal-data">
+							<legend class="legend">Datos personales</legend>
 								<div class="form-section-header">
-									<h3 class="h3-form">Experiencia Profesional</h3>
+									<h3 class="h3-form">Datos personales</h3>
 									<!--botones colapsable-->
-									<div class="form-section-buttons">
-										<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
-										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
+									<div class="form-section-button">
+										<img src="images/plus.png" class="boton-abrir" onclick="abrir('personal-information')" alt="abrir">
+										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
 									</div>
 								</div>
 								<!--oculto-->
-								<div id="experience">
-									<input id="puesto" type="text" name="puesto" placeholder="Puesto">
-									<section class="experience-dates">
-										<div class="desde">
-										<label class="label" for="desde">Desde</label>
-										<select id="start_month" name="start_month" class="month">
-											<option value="mes">Mes</option>
-											<option >--</option>
-											<option>Enero</option>
-											<option>Febrero</option>
-											<option>Marzo</option>
-											<option>Abril</option>
-											<option>Mayo</option>
-											<option>Junio</option>
-											<option>Julio</option>
-											<option>Agosto</option>
-											<option>Septiembre</option>
-											<option>Octubre</option>
-											<option>Noviembre</option>
-											<option>Diciembre</option>
-										</select>
-										<select id="start_year" name="start_year" class="year">
-											<option value="año">Año</option>
-											<option >--</option>
-											<option>1950</option>
-											<option>1951</option>
-											<option>1952</option>
-											<option>1953</option>
-											<option>1954</option>
-											<option>1955</option>
-											<option>1956</option>
-											<option>1957</option>
-											<option>1958</option>
-											<option>1960</option>
-											<option>1961</option>
-											<option>1962</option>
-											<option>1963</option>
-											<option>1964</option>
-											<option>1965</option>
-											<option>1966</option>
-											<option>1967</option>
-											<option>1968</option>
-											<option>1969</option>
-											<option>1970</option>
-											<option>1971</option>
-											<option>1972</option>
-											<option>1973</option>
-											<option>1974</option>
-											<option>1975</option>
-											<option>1976</option>
-											<option>1977</option>
-											<option>1978</option>
-											<option>1979</option>
-											<option>1980</option>
-											<option>1981</option>
-											<option>1982</option>
-											<option>1983</option>
-											<option>1984</option>
-											<option>1985</option>
-											<option>1986</option>
-											<option>1987</option>
-											<option>1988</option>
-											<option>1989</option>
-											<option>1990</option>
-											<option>1991</option>
-											<option>1992</option>
-											<option>1993</option>
-											<option>1994</option>
-											<option>1995</option>
-											<option>1996</option>
-											<option>1997</option>
-											<option>1998</option>
-											<option>1999</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2002</option>
-											<option>2003</option>
-											<option>2004</option>
-											<option>2005</option>
-											<option>2006</option>
-											<option>2007</option>
-											<option>2008</option>
-											<option>2009</option>
-											<option>2010</option>
-											<option>2011</option>
-											<option>2012</option>
-											<option>2013</option>
-											<option>2014</option>
-											<option>2015</option>
-											<option>2016</option>
-											<option>2017</option>
-										</select>
+								<div id="personal-information">
+									<label class="label" for="name"></label>
+									<input id="name" type="text" name="name" placeholder="Nombre*" required>
+									<label class="label" for="surname"></label>
+									<input id="surname" type="text" name="surname" placeholder="Apellidos*" required>
+									<label class="label" for="telephone"></label>
+									<input id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
+									<label class="label" for="date"></label>
+									<input id="date" type="number" name="date" placeholder="Fecha de nacimiento">
+									<label class="label" for="email"></label>
+									<input id="email" type="email" name="email" placeholder="Email*" required>
+									<label class="label" for="address"></label>
+									<input id="address" type="text" name="address" placeholder="Dirección">
+										<div class="rrss">
+											<p>RRSS</p>
+											<input id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+											<input id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+											<input id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+											<input id="Otros" type="text" name="Otros" placeholder="Otros">
 										</div>
-										<div class="hasta">
-										<label class="label" for="hasta">Hasta</label>
-										<select id="end_month" name="end_month" class="month">
-											<option value="mes">Mes</option>
-											<option >--</option>
-											<option>Enero</option>
-											<option>Febrero</option>
-											<option>Marzo</option>
-											<option>Abril</option>
-											<option>Mayo</option>
-											<option>Junio</option>
-											<option>Julio</option>
-											<option>Agosto</option>
-											<option>Septiembre</option>
-											<option>Octubre</option>
-											<option>Noviembre</option>
-											<option>Diciembre</option>
-										</select>
-										<select id="start_year" name="start_year" class="year">
-											<option value="año">Año</option>
-											<option >--</option>
-											<option>1950</option>
-											<option>1951</option>
-											<option>1952</option>
-											<option>1953</option>
-											<option>1954</option>
-											<option>1955</option>
-											<option>1956</option>
-											<option>1957</option>
-											<option>1958</option>
-											<option>1960</option>
-											<option>1961</option>
-											<option>1962</option>
-											<option>1963</option>
-											<option>1964</option>
-											<option>1965</option>
-											<option>1966</option>
-											<option>1967</option>
-											<option>1968</option>
-											<option>1969</option>
-											<option>1970</option>
-											<option>1971</option>
-											<option>1972</option>
-											<option>1973</option>
-											<option>1974</option>
-											<option>1975</option>
-											<option>1976</option>
-											<option>1977</option>
-											<option>1978</option>
-											<option>1979</option>
-											<option>1980</option>
-											<option>1981</option>
-											<option>1982</option>
-											<option>1983</option>
-											<option>1984</option>
-											<option>1985</option>
-											<option>1986</option>
-											<option>1987</option>
-											<option>1988</option>
-											<option>1989</option>
-											<option>1990</option>
-											<option>1991</option>
-											<option>1992</option>
-											<option>1993</option>
-											<option>1994</option>
-											<option>1995</option>
-											<option>1996</option>
-											<option>1997</option>
-											<option>1998</option>
-											<option>1999</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2002</option>
-											<option>2003</option>
-											<option>2004</option>
-											<option>2005</option>
-											<option>2006</option>
-											<option>2007</option>
-											<option>2008</option>
-											<option>2009</option>
-											<option>2010</option>
-											<option>2011</option>
-											<option>2012</option>
-											<option>2013</option>
-											<option>2014</option>
-											<option>2015</option>
-											<option>2016</option>
-											<option>2017</option>
-										</select>
-										<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
-										<p class="present-button-p">Actualidad</p>
-										</div>
-									</section>
-									<input id="lugar" type="text" name="lugar" placeholder="Lugar">
-									<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
-								</div>
-								<hr class="line">
+										<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
+									</div>
+									<hr class="line">
 							</fieldset>
 
-		<!-- FORMATION -->
-							<fieldset class="formation">
-								<legend class="legend">Formación</legend>
+	<!-- EXPERIENCE -->
+							<fieldset class="experience">
+								<legend class="legend">Experiencia</legend>
 									<div class="form-section-header">
-										<h3 class="h3-form">Formación</h3>
+										<h3 class="h3-form">Experiencia Profesional</h3>
 										<!--botones colapsable-->
 										<div class="form-section-buttons">
-											<img src="images/plus.png" class="boton-abrir" onclick="abrir('formation')" alt="abrir">
-											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('formation')" alt="cerrar">
+											<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
+											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
+										</div>
+									</div>
+									<!--oculto-->
+									<div id="experience">
+										<input id="puesto" type="text" name="puesto" placeholder="Puesto">
+										<section class="experience-dates">
+											<div class="desde">
+											<label class="label" for="desde">Desde</label>
+											<select id="start_month" name="start_month" class="month">
+												<option value="mes">Mes</option>
+												<option >--</option>
+												<option>Enero</option>
+												<option>Febrero</option>
+												<option>Marzo</option>
+												<option>Abril</option>
+												<option>Mayo</option>
+												<option>Junio</option>
+												<option>Julio</option>
+												<option>Agosto</option>
+												<option>Septiembre</option>
+												<option>Octubre</option>
+												<option>Noviembre</option>
+												<option>Diciembre</option>
+											</select>
+											<select id="start_year" name="start_year" class="year">
+												<option value="año">Año</option>
+												<option >--</option>
+												<option>1950</option>
+												<option>1951</option>
+												<option>1952</option>
+												<option>1953</option>
+												<option>1954</option>
+												<option>1955</option>
+												<option>1956</option>
+												<option>1957</option>
+												<option>1958</option>
+												<option>1960</option>
+												<option>1961</option>
+												<option>1962</option>
+												<option>1963</option>
+												<option>1964</option>
+												<option>1965</option>
+												<option>1966</option>
+												<option>1967</option>
+												<option>1968</option>
+												<option>1969</option>
+												<option>1970</option>
+												<option>1971</option>
+												<option>1972</option>
+												<option>1973</option>
+												<option>1974</option>
+												<option>1975</option>
+												<option>1976</option>
+												<option>1977</option>
+												<option>1978</option>
+												<option>1979</option>
+												<option>1980</option>
+												<option>1981</option>
+												<option>1982</option>
+												<option>1983</option>
+												<option>1984</option>
+												<option>1985</option>
+												<option>1986</option>
+												<option>1987</option>
+												<option>1988</option>
+												<option>1989</option>
+												<option>1990</option>
+												<option>1991</option>
+												<option>1992</option>
+												<option>1993</option>
+												<option>1994</option>
+												<option>1995</option>
+												<option>1996</option>
+												<option>1997</option>
+												<option>1998</option>
+												<option>1999</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2002</option>
+												<option>2003</option>
+												<option>2004</option>
+												<option>2005</option>
+												<option>2006</option>
+												<option>2007</option>
+												<option>2008</option>
+												<option>2009</option>
+												<option>2010</option>
+												<option>2011</option>
+												<option>2012</option>
+												<option>2013</option>
+												<option>2014</option>
+												<option>2015</option>
+												<option>2016</option>
+												<option>2017</option>
+											</select>
+											</div>
+											<div class="hasta">
+											<label class="label" for="hasta">Hasta</label>
+											<select id="end_month" name="end_month" class="month">
+												<option value="mes">Mes</option>
+												<option >--</option>
+												<option>Enero</option>
+												<option>Febrero</option>
+												<option>Marzo</option>
+												<option>Abril</option>
+												<option>Mayo</option>
+												<option>Junio</option>
+												<option>Julio</option>
+												<option>Agosto</option>
+												<option>Septiembre</option>
+												<option>Octubre</option>
+												<option>Noviembre</option>
+												<option>Diciembre</option>
+											</select>
+											<select id="start_year" name="start_year" class="year">
+												<option value="año">Año</option>
+												<option >--</option>
+												<option>1950</option>
+												<option>1951</option>
+												<option>1952</option>
+												<option>1953</option>
+												<option>1954</option>
+												<option>1955</option>
+												<option>1956</option>
+												<option>1957</option>
+												<option>1958</option>
+												<option>1960</option>
+												<option>1961</option>
+												<option>1962</option>
+												<option>1963</option>
+												<option>1964</option>
+												<option>1965</option>
+												<option>1966</option>
+												<option>1967</option>
+												<option>1968</option>
+												<option>1969</option>
+												<option>1970</option>
+												<option>1971</option>
+												<option>1972</option>
+												<option>1973</option>
+												<option>1974</option>
+												<option>1975</option>
+												<option>1976</option>
+												<option>1977</option>
+												<option>1978</option>
+												<option>1979</option>
+												<option>1980</option>
+												<option>1981</option>
+												<option>1982</option>
+												<option>1983</option>
+												<option>1984</option>
+												<option>1985</option>
+												<option>1986</option>
+												<option>1987</option>
+												<option>1988</option>
+												<option>1989</option>
+												<option>1990</option>
+												<option>1991</option>
+												<option>1992</option>
+												<option>1993</option>
+												<option>1994</option>
+												<option>1995</option>
+												<option>1996</option>
+												<option>1997</option>
+												<option>1998</option>
+												<option>1999</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2002</option>
+												<option>2003</option>
+												<option>2004</option>
+												<option>2005</option>
+												<option>2006</option>
+												<option>2007</option>
+												<option>2008</option>
+												<option>2009</option>
+												<option>2010</option>
+												<option>2011</option>
+												<option>2012</option>
+												<option>2013</option>
+												<option>2014</option>
+												<option>2015</option>
+												<option>2016</option>
+												<option>2017</option>
+											</select>
+											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+											<p class="present-button-p">Actualidad</p>
+											</div>
+										</section>
+										<input id="lugar" type="text" name="lugar" placeholder="Lugar">
+										<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
+									</div>
+									<hr class="line">
+								</fieldset>
+
+			<!-- FORMATION -->
+								<fieldset class="formation">
+									<legend class="legend">Formación</legend>
+										<div class="form-section-header">
+											<h3 class="h3-form">Formación</h3>
+											<!--botones colapsable-->
+											<div class="form-section-buttons">
+												<img src="images/plus.png" class="boton-abrir" onclick="abrir('formation')" alt="abrir">
+												<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('formation')" alt="cerrar">
+											</div>
+										</div>
+									<!--oculto-->
+									<div id="formation">
+										<label class="label" for="titulo"></label>
+										<input id="titulo" type="text" name="titulation" placeholder="Título*" required>
+										<section class="formation-dates">
+											<div class="desde">
+											<label class="label" for="desde">Desde</label>
+											<select id="start_month" name="start_month" class="month">
+												<option value="mes">Mes</option>
+												<option >--</option>
+												<option>Enero</option>
+												<option>Febrero</option>
+												<option>Marzo</option>
+												<option>Abril</option>
+												<option>Mayo</option>
+												<option>Junio</option>
+												<option>Julio</option>
+												<option>Agosto</option>
+												<option>Septiembre</option>
+												<option>Octubre</option>
+												<option>Noviembre</option>
+												<option>Diciembre</option>
+											</select>
+											<select id="start_year" name="start_year" class="year">
+												<option value="año">Año</option>
+												<option >--</option>
+												<option>1950</option>
+												<option>1951</option>
+												<option>1952</option>
+												<option>1953</option>
+												<option>1954</option>
+												<option>1955</option>
+												<option>1956</option>
+												<option>1957</option>
+												<option>1958</option>
+												<option>1960</option>
+												<option>1961</option>
+												<option>1962</option>
+												<option>1963</option>
+												<option>1964</option>
+												<option>1965</option>
+												<option>1966</option>
+												<option>1967</option>
+												<option>1968</option>
+												<option>1969</option>
+												<option>1970</option>
+												<option>1971</option>
+												<option>1972</option>
+												<option>1973</option>
+												<option>1974</option>
+												<option>1975</option>
+												<option>1976</option>
+												<option>1977</option>
+												<option>1978</option>
+												<option>1979</option>
+												<option>1980</option>
+												<option>1981</option>
+												<option>1982</option>
+												<option>1983</option>
+												<option>1984</option>
+												<option>1985</option>
+												<option>1986</option>
+												<option>1987</option>
+												<option>1988</option>
+												<option>1989</option>
+												<option>1990</option>
+												<option>1991</option>
+												<option>1992</option>
+												<option>1993</option>
+												<option>1994</option>
+												<option>1995</option>
+												<option>1996</option>
+												<option>1997</option>
+												<option>1998</option>
+												<option>1999</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2002</option>
+												<option>2003</option>
+												<option>2004</option>
+												<option>2005</option>
+												<option>2006</option>
+												<option>2007</option>
+												<option>2008</option>
+												<option>2009</option>
+												<option>2010</option>
+												<option>2011</option>
+												<option>2012</option>
+												<option>2013</option>
+												<option>2014</option>
+												<option>2015</option>
+												<option>2016</option>
+												<option>2017</option>
+											</select>
+											</div>
+											<div class="hasta">
+											<label class="label" for="hasta">Hasta</label>
+											<select id="end_month" name="end_month" class="month">
+												<option value="mes">Mes</option>
+												<option >--</option>
+												<option>Enero</option>
+												<option>Febrero</option>
+												<option>Marzo</option>
+												<option>Abril</option>
+												<option>Mayo</option>
+												<option>Junio</option>
+												<option>Julio</option>
+												<option>Agosto</option>
+												<option>Septiembre</option>
+												<option>Octubre</option>
+												<option>Noviembre</option>
+												<option>Diciembre</option>
+											</select>
+											<select id="start_year" name="start_year" class="year">
+												<option value="año">Año</option>
+												<option >--</option>
+												<option>1950</option>
+												<option>1951</option>
+												<option>1952</option>
+												<option>1953</option>
+												<option>1954</option>
+												<option>1955</option>
+												<option>1956</option>
+												<option>1957</option>
+												<option>1958</option>
+												<option>1960</option>
+												<option>1961</option>
+												<option>1962</option>
+												<option>1963</option>
+												<option>1964</option>
+												<option>1965</option>
+												<option>1966</option>
+												<option>1967</option>
+												<option>1968</option>
+												<option>1969</option>
+												<option>1970</option>
+												<option>1971</option>
+												<option>1972</option>
+												<option>1973</option>
+												<option>1974</option>
+												<option>1975</option>
+												<option>1976</option>
+												<option>1977</option>
+												<option>1978</option>
+												<option>1979</option>
+												<option>1980</option>
+												<option>1981</option>
+												<option>1982</option>
+												<option>1983</option>
+												<option>1984</option>
+												<option>1985</option>
+												<option>1986</option>
+												<option>1987</option>
+												<option>1988</option>
+												<option>1989</option>
+												<option>1990</option>
+												<option>1991</option>
+												<option>1992</option>
+												<option>1993</option>
+												<option>1994</option>
+												<option>1995</option>
+												<option>1996</option>
+												<option>1997</option>
+												<option>1998</option>
+												<option>1999</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2000</option>
+												<option>2001</option>
+												<option>2002</option>
+												<option>2003</option>
+												<option>2004</option>
+												<option>2005</option>
+												<option>2006</option>
+												<option>2007</option>
+												<option>2008</option>
+												<option>2009</option>
+												<option>2010</option>
+												<option>2011</option>
+												<option>2012</option>
+												<option>2013</option>
+												<option>2014</option>
+												<option>2015</option>
+												<option>2016</option>
+												<option>2017</option>
+											</select>
+											<label class="label" for="actualidad"></label>
+											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+											<p class="present-button-p">Actualidad</p>
+										</div>
+										<label class="label" for="centro"></label>
+										<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
+										<label class="label" for="description"></label>
+										<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
+									</div>
+									<hr class="line">
+								</fieldset>
+
+					<!-- SKILLS -->
+								<fieldset class="skills-fieldset">
+									<legend class="legend">Habilidades</legend>
+										<div class="form-section-header">
+											<h3 class="h3-form">Habilidades</h3>
+									<!--botones colapsable-->
+										<div class="form-section-buttons">
+											<img src="images/plus.png" class="boton-abrir" onclick="abrir('skills')" alt="abrir">
+											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('skills')" alt="cerrar">
 										</div>
 									</div>
 								<!--oculto-->
-								<div id="formation">
-									<label class="label" for="titulo"></label>
-									<input id="titulo" type="text" name="titulation" placeholder="Título*" required>
-									<section class="formation-dates">
-										<div class="desde">
-										<label class="label" for="desde">Desde</label>
-										<select id="start_month" name="start_month" class="month">
-											<option value="mes">Mes</option>
-											<option >--</option>
-											<option>Enero</option>
-											<option>Febrero</option>
-											<option>Marzo</option>
-											<option>Abril</option>
-											<option>Mayo</option>
-											<option>Junio</option>
-											<option>Julio</option>
-											<option>Agosto</option>
-											<option>Septiembre</option>
-											<option>Octubre</option>
-											<option>Noviembre</option>
-											<option>Diciembre</option>
-										</select>
-										<select id="start_year" name="start_year" class="year">
-											<option value="año">Año</option>
-											<option >--</option>
-											<option>1950</option>
-											<option>1951</option>
-											<option>1952</option>
-											<option>1953</option>
-											<option>1954</option>
-											<option>1955</option>
-											<option>1956</option>
-											<option>1957</option>
-											<option>1958</option>
-											<option>1960</option>
-											<option>1961</option>
-											<option>1962</option>
-											<option>1963</option>
-											<option>1964</option>
-											<option>1965</option>
-											<option>1966</option>
-											<option>1967</option>
-											<option>1968</option>
-											<option>1969</option>
-											<option>1970</option>
-											<option>1971</option>
-											<option>1972</option>
-											<option>1973</option>
-											<option>1974</option>
-											<option>1975</option>
-											<option>1976</option>
-											<option>1977</option>
-											<option>1978</option>
-											<option>1979</option>
-											<option>1980</option>
-											<option>1981</option>
-											<option>1982</option>
-											<option>1983</option>
-											<option>1984</option>
-											<option>1985</option>
-											<option>1986</option>
-											<option>1987</option>
-											<option>1988</option>
-											<option>1989</option>
-											<option>1990</option>
-											<option>1991</option>
-											<option>1992</option>
-											<option>1993</option>
-											<option>1994</option>
-											<option>1995</option>
-											<option>1996</option>
-											<option>1997</option>
-											<option>1998</option>
-											<option>1999</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2002</option>
-											<option>2003</option>
-											<option>2004</option>
-											<option>2005</option>
-											<option>2006</option>
-											<option>2007</option>
-											<option>2008</option>
-											<option>2009</option>
-											<option>2010</option>
-											<option>2011</option>
-											<option>2012</option>
-											<option>2013</option>
-											<option>2014</option>
-											<option>2015</option>
-											<option>2016</option>
-											<option>2017</option>
-										</select>
+								<div id="skills">
+										<div class="skills">
+											<div class="languages">
+												<p>Idiomas</p>
+												<div class="language-element">
+													<label class="label" for="language-name1"></label>
+													<input class="language-name" id="language-name1" type="text" name="language-name" placeholder="Idioma 1">
+													<select id="level" name="level" class="level">
+														  <option value="nivel">Nivel</option>
+															<option >--</option>
+															<option>Básico</option>
+															<option>Intermedio</option>
+															<option>Alto</option>
+															<option>Nativo</option>
+													</select>
+													</div>
+												<div class="language-element">
+													<label class="label" for="language-name2"></label>
+													<input class="language-name" id="language-name2" type="text" name="language-name" placeholder="Idioma 2">
+													<label class="label" for="language-level2"></label>
+													<input class="language-level" id="language-level2" type="text" name="language-level" placeholder="Nivel de idioma 2">
+												</div>
+												<div class="language-element">
+													<label class="label" for="language-name3"></label>
+													<input class="language-name" id="language-name3" type="text" name="language-name" placeholder="Idioma 3">
+													<label class="label" for="language-level3"></label>
+													<input class="language-level" id="language-level3" type="text" name="language-level" placeholder="Nivel de idioma 3">
+												</div>
+
+												<div class="language-element">
+													<label class="label" for="language-name4"></label>
+													<input class="language-name" id="language-name4" type="text" name="language-name" placeholder="Idioma 4">
+													<label class="label" for="language-level4"></label>
+													<input class="language-level" id="language-level4" type="text" name="language-level" placeholder="Nivel de idioma 4">
+												</div>
+											</div>
+											<div class="it">
+												<p>Programas informáticos</p>
+												<div class="it-element">
+													<label class="label" for="it-name1"></label>
+													<input class="it-name" id="it-name1" type="text" name="it-name" placeholder="Tecnología 1">
+													<label class="label" for="it-level1"></label>
+													<input class="it-level" id="it-level1" type="text" name="it-level" placeholder="Nivel de tecnología 1">
+												</div>
+												<div class="it-element">
+													<label class="label" for="it-name2"></label>
+													<input class="it-name" id="it-name2" type="text" name="it-name" placeholder="Tecnología 2">
+													<label class="label" for="it-level2"></label>
+													<input class="it-level" id="it-level2" type="text" name="it-level" placeholder="Nivel de tecnología 2">
+												</div>
+												<div class="it-element">
+													<label class="label" for="it-name3"></label>
+													<input class="it-name" id="it-name3" type="text" name="it-name" placeholder="Tecnología 3">
+													<label class="label" for="it-level3"></label>
+													<input class="it-level" id="it-level3" type="text" name="it-level" placeholder="Nivel de tecnología 3">
+												</div>
+												<div class="it-element">
+													<label class="label" for="it-name4"></label>
+													<input class="it-name" id="it-name4" type="text" name="it-name" placeholder="Tecnología 4">
+													<label class="label" for="it-level4"></label>
+													<input class="it-level" id="it-level4" type="text" name="it-level" placeholder="Nivel de tecnología 4">
+												</div>
+											<div class="various-skills">
+												<p>Destrezas</p>
+												<label class="label" for="skill-element1"></label>
+												<input class="skill-element" id="skill-element1" type="text" name="skill-element" placeholder="Habilidad 1">
+												<label class="label" for="skill-element2"></label>
+												<input class="skill-element" id="skill-element2" type="text" name="skill-element" placeholder="Habilidad 2">
+												<label class="label" for="skill-element3"></label>
+												<input class="skill-element" id="skill-element3" type="text" name="skill-element" placeholder="Habilidad 3">
+												<label class="label" for="skill-element4"></label>
+												<input class="skill-element" id="skill-element4" type="text" name="skill-element" placeholder="Habilidad 4">
+											</div>
 										</div>
-										<div class="hasta">
-										<label class="label" for="hasta">Hasta</label>
-										<select id="end_month" name="end_month" class="month">
-											<option value="mes">Mes</option>
-											<option >--</option>
-											<option>Enero</option>
-											<option>Febrero</option>
-											<option>Marzo</option>
-											<option>Abril</option>
-											<option>Mayo</option>
-											<option>Junio</option>
-											<option>Julio</option>
-											<option>Agosto</option>
-											<option>Septiembre</option>
-											<option>Octubre</option>
-											<option>Noviembre</option>
-											<option>Diciembre</option>
-										</select>
-										<select id="start_year" name="start_year" class="year">
-											<option value="año">Año</option>
-											<option >--</option>
-											<option>1950</option>
-											<option>1951</option>
-											<option>1952</option>
-											<option>1953</option>
-											<option>1954</option>
-											<option>1955</option>
-											<option>1956</option>
-											<option>1957</option>
-											<option>1958</option>
-											<option>1960</option>
-											<option>1961</option>
-											<option>1962</option>
-											<option>1963</option>
-											<option>1964</option>
-											<option>1965</option>
-											<option>1966</option>
-											<option>1967</option>
-											<option>1968</option>
-											<option>1969</option>
-											<option>1970</option>
-											<option>1971</option>
-											<option>1972</option>
-											<option>1973</option>
-											<option>1974</option>
-											<option>1975</option>
-											<option>1976</option>
-											<option>1977</option>
-											<option>1978</option>
-											<option>1979</option>
-											<option>1980</option>
-											<option>1981</option>
-											<option>1982</option>
-											<option>1983</option>
-											<option>1984</option>
-											<option>1985</option>
-											<option>1986</option>
-											<option>1987</option>
-											<option>1988</option>
-											<option>1989</option>
-											<option>1990</option>
-											<option>1991</option>
-											<option>1992</option>
-											<option>1993</option>
-											<option>1994</option>
-											<option>1995</option>
-											<option>1996</option>
-											<option>1997</option>
-											<option>1998</option>
-											<option>1999</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2000</option>
-											<option>2001</option>
-											<option>2002</option>
-											<option>2003</option>
-											<option>2004</option>
-											<option>2005</option>
-											<option>2006</option>
-											<option>2007</option>
-											<option>2008</option>
-											<option>2009</option>
-											<option>2010</option>
-											<option>2011</option>
-											<option>2012</option>
-											<option>2013</option>
-											<option>2014</option>
-											<option>2015</option>
-											<option>2016</option>
-											<option>2017</option>
-										</select>
-										<label class="label" for="actualidad"></label>
-										<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
-										<p class="present-button-p">Actualidad</p>
 									</div>
-									<label class="label" for="centro"></label>
-									<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
-									<label class="label" for="description"></label>
-									<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
 								</div>
 								<hr class="line">
 							</fieldset>
-
-				<!-- SKILLS -->
-							<fieldset class="skills-fieldset">
-								<legend class="legend">Habilidades</legend>
-									<div class="form-section-header">
-										<h3 class="h3-form">Habilidades</h3>
-								<!--botones colapsable-->
-									<div class="form-section-buttons">
-										<img src="images/plus.png" class="boton-abrir" onclick="abrir('skills')" alt="abrir">
-										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('skills')" alt="cerrar">
-									</div>
-								</div>
-							<!--oculto-->
-							<div id="skills">
-									<div class="skills">
-										<div class="languages">
-											<p>Idiomas</p>
-											<div class="language-element">
-												<label class="label" for="language-name1"></label>
-												<input class="language-name" id="language-name1" type="text" name="language-name" placeholder="Idioma 1">
-												<select id="level" name="level" class="level">
-													  <option value="nivel">Nivel</option>
-														<option >--</option>
-														<option>Básico</option>
-														<option>Intermedio</option>
-														<option>Alto</option>
-														<option>Nativo</option>
-												</select>
-												</div>
-											<div class="language-element">
-												<label class="label" for="language-name2"></label>
-												<input class="language-name" id="language-name2" type="text" name="language-name" placeholder="Idioma 2">
-												<label class="label" for="language-level2"></label>
-												<input class="language-level" id="language-level2" type="text" name="language-level" placeholder="Nivel de idioma 2">
-											</div>
-											<div class="language-element">
-												<label class="label" for="language-name3"></label>
-												<input class="language-name" id="language-name3" type="text" name="language-name" placeholder="Idioma 3">
-												<label class="label" for="language-level3"></label>
-												<input class="language-level" id="language-level3" type="text" name="language-level" placeholder="Nivel de idioma 3">
-											</div>
-
-											<div class="language-element">
-												<label class="label" for="language-name4"></label>
-												<input class="language-name" id="language-name4" type="text" name="language-name" placeholder="Idioma 4">
-												<label class="label" for="language-level4"></label>
-												<input class="language-level" id="language-level4" type="text" name="language-level" placeholder="Nivel de idioma 4">
-											</div>
-										</div>
-										<div class="it">
-											<p>Programas informáticos</p>
-											<div class="it-element">
-												<label class="label" for="it-name1"></label>
-												<input class="it-name" id="it-name1" type="text" name="it-name" placeholder="Tecnología 1">
-												<label class="label" for="it-level1"></label>
-												<input class="it-level" id="it-level1" type="text" name="it-level" placeholder="Nivel de tecnología 1">
-											</div>
-											<div class="it-element">
-												<label class="label" for="it-name2"></label>
-												<input class="it-name" id="it-name2" type="text" name="it-name" placeholder="Tecnología 2">
-												<label class="label" for="it-level2"></label>
-												<input class="it-level" id="it-level2" type="text" name="it-level" placeholder="Nivel de tecnología 2">
-											</div>
-											<div class="it-element">
-												<label class="label" for="it-name3"></label>
-												<input class="it-name" id="it-name3" type="text" name="it-name" placeholder="Tecnología 3">
-												<label class="label" for="it-level3"></label>
-												<input class="it-level" id="it-level3" type="text" name="it-level" placeholder="Nivel de tecnología 3">
-											</div>
-											<div class="it-element">
-												<label class="label" for="it-name4"></label>
-												<input class="it-name" id="it-name4" type="text" name="it-name" placeholder="Tecnología 4">
-												<label class="label" for="it-level4"></label>
-												<input class="it-level" id="it-level4" type="text" name="it-level" placeholder="Nivel de tecnología 4">
-											</div>
-										<div class="various-skills">
-											<p>Destrezas</p>
-											<label class="label" for="skill-element1"></label>
-											<input class="skill-element" id="skill-element1" type="text" name="skill-element" placeholder="Habilidad 1">
-											<label class="label" for="skill-element2"></label>
-											<input class="skill-element" id="skill-element2" type="text" name="skill-element" placeholder="Habilidad 2">
-											<label class="label" for="skill-element3"></label>
-											<input class="skill-element" id="skill-element3" type="text" name="skill-element" placeholder="Habilidad 3">
-											<label class="label" for="skill-element4"></label>
-											<input class="skill-element" id="skill-element4" type="text" name="skill-element" placeholder="Habilidad 4">
-										</div>
-									</div>
-								</div>
-							</div>
-							<hr class="line">
-						</fieldset>
-				</form>
-			</section>
-
+					</form>
+				</section>
+		</section>
 			<section class="section5bpreview">
 				<h3 class="preview-title"> Previsualización </h3>
 				<img class="theme" src="images/daily-planner.png" alt="theme">
@@ -682,11 +681,14 @@
 								<div><span>Fecha de nacimiento: </span><span id="nacimientoPrompt"></span></div>
 								<div><span>Email: </span><span id="correoElectronicoPrompt"></span></div>
 								<div><span>Dirección: </span><span id="direccionPrompt"></span></div></section>
-
 						</section>
+						<section class="preview-experience"></section>
+						<section class="preview-formation"></section>
+						<section class="preview-skills"></section>
 
 				</div>
 			</section>
+		</section>
 
 			<section class="section section6buttons">
 			</section>
