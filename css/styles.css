@@ -67,6 +67,10 @@ main {
 
 /*burger*/
 
+.burger {
+	position: relative;
+}
+
 .button-burger {
 	width: 40px;
 	height: 40px;
@@ -74,24 +78,25 @@ main {
 
 .burger ul li {
 	list-style: none;
+	border-bottom: #31B89A;
+	border-width: 1px;
+	width: 150px;
+	height: 30px;
+	background-color: #424A5F;
+	padding: 0;
+	margin: 0;
 }
 
 .burger ul li a {
 	text-decoration: none;
 	color: #E7ECED;
-	border-bottom: 1px solid #31B89A;
-	border: none;
-	width: 90px;
-	height: 30px;
-	background-color: #424A5F;
-	padding: 4px 10px;
-	margin: 0;
+	padding: 10px;
+	padding-top: 5px;
 }
 
 .list-burger {
+	position: absolute;
 	display: block;
-	padding-left: 10px;
-	padding-top: 10px;
 }
 
 #list-burger {
@@ -232,9 +237,21 @@ main {
 
 /*SECTION IMAGE*/
 
+.section3photo {
+	padding: 3%;
+	text-align: center;
+	background-color: #E7ECED;
+}
+
 .foto {
+	display: none;
+}
+
+.trigger {
+	display: inline-block;
 	width: 100px;
 	height: 100px;
+	background: pink;
 }
 
 /*FORM*/
@@ -309,16 +326,26 @@ input, .description, .experience-text {
 	height: auto;
 }
 
-.experience-dates input, .experience-dates p, .formation-dates input, .formation-dates p {
+/*ANTES PARA LAS OTRAS FECHAS.AHORA NO NECESARIO*/
+/*.experience-dates input, .experience-dates p, .formation-dates input
 	width: 20%;
 	display: inline;
 	font-size: 10px;
 	color: rgb(117, 117, 117);
+}*/
+ .formation-dates p, .experience-dates p{
+	display: inline;
+	color: black;
+	font-size: 14px;
+ }
+.desde, .hasta, .level {
+	display: block;
+	margin: 4px 0 4px 6px;
 }
-
 .present-button {
+	display: inline;
 	color: rgb(117, 117, 117);
-	width: auto;
+	width: 50%;
 	height: auto;
 }
 

@@ -1,7 +1,7 @@
 // burger
 
-function openClose(id) {
-  var burger = document.getElementById(id);
+function openClose(idContent) {
+  var burger = document.getElementById(idContent);
   if (burger.style.display == 'block'){
 			burger.style.display ='none';
 	} else {
@@ -50,12 +50,41 @@ function archivo(evt) {
            if (!f.type.match('image.*')) {
                 continue;
            }
-      //      var reader = new FileReader();
-      //      reader.onload = (function(theFile) {
-      //          return function(e) {
-      //          // Creamos la imagen.
-      //                 document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-      //          };
-      //      })(f);
-      //      reader.readAsDataURL(f);
-      //  }
+				 }
+           var reader = new FileReader();
+           reader.onload = (function(theFile) {
+               return function(e) {
+               // Creamos la imagen.
+                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+               };
+           })(f);
+           reader.readAsDataURL(f);
+       }
+
+			 function triggerFile() {
+		   document.getElementById('#'+fileID).click();
+		 }
+
+
+			//  function archivo2(evt) {
+			//  			      var files = evt.target.files; // FileList object
+			 //
+			//  			        //Obtenemos la imagen del campo "file".
+			//  			      for (var i = 0, f; f = files[i]; i++) {
+			//  			           //Solo admitimos imágenes.
+			//  			           if (!f.type.match('image.*')) {
+			//  			                continue;
+			//  			           }
+			 //
+			//  			           var reader = new FileReader();
+			 //
+			//  			           reader.onload = (function(theFile) {
+			//  			               return function(e) {
+			//  			               // Creamos la imagen.
+			//  			                      document.getElementById("prefoto").innerHTML = ['<img class="thumb2" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+			//  			               };
+			//  			           })(f);
+			 //
+			//  			           reader.readAsDataURL(f);
+			//  			       }
+			//  			}
