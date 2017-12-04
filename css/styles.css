@@ -67,6 +67,10 @@ main {
 
 /*burger*/
 
+.burger {
+	position: relative;
+}
+
 .button-burger {
 	width: 40px;
 	height: 40px;
@@ -74,24 +78,25 @@ main {
 
 .burger ul li {
 	list-style: none;
+	border-bottom: #31B89A;
+	border-width: 1px;
+	width: 150px;
+	height: 30px;
+	background-color: #424A5F;
+	padding: 0;
+	margin: 0;
 }
 
 .burger ul li a {
 	text-decoration: none;
 	color: #E7ECED;
-	border-bottom: 1px solid #31B89A;
-	border: none;
-	width: 90px;
-	height: 30px;
-	background-color: #424A5F;
-	padding: 4px 10px;
-	margin: 0;
+	padding: 10px;
+	padding-top: 5px;
 }
 
 .list-burger {
+	position: absolute;
 	display: block;
-	padding-left: 10px;
-	padding-top: 10px;
 }
 
 #list-burger {

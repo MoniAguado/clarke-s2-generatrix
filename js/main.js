@@ -1,7 +1,7 @@
 // burger
 
-function openClose(id) {
-  var burger = document.getElementById(id);
+function openClose(idContent) {
+  var burger = document.getElementById(idContent);
   if (burger.style.display == 'block'){
 			burger.style.display ='none';
 	} else {
@@ -50,6 +50,7 @@ function archivo(evt) {
            if (!f.type.match('image.*')) {
                 continue;
            }
+				 }
       //      var reader = new FileReader();
       //      reader.onload = (function(theFile) {
       //          return function(e) {
