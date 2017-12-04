@@ -237,9 +237,21 @@ main {
 
 /*SECTION IMAGE*/
 
+.section3photo {
+	padding: 3%;
+	text-align: center;
+	background-color: #E7ECED;
+}
+
 .foto {
+	display: none;
+}
+
+.trigger {
+	display: inline-block;
 	width: 100px;
 	height: 100px;
+	background: pink;
 }
 
 /*FORM*/
