@@ -201,7 +201,7 @@ main {
 	height: 100px;
 }
 
-.design-options li img {
+.desing-img {
 	width: 100px;
 	height: 100px;
 }
@@ -222,8 +222,9 @@ main {
 	display: block;
 }
 
-.font {
+.font, .colour, .theme {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100px;
@@ -240,34 +241,14 @@ main {
 .font + .font {
 	border-top: 1px solid #EAB931;
 }
-.colour {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-color: white;
-	border-width: 1px;
-	width: 100px;
-	height: 40px;
-	background-color: pink;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+.colour img {
+	height: 70%;
+}
+.colour:hover {
+	background: #55607F;
 }
 .colour + .colour {
-	border-top: 1px solid #424A5F;
-}
-.theme {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-color: white;
-	border-width: 1px;
-	width: 100px;
-	height: 40px;
-	background-color: pink;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+	border-top: 1px solid #EAB931;
 }
 
 /*SECTION IMAGE*/
