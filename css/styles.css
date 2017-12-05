@@ -201,7 +201,7 @@ main {
 	height: 100px;
 }
 
-.desing-img {
+.design-img {
 	width: 100px;
 	height: 100px;
 }
@@ -233,7 +233,7 @@ main {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-		border-radius: 7px;
+	border-radius: 7px;
 }
 .font:hover {
 	background: #55607F;
@@ -543,6 +543,9 @@ footer {
 	}
 	.design-options {
 		height: 212px;
+	}
+	.design-options-font, .design-options-colour, .design-options-theme {
+		height: 200px;
 	}
 	.design-img {
 		width: 200px;
