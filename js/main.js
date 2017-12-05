@@ -14,7 +14,6 @@ function openClose(idContent) {
 //función para desplegar sección
 
 function abrir(idContent){
-
 document.getElementById(idContent).style.display = 'block';
 }
 
@@ -49,6 +48,13 @@ function completar () {
 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
 }
 
+var inputFile = document.querySelector('#file');
+var trigger = document.querySelector('.trigger');
+
+function triggerFile() {
+ trigger.addEventListener('click', trigger);
+}
+
 function archivo(evt) {
       var files = evt.target.file; // FileList object
         // imagen del campo "file".
@@ -62,14 +68,10 @@ function archivo(evt) {
            reader.onload = (function(theFile) {
                return function(e) {
                // Creamos la imagen.
-                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                      document.getElementById("file").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
                };
            })(f);
            reader.readAsDataURL(f);
-       }
+}
 
-			 var trigger = document.querySelector('.trigger');
-
-			 function triggerFile() {
-				trigger.addEventListener('click', '#'+fileID, trigger);
-		 }
+inputFile.addEventListener('change', archivo);
