@@ -224,7 +224,6 @@ main {
 
 .font, .colour, .theme {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100px;
@@ -234,6 +233,7 @@ main {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+		border-radius: 7px;
 }
 .font:hover {
 	background: #55607F;
@@ -241,8 +241,38 @@ main {
 .font + .font {
 	border-top: 1px solid #EAB931;
 }
-.colour img {
-	height: 70%;
+.colour1, .colour2, .colour3, .colour4, .colour5, .colour6, .colour7, .colour8, .colour9 {
+	border-radius: 30px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+}
+.colour1{
+	background: rgb(221, 90, 75);
+}
+.colour2{
+	background: rgb(23, 71, 82);
+}
+.colour3{
+	background: rgb(210, 222, 107);
+}
+.colour4{
+	background: rgb(37, 31, 33);
+}
+.colour5{
+	background: rgb(148, 211, 201);
+}
+.colour6{
+	background: rgb(210, 221, 107);
+}
+.colour7{
+	background: rgb(37, 31, 33);
+}
+.colour8{
+	background: rgb(238, 91, 120);
+}
+.colour9{
+	background: rgb(129, 126, 126);
 }
 .colour:hover {
 	background: #55607F;
@@ -250,7 +280,12 @@ main {
 .colour + .colour {
 	border-top: 1px solid #EAB931;
 }
-
+.theme:hover {
+	background: #55607F;
+}
+.theme + .theme {
+	border-top: 1px solid #EAB931;
+}
 /*SECTION IMAGE*/
 
 .section3photo {
@@ -397,7 +432,7 @@ input, .description, .experience-text {
 	padding-top: 1em;
 }
 
-.theme {
+.preview-theme {
 	position: relative;
 	font-size: 80%;
 	margin-bottom: 5%;
@@ -509,23 +544,15 @@ footer {
 	.design-options {
 		height: 212px;
 	}
-	.design-options li img {
+	.design-img {
 		width: 200px;
 		height: 200px;
 	}
-	.font, .colour, .theme {
+	.fonts, .colours, .themes {
 		width: 200px;
 		height: auto;
 	}
-	.font li {
-		width: 200px;
-		height: 50px;
-	}
-	.colour li {
-		width: 200px;
-		height: 50px;
-	}
-	.theme li {
+	.font, .colour, .theme {
 		width: 200px;
 		height: 50px;
 	}
