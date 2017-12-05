@@ -3,6 +3,7 @@
 /*font-family: 'Fira Sans', sans-serif;
 font-family: 'Cookie', cursive;
 font-family: 'Philosopher', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Cookie|Fira+Sans:400,700|Philosopher:400,700');
 
 body {
 	margin: 0;
@@ -188,6 +189,7 @@ main {
 }
 
 .design-options li {
+	cursor: context-menu;
 	border-color: #31B89A;
 	border-width: 3px;
 	border-style: solid;
@@ -197,16 +199,25 @@ main {
 	width: 100px;
 	height: 100px;
 }
-.show {
-	display: block;
-}
-.font, .colour, .style {
+
+.font, .colour, .theme {
+	list-style: none;
 	display: none;
 	position: absolute;
 	padding: 0;
 	margin: 0;
 	width: 100px;
 	height: auto;
+}
+
+.design-options-font:hover .font {
+	display: block;
+}
+.design-options-colour:hover .colour {
+	display: block;
+}
+.design-options-theme:hover .theme {
+	display: block;
 }
 
 .font li {
@@ -231,7 +242,7 @@ main {
 	list-style: none;
 }
 
-.style li {
+.theme li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
