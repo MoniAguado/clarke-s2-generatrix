@@ -20,12 +20,14 @@ main {
 	flex: 1;
 	padding-top: 80px;
 }
+
 .main-block {
 	display: flex;
 	flex-direction: column;
 	padding: 0 3%;
 	background-color: #E7ECED;
 }
+
 .personal-data {
 	margin-top: 1.2em;
 }
@@ -271,7 +273,11 @@ main {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	background: #424A5F;
+	background-color: #424A5F;
+	background-repeat: no-repeat;
+	/*no mosaico*/
+	background-size: cover;
+	background-position: center center;
 	border-radius: 100px;
 	border-color: #424A5F;
 }
@@ -387,17 +393,20 @@ input, .description, .experience-text {
 	flex-direction: column;
 	align-items: center;
 }
+
 .preview-title {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
 	padding-top: 1em;
 }
+
 .theme {
 	position: relative;
 	font-size: 80%;
 	margin-bottom: 5%;
 }
+
 .showpreview {
 	position: absolute;
 	z-index: 1;
@@ -405,23 +414,31 @@ input, .description, .experience-text {
 	display: flex;
 	flex-direction: column;
 }
-.preview-header{
+
+.preview-header {
 	margin-top: 20%;
 	margin-left: 5%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
-.preview-photo{
+
+.preview-photo {
 	width: 150px;
-	height: 200px;
+	min-height: 50px;
 	background-color: #EAB931;
 }
+
+.preview-photo .thumb {
+	width: 100%;
+}
+
 .preview-data {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
 }
+
 /*FOOTER*/
 
 footer {
@@ -483,7 +500,6 @@ footer {
 		font-size: 20px;
 		padding-right: 10px;
 	}
-
 	input, .h3-form {
 		font-size: 30px;
 	}
@@ -518,6 +534,7 @@ footer {
 		height: 50px;
 	}
 }
+
 @media all and (min-width:1100px) {
 	.main-block {
 		display: flex;
