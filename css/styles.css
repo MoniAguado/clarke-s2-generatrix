@@ -24,7 +24,8 @@ main {
 .main-block {
 	display: flex;
 	flex-direction: column;
-	padding: 0 3%;
+	width: 100%;
+	padding: 0;
 	background-color: #E7ECED;
 }
 
@@ -175,7 +176,8 @@ main {
 
 .section2design {
 	background: #31B89A;
-	height: 110px;
+	height: 106px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -190,11 +192,13 @@ main {
 	height: 106px;
 }
 
-.design-options li {
+.design-options-font, .design-options-colour, .design-options-theme  {
 	cursor: context-menu;
-	border-color: #31B89A;
+	border-color: #424A5F;
 	border-width: 3px;
 	border-style: solid;
+	padding: 0;
+	height: 100px;
 }
 
 .design-options li img {
@@ -202,53 +206,64 @@ main {
 	height: 100px;
 }
 
-.font, .colour, .theme {
-	list-style: none;
+.fonts, .colours, .themes {
 	display: none;
 	position: absolute;
 	padding: 0;
-	margin: 0;
+}
+
+.design-options-font:hover .fonts {
+	display: block;
+}
+.design-options-colour:hover .colours {
+	display: block;
+}
+.design-options-theme:hover .themes {
+	display: block;
+}
+
+.font {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100px;
-	height: auto;
+	height: 40px;
+	background-color: #424A5F;
+	color: #E7ECED;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
-
-.design-options-font:hover .font {
-	display: block;
+.font:hover {
+	background: #55607F;
 }
-.design-options-colour:hover .colour {
-	display: block;
+.font + .font {
+	border-top: 1px solid #EAB931;
 }
-.design-options-theme:hover .theme {
-	display: block;
-}
-
-.font li {
+.colour {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
-	height: 50px;
+	height: 40px;
 	background-color: pink;
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
-
-.colour li {
-	border-color: white;
-	border-width: 1px;
-	width: 100px;
-	height: 50px;
-	background-color: pink;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+.colour + .colour {
+	border-top: 1px solid #424A5F;
 }
-
-.theme li {
+.theme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
-	height: 50px;
+	height: 40px;
 	background-color: pink;
 	padding: 0;
 	margin: 0;
@@ -517,20 +532,20 @@ footer {
 		width: 200px;
 		height: 200px;
 	}
-	#font, #colour, #style {
+	.font, .colour, .theme {
 		width: 200px;
 		height: auto;
 	}
-	#font li {
+	.font li {
 		width: 200px;
-		height: 100px;
+		height: 50px;
 	}
-	#colour li {
+	.colour li {
 		width: 200px;
-		height: 100px;
+		height: 50px;
 	}
-	#style li {
-		width: 100px;
+	.theme li {
+		width: 200px;
 		height: 50px;
 	}
 }
