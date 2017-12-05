@@ -199,8 +199,10 @@ main {
 	width: 100px;
 	height: 100px;
 }
-
-#font, #colour, #style {
+.show {
+	display: block;
+}
+.font, .colour, .style {
 	display: none;
 	position: absolute;
 	padding: 0;
@@ -209,7 +211,7 @@ main {
 	height: auto;
 }
 
-#font li {
+.font li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
@@ -220,7 +222,7 @@ main {
 	list-style: none;
 }
 
-#colour li {
+.colour li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;
@@ -231,7 +233,7 @@ main {
 	list-style: none;
 }
 
-#style li {
+.style li {
 	border-color: white;
 	border-width: 1px;
 	width: 100px;

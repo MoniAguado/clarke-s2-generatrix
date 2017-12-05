@@ -83,7 +83,7 @@
 					<li class="design-options-font">
 						<img src="images/text.svg" title="fuente" alt="fuentes" onclick="abrir('font'); cerrar('colour'); cerrar('style')">
 						<!-- hidden -->
-						<ul id="font">
+						<ul class="font">
 							<li class="font-1" onclick="cerrar('font')">j</li>
 							<li class="font-2" onclick="cerrar('font')">n</li>
 							<li class="font-3" onclick="cerrar('font')">o</li>
@@ -92,7 +92,7 @@
 					<li class="design-options-palette">
 						<img src="images/paint-palette.svg" title="color" alt="color" onclick="abrir('colour'); cerrar('font'); cerrar('style')">
 						<!-- hidden -->
-						<ul id="colour">
+						<ul class="colour">
 							<li class="colour-1" onclick="cerrar('colour')">j</li>
 							<li class="colour-2" onclick="cerrar('colour')">n</li>
 							<li class="colour-3" onclick="cerrar('colour')">o</li>
@@ -102,20 +102,20 @@
 						<img src="images/menu.svg" title="estilo" alt="estilo"
 						onclick="abrir('style'); cerrar('font'); cerrar('colour')">
 						<!-- hidden -->
-						<ul id="style">
+						<ul class="style">
 							<li class="style-1" onclick="cerrar('style')">j</li>
 							<li class="style-2" onclick="cerrar('style')">n</li>
 							<li class="style-3" onclick="cerrar('style')">o</li>
 						</ul>
 					</li>
 				</ul>
+			</section>
 <!-- ADD FILES -->
 			<section class="section3photo">
 				<label class="label" for="files">Sube tu foto</label>
 				<input type="file" id="files" name="files[]" class="foto"/>
 				<div class="trigger"></div>
 			</section>
-		</section>
 				<section class="section5form">
 					<form class="personal-information" action="index.html" method="post">
 
