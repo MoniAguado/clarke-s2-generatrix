@@ -44,15 +44,13 @@ function selectMonths() {
   for (var i = 0; i < meses.length - 1; i++){
     options += '<option>' + meses[i]+ '</option>';
 }
-months.innerHTML+= options;
-
-var monthsAll = document.querySelectorAll('.year');
+var monthsAll = document.querySelectorAll('.month');
 for (var i = 0; i < monthsAll.length; i++) {
-	monthsAll.innerHTML = selectMonths;}
+	monthsAll[i].innerHTML = options;
+};
+
 }
-
 selectMonths();
-
 //función para años
 var years = 2018;
 var selectYear = '';
