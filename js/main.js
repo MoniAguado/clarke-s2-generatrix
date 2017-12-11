@@ -9,8 +9,6 @@ function openClose(idContent) {
 	}
 }
 
-
-
 //función para desplegar sección
 
 function abrir(idContent){
@@ -22,67 +20,125 @@ function cerrar(idContent){
 document.getElementById(idContent).style.display = 'none';
 }
 
-// comandos para desplegable de la seccion diseño
-var design = document.querySelectorAll('.section2design ul');
-design.addEventListener('click',showOptions);
-var show = document.querySelectorAll('.section2design ul li')
-function showOptions() {
-	show.classList.add('.show');
+// function showOptions() {
+// 	show.classList.add('.show');
+// }
+// // comandos para desplegable de la seccion diseño
+// var design = document.querySelectorAll('.section2design ul');
+// design.addEventListener('click',showOptions);
+// var show = document.querySelectorAll('.section2design ul li')
 
 
 
 // función para completar los campos del formulario
-function completar () {
-	var namePrompt = prompt("Introduce tu nombre");
-	var surnamesPrompt = prompt("Introduce tus apellidos");
-	var telephonePrompt = prompt("Introduce tu número de teléfono");
-	var dateBirthPrompt = prompt("Introduce tu fecha de nacimiento");
-	var emailPrompt = prompt("Introduce tu dirección de correo electrónico");
-	var addressPrompt = prompt("Introduce tu dirección de correo postal");
+// function completar () {
+// 	var namePrompt = prompt("Introduce tu nombre");
+// 	var surnamesPrompt = prompt("Introduce tus apellidos");
+// 	var telephonePrompt = prompt("Introduce tu número de teléfono");
+// 	var dateBirthPrompt = prompt("Introduce tu fecha de nacimiento");
+// 	var emailPrompt = prompt("Introduce tu dirección de correo electrónico");
+// 	var addressPrompt = prompt("Introduce tu dirección de correo postal");
+//
+// 	document.querySelector("#nombrePrompt").innerHTML = namePrompt;
+// 	document.querySelector("#apellidoPrompt").innerHTML = surnamesPrompt;
+// 	document.querySelector("#telefonoPrompt").innerHTML = telephonePrompt;
+// 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
+// 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
+// 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
+// }
 
-	document.querySelector("#nombrePrompt").innerHTML = namePrompt;
-	document.querySelector("#apellidoPrompt").innerHTML = surnamesPrompt;
-	document.querySelector("#telefonoPrompt").innerHTML = telephonePrompt;
-	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
-	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
-	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
-}
-
-var inputFile = document.querySelector('#files');
-var trigger = document.querySelector('.trigger');
+// var inputFile = document.querySelector('#files');
+// var trigger = document.querySelector('.trigger');
 
 // hacemos clic en trigger y llamamos a la funcion
-trigger.addEventListener('click', simularClic);
+// trigger.addEventListener('click', simularClic);
 
 // función para que simule un clic en input
-function simularClic(){
-	inputFile.click();
+// function simularClic(){
+// 	inputFile.click();
+// }
+
+
+// function archivo(evt) {
+// 	console.log('hola')
+//       var files = evt.target.files; // FileList object
+//
+//         //Obtenemos la imagen del campo "file".
+//       for (var i = 0, f; f = files[i]; i++) {
+//            //Solo admitimos imágenes.
+//            if (!f.type.match('image.*')) {
+//                 continue;
+//            }
+//
+//            var reader = new FileReader();
+//
+//            reader.onload = (function(theFile) {
+//                return function(e) {
+//                // Creamos la imagen.
+// 											trigger.style = "background-image:url(" + e.target.result + ");";
+//                       document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+//                };
+//            })(f);
+//
+//            reader.readAsDataURL(f);
+//        }
+// }
+
+// inputFile.addEventListener('change', archivo);
+
+
+
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
+var idLanguageModifier = 2;
+function addItemLanguage() {
+	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
+	repeatedItemLanguage+= '<input class="language-name" id="language-name' + idLanguageModifier + '" type="text" name="language-name" placeholder="Idioma ' + idLanguageModifier +'">';
+	repeatedItemLanguage+= '<select id="level" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option><option>Nativo</option></select>';
+	repeatedItemLanguage+= '</div>';
+
+	var languageElement = document.querySelector('.language-element');
+
+	languageElement.insertAdjacentHTML('beforeend', repeatedItemLanguage);
+
+	idLanguageModifier++;
 }
 
+var newLanguageButton = document.querySelector('.new-language-button');
+newLanguageButton.addEventListener('click',addItemLanguage);
 
-function archivo(evt) {
-	console.log('hola')
-      var files = evt.target.files; // FileList object
 
-        //Obtenemos la imagen del campo "file".
-      for (var i = 0, f; f = files[i]; i++) {
-           //Solo admitimos imágenes.
-           if (!f.type.match('image.*')) {
-                continue;
-           }
 
-           var reader = new FileReader();
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)
+var idItModifier = 2;
+function addItemIt() {
+	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><label class="label" for="it-level ' + idItModifier + '"></label><input class="it-level" id="it-level ' + idItModifier + '" type="text" name="it-level" placeholder="Nivel de tecnología ' + idItModifier + '"></div>';
 
-           reader.onload = (function(theFile) {
-               return function(e) {
-               // Creamos la imagen.
-											trigger.style = "background-image:url(" + e.target.result + ");";
-                      document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-               };
-           })(f);
+	var itElement = document.querySelector('.it-element');
 
-           reader.readAsDataURL(f);
-       }
+	itElement.insertAdjacentHTML('beforeend', repeatedItemIt);
+
+	idItModifier++;
 }
 
-inputFile.addEventListener('change', archivo);
+var newItButton = document.querySelector('.new-it-button');
+newItButton.addEventListener('click',addItemIt);
+
+
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
+var idSkillModifier = 2;
+function addItemSkill() {
+	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
+
+	var skillElement = document.querySelector('.skill-element');
+
+	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
+
+	idSkillModifier++;
+}
+
+var newSkillButton = document.querySelector('.new-skill-button');
+newSkillButton.addEventListener('click',addItemSkill);
+
+
+// var openSkillsButton= document.querySelector('.boton-abrir-skills');
+// openSkillsButton.addEventListener('click', abrir);
