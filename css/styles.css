@@ -361,8 +361,6 @@ input, .description, .experience-text {
 	border-radius: 5px;
 	background: #E7ECED;
 	font-family: inherit;
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	padding: 5px;
 	margin: 5px;
 	width: 80%;
