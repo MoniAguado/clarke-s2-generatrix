@@ -24,7 +24,7 @@ document.getElementById(idContent).style.display = 'none';
 //función para meses
 function selectMonths() {
 	var options = '';
-var monthsAll = document.querySelectorAll('.month');
+	var months = document.querySelectorAll('.month');
   var meses = [
     "Enero",
     "Febrero",
@@ -42,9 +42,15 @@ var monthsAll = document.querySelectorAll('.month');
   ];
 
   for (var i = 0; i < meses.length - 1; i++){
-    options += '<option value="'+i+'">' + meses[i]+ '</option>';
+    options += '<option>' + meses[i]+ '</option>';
 }
-monthsAll.innerHTML+= options;}
+months.innerHTML+= options;
+
+var monthsAll = document.querySelectorAll('.year');
+for (var i = 0; i < monthsAll.length; i++) {
+	monthsAll.innerHTML = selectMonths;}
+}
+
 selectMonths();
 
 //función para años
