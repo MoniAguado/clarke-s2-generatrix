@@ -125,9 +125,24 @@ newItButton.addEventListener('click',addItemIt);
 
 
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
+// var idSkillModifier = 2;
+// function addItemSkill() {
+// 	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
+//
+// 	var skillElement = document.querySelector('.skill-element');
+//
+// 	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
+//
+// 	idSkillModifier++;
+// }
+//
+// var newSkillButton = document.querySelector('.new-skill-button');
+// newSkillButton.addEventListener('click',addItemSkill);
+
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)NO FUNCIONAAAAAAAAAAAAAAAA
 var idSkillModifier = 2;
-function addItemSkill() {
-	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
+function addItemSkills() {
+	var repeatedItemSkill = '<label class="label" for="skill-element1"></label><input class="skill-element" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">';
 
 	var skillElement = document.querySelector('.skill-element');
 
@@ -137,7 +152,7 @@ function addItemSkill() {
 }
 
 var newSkillButton = document.querySelector('.new-skill-button');
-newSkillButton.addEventListener('click',addItemSkill);
+newSkillButton.addEventListener('click',addItemSkills);
 
 
 // var openSkillsButton= document.querySelector('.boton-abrir-skills');
