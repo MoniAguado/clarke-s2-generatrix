@@ -11,6 +11,13 @@ function openClose(idContent) {
 	}
 }
 
+// desplegables
+var collapsableOpen = document.querySelector('.boton-abrir');
+function desplegable(){
+  collapsableOpen.style.display == 'block'
+}
+collapsableOpen.addEventListener('click', desplegable);
+
 //función para desplegar sección
 
 function abrir(idContent){
