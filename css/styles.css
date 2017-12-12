@@ -202,6 +202,8 @@ main {
 	border-style: solid;
 	padding: 0;
 	height: 100px;
+	background-color: white;
+	z-index: 2;
 }
 
 .design-img {
