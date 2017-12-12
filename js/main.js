@@ -1,3 +1,4 @@
+'use strict'
 // burger
 
 function openClose(idContent) {
@@ -20,18 +21,62 @@ function cerrar(idContent){
 document.getElementById(idContent).style.display = 'none';
 }
 
-// function showOptions() {
-// 	show.classList.add('.show');
-// }
-// // comandos para desplegable de la seccion diseño
-// var design = document.querySelectorAll('.section2design ul');
-// design.addEventListener('click',showOptions);
-// var show = document.querySelectorAll('.section2design ul li')
+//función para meses
+function selectMonths() {
+	var options = '';
+	var months = document.querySelectorAll('.month');
+  var meses = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+  ];
+
+  for (var i = 0; i < meses.length - 1; i++){
+    options += '<option>' + meses[i]+ '</option>';
+}
+var monthsAll = document.querySelectorAll('.month');
+for (var i = 0; i < monthsAll.length; i++) {
+	monthsAll[i].innerHTML = options;
+};
+}
+selectMonths();
+//función para años
+var years = 2018;
+var selectYear = '';
+
+for (var i=1950; i<years; i++) {
+  selectYear = selectYear + '<option>' + (i) + '</option>';
+}
+var yearsAll = document.querySelectorAll('.year');
+for (var i = 0; i < yearsAll.length; i++) {
+	yearsAll[i].innerHTML = selectYear;
+};
 
 
+
+
+// comandos para desplegable de la seccion diseño
+var design = document.querySelectorAll('.section2design ul');
+design.addEventListener('click',showOptions);
+var show = document.querySelectorAll('.section2design ul li')
+function showOptions() {
+	show.classList.add('.show');
+};
 
 // función para completar los campos del formulario
 // function completar () {
+//
+// 	var name= document.querySelector ('#box_number').value
 // 	var namePrompt = prompt("Introduce tu nombre");
 // 	var surnamesPrompt = prompt("Introduce tus apellidos");
 // 	var telephonePrompt = prompt("Introduce tu número de teléfono");
@@ -45,10 +90,11 @@ document.getElementById(idContent).style.display = 'none';
 // 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
 // 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
 // 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
-// }
+// };
 
-// var inputFile = document.querySelector('#files');
-// var trigger = document.querySelector('.trigger');
+
+var inputFile = document.querySelector('#files');
+var trigger = document.querySelector('.trigger');
 
 // hacemos clic en trigger y llamamos a la funcion
 // trigger.addEventListener('click', simularClic);
