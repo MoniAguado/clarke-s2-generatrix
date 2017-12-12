@@ -11,23 +11,32 @@ function openClose(idContent) {
 	}
 }
 
-// desplegables
+var
+
+
+// desplegables sin onclick
 var collapsableOpen = document.querySelector('.boton-abrir');
-function desplegable(){
-  collapsableOpen.style.display == 'block'
+function desplegable(event){
+	// llamo al evento
+	// currentTarget coge el elemento (en este caso un boton) que dispara el evento. Le ponemos data-plus porque queremos que busque la id del elemento que tiene que mostrar
+	var plusId = event.currentTarget.getAttribute('data-plus');
+	// data-plus: identificador del elemento, que queremos que se replique en el resto de elementos
+	// hacemos una variable para crear el selector, event.currentTarget es el elemento que dispara el evento (hacer click)
+	console.log(plusId);
+	var datosPersonales = document.querySelector('#' + plusId);
+	if (datosPersonales.style.display == 'block'){
+		datosPersonales.style.display = 'none';
+	} else {
+		datosPersonales.style.display = 'block';
+	}
+	var botones = document.querySelectorAll('.boton-abrir');
+	console.log(botones);
+	for (i=0; i<botones.length, i++){
+	}
 }
 collapsableOpen.addEventListener('click', desplegable);
+botones[i].addEventListener('click', desplegable);
 
-//función para desplegar sección
-
-function abrir(idContent){
-	document.getElementById(idContent).style.display = 'block';
-}
-
-//función para cerrar sección
-function cerrar(idContent){
-	document.getElementById(idContent).style.display = 'none';
-}
 
 //función para meses
 function selectMonths() {
@@ -68,27 +77,7 @@ for (var i = 0; i < yearsAll.length; i++) {
 	yearsAll[i].innerHTML = selectYear;
 };
 
-
-
-// función para completar los campos del formulario
-// function completar () {
-//
-// 	var name= document.querySelector ('#box_number').value
-// 	var namePrompt = prompt("Introduce tu nombre");
-// 	var surnamesPrompt = prompt("Introduce tus apellidos");
-// 	var telephonePrompt = prompt("Introduce tu número de teléfono");
-// 	var dateBirthPrompt = prompt("Introduce tu fecha de nacimiento");
-// 	var emailPrompt = prompt("Introduce tu dirección de correo electrónico");
-// 	var addressPrompt = prompt("Introduce tu dirección de correo postal");
-//
-// 	document.querySelector("#nombrePrompt").innerHTML = namePrompt;
-// 	document.querySelector("#apellidoPrompt").innerHTML = surnamesPrompt;
-// 	document.querySelector("#telefonoPrompt").innerHTML = telephonePrompt;
-// 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
-// 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
-// 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
-// };
-
+// IMAGEN
 var inputFile = document.querySelector('#files');
 var trigger = document.querySelector('.trigger');
 
