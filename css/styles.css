@@ -356,7 +356,7 @@ fieldset {
 	width: 20px;
 }
 
-input, .description, .experience-text {
+.claseinput, .description, .experience-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -392,27 +392,21 @@ input, .description, .experience-text {
 	color: rgb(117, 117, 117);
 }*/
 
-.formation-dates-p, .experience-dates-p {
-	/*display: inline;*/
+.formation-dates-p, .experience-dates-p, .present-button-p {
+	display: inline;
 	color: black;
 	font-size: 14px;
 }
-
-.desde, .hasta, .level {
+.desde, .hasta, .level{
 	display: block;
 	margin: 4px 0 4px 6px;
 }
-
- .selector_hasta, .actualidad{
-	display: inline;
-	/*color: rgb(117, 117, 117);*/
-}
-.present-button {
+/*.present-button {
 	right: 25%;
 	margin-right: 0;
-}
+}*/
 .actualidad{
-	font-size: 12px;
+	margin-top: 4px;
 }
 #experience {
 	display: none;
@@ -533,7 +527,7 @@ footer {
 		font-size: 20px;
 		padding-right: 10px;
 	}
-	input, .h3-form {
+	.claseinput, .h3-form {
 		font-size: 30px;
 	}
 	.boton-abrir, .boton-cerrar {
@@ -561,6 +555,13 @@ footer {
 		width: 200px;
 		height: 50px;
 	}
+	.hasta{
+ 	display: flex;
+	flex-direction: row;
+	}
+	.formation-dates {
+		display: inline;
+	}
 }
 
 @media all and (min-width:1100px) {
@@ -571,4 +572,27 @@ footer {
 		justify-content: space-between;
 		background-color: #E7ECED;
 	}
+}
+@media all and (min-width:622px){
+	.formation-dates, .experience-dates {
+		display: flex;
+		flex-direction: row;
+	}
+	.actualidad {
+		margin-left: 20px;
+		margin-top: 0;
+	}
+	.present-button-p {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+@media all and (min-width:500px){
+	.hasta {
+		display: flex;
+		flex-direction: row;
+		height: 20px;
+	}
+	.actualidad {
+		margin-left: 20px;
 }
