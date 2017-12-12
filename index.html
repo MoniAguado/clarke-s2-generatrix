@@ -181,26 +181,23 @@
 											<div class="desde">
 											<label class="label" for="desde">Desde</label>
 											<select id="start_month" name="start_month" class="month">
-												<option value="">Mes</option>
-
-												</select>
+											</select>
 											<select id="start_year" name="start_year" class="year">
-												<option value="año">Año</option>
-												<option >--</option>
-												</select>
+											</select>
 											</div>
 											<div class="hasta">
+												<div class="selector_hasta">
 											<label class="label" for="hasta">Hasta</label>
 											<select id="end_month" name="end_month" class="month">
-												<option value="mes">Mes</option>
-												<option >--</option>
 											</select>
 											<select id="start_year" name="start_year" class="year">
-												<option value="año">Año</option>
-												<option >--</option>
 											</select>
+											</div>
+											<div class="actualidad">
+												<!-- <label for="actualidad" class="present-button-p">Actualidad</label> -->
 											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
 											<p class="present-button-p">Actualidad</p>
+											</div>
 											</div>
 										</section>
 										<input id="lugar" type="text" name="lugar" placeholder="Lugar">
@@ -246,9 +243,10 @@
 												<option value="año">Año</option>
 												<option >--</option>
 												</select>
-											<label class="label" for="actualidad"></label>
+												<div class="actualidad">
+											<label for="actualidad" class="present-button-p">Actualidad</label>
 											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
-											<p class="present-button-p">Actualidad</p>
+										</div>
 										</div>
 										<label class="label" for="centro"></label>
 										<input id="centro" type="text" name="place" placeholder="Centro de estudios*" required>

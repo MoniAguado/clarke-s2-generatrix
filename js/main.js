@@ -48,7 +48,6 @@ var monthsAll = document.querySelectorAll('.month');
 for (var i = 0; i < monthsAll.length; i++) {
 	monthsAll[i].innerHTML = options;
 };
-
 }
 selectMonths();
 //función para años
