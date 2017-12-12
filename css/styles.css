@@ -364,8 +364,6 @@ input, .description, .experience-text {
 	border-radius: 5px;
 	background: #E7ECED;
 	font-family: inherit;
-	-webkit-appearance: none;
-	-moz-appearance: none;
 	padding: 5px;
 	margin: 5px;
 	width: 80%;
@@ -397,8 +395,8 @@ input, .description, .experience-text {
 	color: rgb(117, 117, 117);
 }*/
 
-.formation-dates p, .experience-dates p {
-	display: inline;
+.formation-dates-p, .experience-dates-p {
+	/*display: inline;*/
 	color: black;
 	font-size: 14px;
 }
@@ -408,13 +406,17 @@ input, .description, .experience-text {
 	margin: 4px 0 4px 6px;
 }
 
-.present-button {
+ .selector_hasta, .actualidad{
 	display: inline;
-	color: rgb(117, 117, 117);
-	width: 50%;
-	height: auto;
+	/*color: rgb(117, 117, 117);*/
 }
-
+.present-button {
+	right: 25%;
+	margin-right: 0;
+}
+.actualidad{
+	font-size: 12px;
+}
 #experience {
 	display: none;
 }
