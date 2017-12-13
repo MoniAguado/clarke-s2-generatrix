@@ -451,9 +451,6 @@ fieldset {
 
 .section5bpreview {
 	background-color: #E7ECED;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .preview-title {
@@ -478,17 +475,60 @@ fieldset {
 }
 
 .preview-header {
-	margin-top: 20%;
-	margin-left: 5%;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-content: flex-start;
+	height: 100px;
+}
+
+.cuadro-photo {
+	width: 25%;
+	padding-left: 20px;
 }
 
 .preview-photo-div {
-	width: 150px;
-	min-height: 50px;
+	width: 50px;
+	height: 50px;
+	background-color: #31B89A;
+	border-radius: 100px;
+}
+.nombre-direccion-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 10px;
+	align-content: flex-start;
+	width: 70%;
+}
+.nombre-cargo {
 	background-color: #EAB931;
+	width: 32%;
+	height: 50px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 11px;
+}
+
+
+.cuadro-direccion {
+	width: 60%;
+	height: 50px;
+	background-color: #EAB931;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 9px;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
 }
 
 .preview-photo-div .thumb {
