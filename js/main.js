@@ -63,16 +63,6 @@ for (var i = 0; i < yearsAll.length; i++) {
 };
 
 
-
-
-// comandos para desplegable de la seccion diseño
-var design = document.querySelectorAll('.section2design ul');
-design.addEventListener('click',showOptions);
-var show = document.querySelectorAll('.section2design ul li')
-function showOptions() {
-	show.classList.add('.show');
-};
-
 // función para completar los campos del formulario
 // function completar () {
 //
