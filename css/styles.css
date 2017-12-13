@@ -85,12 +85,20 @@ main {
 	height: 40px;
 }
 
+.burger ul {
+	margin-top: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
 .burger ul li {
 	list-style: none;
 	border-bottom: #31B89A;
 	border-width: 1px;
 	width: 150px;
 	height: 30px;
+	line-height: 30px;
 	background-color: #424A5F;
 	padding: 0;
 	margin: 0;
@@ -100,7 +108,7 @@ main {
 	text-decoration: none;
 	color: #E7ECED;
 	padding: 10px;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 
 .list-burger {

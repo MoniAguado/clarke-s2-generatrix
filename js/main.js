@@ -17,10 +17,10 @@ var botones = document.querySelectorAll('.boton-abrir');
 function desplegable(event){
 	// llamo al evento
 	// currentTarget coge el elemento (en este caso un boton) que dispara el evento. Le ponemos data-plus porque queremos que busque la id del elemento que tiene que mostrar
-	var plusId = event.currentTarget.getAttribute('data-plus');
+	var plusId = event.currentTarget.getAttribute('data-idDesplegar');
 	// data-plus: identificador del elemento, que queremos que se replique en el resto de elementos
 	// hacemos una variable para crear el selector, event.currentTarget es el elemento que dispara el evento (hacer click)
-	var cuadro = document.querySelector('#' + plusId);
+	var cuadro = document.getElementById(plusId);
 	if (cuadro.style.display == 'block'){
 		cuadro.style.display = 'none';
 	} else {
