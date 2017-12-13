@@ -11,31 +11,27 @@ function openClose(idContent) {
 	}
 }
 
-var
-
 
 // desplegables sin onclick
-var collapsableOpen = document.querySelector('.boton-abrir');
+var botones = document.querySelectorAll('.boton-abrir');
 function desplegable(event){
 	// llamo al evento
 	// currentTarget coge el elemento (en este caso un boton) que dispara el evento. Le ponemos data-plus porque queremos que busque la id del elemento que tiene que mostrar
 	var plusId = event.currentTarget.getAttribute('data-plus');
 	// data-plus: identificador del elemento, que queremos que se replique en el resto de elementos
 	// hacemos una variable para crear el selector, event.currentTarget es el elemento que dispara el evento (hacer click)
-	console.log(plusId);
-	var datosPersonales = document.querySelector('#' + plusId);
-	if (datosPersonales.style.display == 'block'){
-		datosPersonales.style.display = 'none';
+	var cuadro = document.querySelector('#' + plusId);
+	if (cuadro.style.display == 'block'){
+		cuadro.style.display = 'none';
 	} else {
-		datosPersonales.style.display = 'block';
-	}
-	var botones = document.querySelectorAll('.boton-abrir');
-	console.log(botones);
-	for (i=0; i<botones.length, i++){
+		cuadro.style.display = 'block';
 	}
 }
-collapsableOpen.addEventListener('click', desplegable);
-botones[i].addEventListener('click', desplegable);
+for (i=0; i<botones.length; i++){
+	botones[i].addEventListener('click', desplegable);
+}
+
+
 
 
 //función para meses
