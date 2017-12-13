@@ -343,6 +343,10 @@ main {
 	border-color: #424A5F;
 }
 
+.selection-image{
+	display: none;
+}
+
 /*FORM*/
 
 .h3-form {
@@ -395,6 +399,7 @@ fieldset {
 	margin: 5px;
 	width: 80%;
 }
+
 
 .description, .experience-text {
 	resize: vertical;
@@ -480,13 +485,13 @@ fieldset {
 	align-items: center;
 }
 
-.preview-photo {
+.preview-photo-div {
 	width: 150px;
 	min-height: 50px;
 	background-color: #EAB931;
 }
 
-.preview-photo .thumb {
+.preview-photo-div .thumb {
 	width: 100%;
 }
 
