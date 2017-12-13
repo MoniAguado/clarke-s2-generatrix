@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -19,6 +19,7 @@ body {
 main {
 	flex: 1;
 	padding-top: 80px;
+	min-height: 100vh;
 }
 
 .main-block {
@@ -246,37 +247,37 @@ main {
 .font + .font {
 	border-top: 1px solid #EAB931;
 }
-.colour1, .colour2, .colour3, .colour4, .colour5, .colour6, .colour7, .colour8, .colour9 {
+.red, .green, .lime, .black, .blue, .pink, .grey {
 	border-radius: 30px;
 	width: 20px;
 	height: 20px;
 	border: 2px solid black;
 }
-.colour1{
+.red{
 	background: rgb(221, 90, 75);
 }
-.colour2{
+.green{
 	background: rgb(23, 71, 82);
 }
-.colour3{
+.lime{
 	background: rgb(210, 222, 107);
 }
-.colour4{
+.black{
 	background: rgb(37, 31, 33);
 }
-.colour5{
+.blue{
 	background: rgb(148, 211, 201);
 }
-.colour6{
+.lime{
 	background: rgb(210, 221, 107);
 }
-.colour7{
+.black{
 	background: rgb(37, 31, 33);
 }
-.colour8{
+.pink{
 	background: rgb(238, 91, 120);
 }
-.colour9{
+.grey{
 	background: rgb(129, 126, 126);
 }
 .colour:hover {
@@ -440,8 +441,8 @@ fieldset {
 }
 
 .showpreview {
+	background: url("../images/themes/stripes.png") center  no-repeat;
 	position: absolute;
-	z-index: 1;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
@@ -469,6 +470,73 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
+}
+
+/*Cookie*/
+.cookie .preview-title{
+	font-family: 'Cookie';
+	font-size: 1.3em;
+}
+.cookie .preview-text{
+	font-family: 'arial';
+	font-size: 1em;
+}
+/*Fira*/
+.fira .preview-title{
+	font-family: 'Fira';
+	font-size: 1em;
+	font-weight: 700;
+}
+.fira .preview-text{
+	font-family: 'Fira';
+	font-size: 1em;
+}
+/*Philosopher*/
+.philosopher .preview-title{
+	font-family: 'Philosopher';
+	font-size: 1em;
+	font-weight: 700;
+}
+.philosopher .preview-text{
+	font-family: 'Philosopher';
+	font-size: 1em;
+}
+
+/*Colour rgb(221, 90, 75) rgb(85, 85, 85) rgb(23, 71, 82) rgb(210, 222, 107) rgb(37, 31, 33) rgb(148, 211, 201) rgb(238, 91, 120) rgb(129, 126, 126)*/
+/*red-green-lime*/
+.red-green-lime .preview-title {
+	color: rgb(221, 90, 75);
+	border-bottom: 1px solid rgb(210, 222, 107);
+}
+.red-green-lime .preview-text {
+	color: rgb(23, 71, 82);
+}
+/*black-blue-lime*/
+.black-blue-lime .preview-title {
+	color: rgb(148, 211, 201);
+	border-bottom: 1px solid rgb(210, 222, 107);
+}
+.black-blue-lime .preview-text {
+	color: rgb(37, 31, 33);
+}
+/*lack-pink-grey*/
+.black-pink-grey .preview-title {
+	color: rgb(37, 31, 33);
+	border-bottom: 1px solid rgb(238, 91, 120);
+}
+.black-pink-grey .preview-text {
+	color: rgb(129, 126, 126);
+}
+
+/*Temas*/
+.dots .showpreview {
+	background: url("../images/themes/dots.png") center  no-repeat;
+}
+.stripes .showpreview {
+	background: url("../images/themes/stripes.png") center  no-repeat;
+}
+.zigZag .showpreview {
+	background: url("../images/themes/zigZag.png") center  no-repeat;
 }
 
 /*FOOTER*/
@@ -574,7 +642,6 @@ footer {
 		display: flex;
 		flex-direction: row;
 		padding: 0 3%;
-		justify-content: space-between;
 		background-color: #E7ECED;
 	}
 }

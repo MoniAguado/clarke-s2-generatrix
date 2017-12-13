@@ -10,6 +10,58 @@ function openClose(idContent) {
 	}
 }
 
+//Elegir estilos para curriculum
+var preview = document.querySelector('.showpreview');
+//Letra
+var fonts = document.querySelectorAll('.font');
+
+function cleanFontClasses() {
+  preview.classList.remove('cookie', 'fira', 'philosopher');
+}
+
+function applyFont(event){
+	var fontClass = event.currentTarget.getAttribute('data-font-class');
+  cleanFontClasses();
+  preview.classList.add(fontClass);
+}
+
+for (var i = 0; i < fonts.length; i++) {
+  fonts[i].addEventListener('click', applyFont);
+}
+//Colores
+var colours = document.querySelectorAll('.colour');
+
+function cleanColourClasses() {
+  preview.classList.remove('red-green-lime', 'black-blue-lime', 'black-pink-grey');
+}
+
+function applyColour(event){
+  var colourClass = event.currentTarget.getAttribute('data-colour-class');
+  cleanColourClasses();
+  preview.classList.add(colourClass);
+}
+
+for (var i = 0; i < colours.length; i++) {
+  colours[i].addEventListener('click', applyColour);
+}
+
+//temas
+var themes = document.querySelectorAll('.theme');
+
+function cleanThemeClasses() {
+  preview.classList.remove('dots', 'stripes', 'zigZag');
+}
+
+function applyTheme(event){
+  var themeClass = event.currentTarget.getAttribute('data-theme-class');
+  cleanThemeClasses();
+  preview.classList.add(themeClass);
+}
+
+for (var i = 0; i < themes.length; i++) {
+  themes[i].addEventListener('click', applyTheme);
+}
+
 //función para desplegar sección
 
 function abrir(idContent){
@@ -21,20 +73,6 @@ function cerrar(idContent){
 document.getElementById(idContent).style.display = 'none';
 }
 
-<<<<<<< HEAD
-// function showOptions() {
-// 	show.classList.add('.show');
-// }
-// // comandos para desplegable de la seccion diseño
-// var design = document.querySelectorAll('.section2design ul');
-// design.addEventListener('click',showOptions);
-// var show = document.querySelectorAll('.section2design ul li')
-
-
-
-// función para completar los campos del formulario
-// function completar () {
-=======
 //función para meses
 function selectMonths() {
 	var options = '';
@@ -79,19 +117,12 @@ for (var i = 0; i < yearsAll.length; i++) {
 
 
 
-// comandos para desplegable de la seccion diseño
-var design = document.querySelectorAll('.section2design ul');
-design.addEventListener('click',showOptions);
-var show = document.querySelectorAll('.section2design ul li')
-function showOptions() {
-	show.classList.add('.show');
-};
+
 
 // función para completar los campos del formulario
 // function completar () {
 //
 // 	var name= document.querySelector ('#box_number').value
->>>>>>> master
 // 	var namePrompt = prompt("Introduce tu nombre");
 // 	var surnamesPrompt = prompt("Introduce tus apellidos");
 // 	var telephonePrompt = prompt("Introduce tu número de teléfono");
@@ -105,18 +136,11 @@ function showOptions() {
 // 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
 // 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
 // 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
-<<<<<<< HEAD
-// }
-
-// var inputFile = document.querySelector('#files');
-// var trigger = document.querySelector('.trigger');
-=======
 // };
 
 
 var inputFile = document.querySelector('#files');
 var trigger = document.querySelector('.trigger');
->>>>>>> master
 
 // hacemos clic en trigger y llamamos a la funcion
 // trigger.addEventListener('click', simularClic);
@@ -154,48 +178,63 @@ var trigger = document.querySelector('.trigger');
 
 // inputFile.addEventListener('change', archivo);
 
-
-
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
-var idLanguageModifier = 2;
-function addItemLanguage() {
-	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
-	repeatedItemLanguage+= '<input class="language-name" id="language-name' + idLanguageModifier + '" type="text" name="language-name" placeholder="Idioma ' + idLanguageModifier +'">';
-	repeatedItemLanguage+= '<select id="level" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option><option>Nativo</option></select>';
-	repeatedItemLanguage+= '</div>';
-
-	var languageElement = document.querySelector('.language-element');
-
-	languageElement.insertAdjacentHTML('beforeend', repeatedItemLanguage);
-
-	idLanguageModifier++;
-}
-
-var newLanguageButton = document.querySelector('.new-language-button');
-newLanguageButton.addEventListener('click',addItemLanguage);
-
-
-
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)
-var idItModifier = 2;
-function addItemIt() {
-	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><label class="label" for="it-level ' + idItModifier + '"></label><input class="it-level" id="it-level ' + idItModifier + '" type="text" name="it-level" placeholder="Nivel de tecnología ' + idItModifier + '"></div>';
-
-	var itElement = document.querySelector('.it-element');
-
-	itElement.insertAdjacentHTML('beforeend', repeatedItemIt);
-
-	idItModifier++;
-}
-
-var newItButton = document.querySelector('.new-it-button');
-newItButton.addEventListener('click',addItemIt);
-
-
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
+//
+//
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
+// var idLanguageModifier = 2;
+// function addItemLanguage() {
+// 	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
+// 	repeatedItemLanguage+= '<input class="language-name" id="language-name' + idLanguageModifier + '" type="text" name="language-name" placeholder="Idioma ' + idLanguageModifier +'">';
+// 	repeatedItemLanguage+= '<select id="level" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option><option>Nativo</option></select>';
+// 	repeatedItemLanguage+= '</div>';
+//
+// 	var languageElement = document.querySelector('.language-element');
+//
+// 	languageElement.insertAdjacentHTML('beforeend', repeatedItemLanguage);
+//
+// 	idLanguageModifier++;
+// }
+//
+// var newLanguageButton = document.querySelector('.new-language-button');
+// newLanguageButton.addEventListener('click',addItemLanguage);
+//
+//
+//
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)
+// var idItModifier = 2;
+// function addItemIt() {
+// 	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><label class="label" for="it-level ' + idItModifier + '"></label><input class="it-level" id="it-level ' + idItModifier + '" type="text" name="it-level" placeholder="Nivel de tecnología ' + idItModifier + '"></div>';
+//
+// 	var itElement = document.querySelector('.it-element');
+//
+// 	itElement.insertAdjacentHTML('beforeend', repeatedItemIt);
+//
+// 	idItModifier++;
+// }
+//
+// var newItButton = document.querySelector('.new-it-button');
+// newItButton.addEventListener('click',addItemIt);
+//
+//
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
+// // var idSkillModifier = 2;
+// // function addItemSkill() {
+// // 	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
+// //
+// // 	var skillElement = document.querySelector('.skill-element');
+// //
+// // 	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
+// //
+// // 	idSkillModifier++;
+// // }
+// //
+// // var newSkillButton = document.querySelector('.new-skill-button');
+// // newSkillButton.addEventListener('click',addItemSkill);
+//
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)NO FUNCIONAAAAAAAAAAAAAAAA
 // var idSkillModifier = 2;
-// function addItemSkill() {
-// 	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
+// function addItemSkills() {
+// 	var repeatedItemSkill = '<label class="label" for="skill-element1"></label><input class="skill-element" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">';
 //
 // 	var skillElement = document.querySelector('.skill-element');
 //
@@ -205,23 +244,8 @@ newItButton.addEventListener('click',addItemIt);
 // }
 //
 // var newSkillButton = document.querySelector('.new-skill-button');
-// newSkillButton.addEventListener('click',addItemSkill);
-
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)NO FUNCIONAAAAAAAAAAAAAAAA
-var idSkillModifier = 2;
-function addItemSkills() {
-	var repeatedItemSkill = '<label class="label" for="skill-element1"></label><input class="skill-element" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">';
-
-	var skillElement = document.querySelector('.skill-element');
-
-	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
-
-	idSkillModifier++;
-}
-
-var newSkillButton = document.querySelector('.new-skill-button');
-newSkillButton.addEventListener('click',addItemSkills);
-
-
-// var openSkillsButton= document.querySelector('.boton-abrir-skills');
-// openSkillsButton.addEventListener('click', abrir);
+// newSkillButton.addEventListener('click',addItemSkills);
+//
+//
+// // var openSkillsButton= document.querySelector('.boton-abrir-skills');
+// // openSkillsButton.addEventListener('click', abrir);
