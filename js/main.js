@@ -39,29 +39,29 @@ function selectMonths() {
 	var options = '';
 
 	var months = document.querySelectorAll('.month');
-  var meses = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre"
-  ];
+	var meses = [
+		"Enero",
+		"Febrero",
+		"Marzo",
+		"Abril",
+		"Mayo",
+		"Junio",
+		"Julio",
+		"Julio",
+		"Agosto",
+		"Septiembre",
+		"Octubre",
+		"Noviembre",
+		"Diciembre"
+	];
 
-  for (var i = 0; i < meses.length - 1; i++){
-    options += '<option>' + meses[i]+ '</option>';
-}
-var monthsAll = document.querySelectorAll('.month');
-for (var i = 0; i < monthsAll.length; i++) {
-	monthsAll[i].innerHTML = options;
-};
+	for (var i = 0; i < meses.length - 1; i++){
+		options += '<option>' + meses[i]+ '</option>';
+	}
+	var monthsAll = document.querySelectorAll('.month');
+	for (var i = 0; i < monthsAll.length; i++) {
+		monthsAll[i].innerHTML = options;
+	};
 
 }
 selectMonths();
@@ -78,44 +78,6 @@ for (var i = 0; i < yearsAll.length; i++) {
 };
 
 // IMAGEN
-// var inputFile = document.querySelector('#files');
-// var trigger = document.querySelector('.trigger');
-
-	// hacemos clic en trigger y llamamos a la funcion
-// trigger.addEventListener('click', simularClic);
-//
-// // función para que simule un clic en input
-// function simularClic(){
-// 	inputFile.click();
-// }
-//
-// function archivo(evt) {
-// 	console.log('hola')
-// 	var files = evt.target.files; // FileList object
-//
-// 	//Obtenemos la imagen del campo "file".
-// 	for (var i = 0, f; f = files[i]; i++) {
-// 		//Solo admitimos imágenes.
-// 		if (!f.type.match('image.*')) {
-// 			continue;
-// 		}
-//
-// 		var reader = new FileReader();
-//
-// 		reader.onload = (function(theFile) {
-// 			return function(e) {
-// 				// Creamos la imagen.
-// 				trigger.style = "background-image:url(" + e.target.result + ");";
-// 				document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-// 			};
-// 		})(f);
-//
-// 		reader.readAsDataURL(f);
-// 	}
-// }
-//
-// inputFile.addEventListener('change', archivo);
-
 
 var inputFile = document.querySelector('#files');
 var trigger = document.querySelector('.trigger');
@@ -128,30 +90,30 @@ function simularClic(){
 }
 
 function archivo(evt) {
-         // imagen del campo "file".
- console.log('hola')
+	// imagen del campo "file".
+	console.log('hola')
 	var files = evt.target.files; // FileList object
-	       //Obtenemos la imagen del campo "file".
-  for (var i = 0, f; f = files[i]; i++) {
-          //Solo admitimos imágenes.
-  if (!f.type.match('image.*')) {
-                  continue;
-             }
- 				 }
-  var reader = new FileReader();
-  reader.onload = (function(theFile) {
-      return function(e) {
-              // Creamos la imagen.
-        document.getElementById("file").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-				trigger.style = "background-image:url(" + e.target.result + ");";
-        document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-                 };
-             })(f);
-        reader.readAsDataURL(f);
-       }
-  }
-  
-  inputFile.addEventListener('change', archivo);
+	//Obtenemos la imagen del campo "file".
+	for (var i = 0, f; f = files[i]; i++) {
+		//Solo admitimos imágenes.
+		if (!f.type.match('image.*')) {
+			continue;
+		}
+	}
+	var reader = new FileReader();
+	reader.onload = (function(theFile) {
+		return function(e) {
+			// Creamos la imagen.
+			document.getElementById("file").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+			trigger.style = "background-image:url(" + e.target.result + ");";
+			document.querySelector(".preview-photo-div").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+		};
+	})(f);
+	reader.readAsDataURL(f);
+}
+
+
+inputFile.addEventListener('change', archivo);
 
 
 
@@ -192,30 +154,6 @@ function addItemIt() {
 var newItButton = document.querySelector('.new-it-button');
 newItButton.addEventListener('click',addItemIt);
 
-<<<<<<< HEAD
-function archivo(evt) {
-	var files = evt.target.files; // FileList object
-	//Obtenemos la imagen del campo "file".
-	for (var i = 0, f; f = files[i]; i++) {
-		//Solo admitimos imágenes.
-		if (!f.type.match('image.*')) {
-			continue;
-		}
-		var reader = new FileReader();
-		reader.onload = (function(theFile) {
-			return function(e) {
-				// Creamos la imagen.
-				trigger.style = "background-image:url(" + e.target.result + ");";
-				document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-			};
-		})(f);
-		reader.readAsDataURL(f);
-	}
-}
-
-
-inputFile.addEventListener('change', archivo);
-=======
 
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
 // var idSkillModifier = 2;
@@ -250,4 +188,3 @@ newSkillButton.addEventListener('click',addItemSkills);
 
 // var openSkillsButton= document.querySelector('.boton-abrir-skills');
 // openSkillsButton.addEventListener('click', abrir);
->>>>>>> master
