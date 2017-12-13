@@ -92,14 +92,17 @@ main {
 	width: 150px;
 	height: 30px;
 	background-color: #424A5F;
-	padding: 0;
 	margin: 0;
+	border-color: #424A5F;
+	border-width: 3px;
+	border-style: solid;
+	padding: 0;
+	z-index: 4;
 }
 
 .burger ul li a {
 	text-decoration: none;
 	color: #E7ECED;
-	padding: 10px;
 	padding-top: 5px;
 }
 
@@ -559,12 +562,16 @@ footer {
 	}
 }
 
-@media all and (min-width:1100px) {
+@media all and (min-width:1024px) {
 	.main-block {
 		display: flex;
 		flex-direction: row;
 		padding: 0 3%;
 		justify-content: space-between;
 		background-color: #E7ECED;
+	}
+
+	.main-img-section1{
+		background-image: url(..);
 	}
 }
