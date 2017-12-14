@@ -128,7 +128,8 @@ for (var i = 0; i < yearsAll.length; i++) {
 };
 
 
-
+var inputFile = document.querySelector('#files');
+var trigger = document.querySelector('.trigger');
 
 // hacemos clic en trigger y llamamos a la funcion
 trigger.addEventListener('click', simularClic);
