@@ -100,6 +100,7 @@
 								</ul>
 							</li>
 						</ul>
+
 					</section>
 					<!-- ADD FILES -->
 					<section class="section3photo">
@@ -126,6 +127,8 @@
 									<input class="claseinput" id="name" type="text" name="name" placeholder="Nombre*" required>
 									<label class="label" for="surname"></label>
 									<input class="claseinput" id="surname" type="text" name="surname" placeholder="Apellidos*" required>
+									<label class="label" for="profesion"></label>
+									<input class="claseinput" id="profesion" type="text" name="name" placeholder="Profesión*" required>
 									<label class="label" for="telephone"></label>
 									<input class="claseinput" id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
 									<label class="label" for="date"></label>
@@ -134,12 +137,14 @@
 									<input class="claseinput" id="email" type="email" name="email" placeholder="Email*" required>
 									<label class="label" for="address"></label>
 									<input class="claseinput" id="address" type="text" name="address" placeholder="Dirección">
-									<div class="rrss">
-										<p>RRSS</p>
-										<input class="claseinput" id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
-										<input class="claseinput" id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
-										<input class="claseinput" id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-										<input class="claseinput" id="Otros" type="text" name="Otros" placeholder="Otros">
+										<div class="rrss">
+									<textarea class="extracto-text" maxlength=650px name="extracto" rows="8" cols="80" placeholder="Extracto"></textarea>
+											<p>RRSS</p>
+											<input class="claseinput" id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
+											<input class="claseinput" id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
+											<input class="claseinput" id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
+											<input class="claseinput" id="Otros" type="text" name="Otros" placeholder="Otros">
+										</div>
 									</div>
 								</div>
 								<hr class="line">
@@ -171,7 +176,7 @@
 											<label class="label" for="hasta">Hasta</label>
 											<select id="end_month" name="end_month" class="month">
 											</select>
-											<select id="start_year" name="start_year" class="year">
+											<select id="end_year" name="end_year" class="year">
 											</select>
 
 											<div class="actualidad">
@@ -212,7 +217,7 @@
 											<label class="label" for="hasta">Hasta</label>
 											<select id="end_month" name="end_month" class="month">
 											</select>
-											<select id="start_year" name="start_year" class="year">
+											<select id="end_year" name="end_year" class="year">
 											</select>
 											<div class="actualidad">
 												<label for="actualidad" class="present-button-p">Actualidad</label>
@@ -258,20 +263,27 @@
 											</div>
 											<button type="button" name="button" class="new-language-button">Nuevo idioma</button>
 										</div>
-										<div class="it">
-											<p>Programas informáticos</p>
-											<div class="it-element">
-												<label class="label" for="it-name1"></label>
-												<input class="it-name claseinput" id="it-name1" type="text" name="it-name" placeholder="Tecnología 1">
-												<select id="level" name="level" class="level">
-													<option value="nivel">Nivel</option>
-													<option >--</option>
-													<option>Básico</option>
-													<option>Intermedio</option>
-													<option>Alto</option>
-												</select>
+												<div class="it">
+												<p>Programas informáticos</p>
+												<div class="it-element">
+													<label class="label" for="it-name1"></label>
+													<input class="it-name claseinput" id="it-name1" type="text" name="it-name" placeholder="Tecnología 1">
+														<select id="level" name="level" class="level">
+														  <option value="nivel">Nivel</option>
+															<option >--</option>
+															<option>Básico</option>
+															<option>Intermedio</option>
+															<option>Alto</option>
+													</select>
+												</div>
+												<button type="button" name="button" class="new-it-button">Nuevo programa informático</button>
 											</div>
-											<button type="button" name="button" class="new-it-button">Nuevo programa informático</button>
+											<div class="various-skills">
+												<p>Destrezas</p>
+												<label class="label" for="skill-element1"></label>
+												<input class="skill-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
+												<button type="button" name="button" class="new-skill-button">Nueva destreza</button>
+											</div>
 										</div>
 										<div class="various-skills">
 											<p>Destrezas</p>

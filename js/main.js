@@ -71,7 +71,6 @@ for (var i = 0; i < yearsAll.length; i++) {
 };
 
 
-
 var inputFile = document.querySelector('#files');
 var trigger = document.querySelector('.trigger');
 
@@ -113,7 +112,7 @@ inputFile.addEventListener('change', archivo);
 
 
 
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
 var idLanguageModifier = 2;
 function addItemLanguage() {
 	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
@@ -150,20 +149,6 @@ newItButton.addEventListener('click',addItemIt);
 
 
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
-// var idSkillModifier = 2;
-// function addItemSkill() {
-// 	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
-//
-// 	var skillElement = document.querySelector('.skill-element');
-//
-// 	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
-//
-// 	idSkillModifier++;
-// }
-//
-// var newSkillButton = document.querySelector('.new-skill-button');
-// newSkillButton.addEventListener('click',addItemSkill);
-
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)NO FUNCIONAAAAAAAAAAAAAAAA
 var idSkillModifier = 2;
 function addItemSkills() {
@@ -179,6 +164,4 @@ function addItemSkills() {
 var newSkillButton = document.querySelector('.new-skill-button');
 newSkillButton.addEventListener('click',addItemSkills);
 
-
-// var openSkillsButton= document.querySelector('.boton-abrir-skills');
-// openSkillsButton.addEventListener('click', abrir);
+var openSkillsButton= document.querySelector('.boton-abrir-skills');

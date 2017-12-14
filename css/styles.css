@@ -3,8 +3,11 @@
 /*font-family: 'Fira Sans', sans-serif;
 font-family: 'Cookie', cursive;
 font-family: 'Philosopher', sans-serif;*/
-
 @import url('https://fonts.googleapis.com/css?family=Cookie|Fira+Sans:400,700|Philosopher:400,700');
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	width: 100%;
@@ -327,7 +330,9 @@ main {
 	align-items: center;
 	justify-content: space-around;
 }
-
+.claseinput-img {
+	margin-bottom: 10px;
+}
 .foto {
 	display: none;
 }
@@ -393,7 +398,7 @@ fieldset {
 	width: 20px;
 }
 
-.claseinput, .description, .experience-text {
+.claseinput, .description, .experience-text, .extracto-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -403,11 +408,14 @@ fieldset {
 	width: 80%;
 }
 
+.description, .experience-text, .extracto-text {
 
-.description, .experience-text {
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
+}
+.fill {
+	margin:0 0 0 6px;
 }
 
 /*EXPERIENCE*/
@@ -661,10 +669,10 @@ footer {
 
 @media all and (min-width:768px) {
 	.title-on-cover-main {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.instructions-paragraph p {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.steps-band {
 		padding: 8em 0em;
@@ -677,7 +685,7 @@ footer {
 		width: 45%;
 	}
 	.span-step {
-		font-size: 25px;
+		font-size: 20px;
 		padding-top: 2em;
 	}
 	.footer-list {
@@ -690,7 +698,14 @@ footer {
 		padding-right: 10px;
 	}
 	.claseinput, .h3-form {
-		font-size: 30px;
+		font-size: 22px;
+	}
+	.sube {
+		font-size: 22px;
+	}
+	.claseinput-img {
+		font-size: 15px;
+		margin-bottom: 10px;
 	}
 	.boton-abrir, .boton-cerrar {
 		width: 30px;
@@ -758,4 +773,7 @@ footer {
 	}
 	.actualidad {
 		margin-left: 20px;
+}
+#end_month, #end_year {
+	margin: 0.5px;
 }
