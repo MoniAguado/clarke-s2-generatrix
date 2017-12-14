@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="icon" type="images/png" href="/images/untitled(12).png" />
 	<title>Generatrix</title>
 </head>
 
@@ -19,25 +20,6 @@
 						<li><a href="index.html#diseño">Diseño</a></li>
 						<li><a href="index.html#form">Completa tu CV</a></li>
 						<li><a href="index.html#previo">Previsualización</a></li>
-						<!-- <li><button class="button">SIGN IN</button></li> -->
-	<!-- Esta es la parte de Sign in, por si queremos añadirlo más tarde
-							<div class="register">
-								<form class="form-sign">
-									<div>
-										<label class="user">Usuario</label>
-										<input id="userid" name="usuario" type="text" placeholder="Nombre de usuario" required>
-									</div>
-									<div>
-										<label class="password">Contraseña</label>
-										<input id="passwordid" name="usuario" type="password" placeholder="Contraseña" required>
-									</div>
-									<div>
-										<input id="submit" name="submit" type="submit" class="submit">
-									</div>
-
-								</form>
-							</div>
--->
 					</ul>
 				</nav><a href="index.html">
 			<img src="images/untitled.png" alt="Generatrix" class="logo"> </a>
@@ -119,8 +101,8 @@
 			</section>
 <!-- ADD FILES -->
 			<section class="section3photo">
-				<label class="label" for="files">Sube tu foto</label>
-				<input class="claseinput" type="file" id="files" name="files[]" class="foto"/>
+				<label class="label sube" for="files">Sube tu foto</label>
+				<input class="claseinput-img" type="file" id="files" name="files[]" class="foto"/>
 				<div class="trigger"></div>
 			</section>
 				<section class="section5form">
@@ -133,8 +115,7 @@
 									<h3 class="h3-form">Datos personales</h3>
 									<!--botones colapsable-->
 									<div class="form-section-button">
-										<img src="images/plus.png" class="boton-abrir" onclick="abrir('personal-information')" alt="abrir">
-										<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('personal-information')" alt="cerrar">
+										<img src="images/plus.png" id='boton-abrir' class="boton-abrir" alt="abrir" data-idDesplegar="personal-information">
 									</div>
 								</div>
 								<!--oculto-->
@@ -143,6 +124,8 @@
 									<input class="claseinput" id="name" type="text" name="name" placeholder="Nombre*" required>
 									<label class="label" for="surname"></label>
 									<input class="claseinput" id="surname" type="text" name="surname" placeholder="Apellidos*" required>
+									<label class="label" for="profesion"></label>
+									<input class="claseinput" id="profesion" type="text" name="name" placeholder="Profesión*" required>
 									<label class="label" for="telephone"></label>
 									<input class="claseinput" id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
 									<label class="label" for="date"></label>
@@ -152,13 +135,13 @@
 									<label class="label" for="address"></label>
 									<input class="claseinput" id="address" type="text" name="address" placeholder="Dirección">
 										<div class="rrss">
+									<textarea class="extracto-text" maxlength=650px name="extracto" rows="8" cols="80" placeholder="Extracto"></textarea>
 											<p>RRSS</p>
 											<input class="claseinput" id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
 											<input class="claseinput" id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
 											<input class="claseinput" id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
 											<input class="claseinput" id="Otros" type="text" name="Otros" placeholder="Otros">
 										</div>
-										<button class="fill" onclick="completar()" value="rellenar">RELLENAR</button>
 									</div>
 									<hr class="line">
 							</fieldset>
@@ -170,8 +153,7 @@
 										<h3 class="h3-form">Experiencia Profesional</h3>
 										<!--botones colapsable-->
 										<div class="form-section-buttons">
-											<img src="images/plus.png" class="boton-abrir" onclick="abrir('experience')" alt="abrir">
-											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('experience')" alt="cerrar">
+											<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="experience" alt="abrir">
 										</div>
 									</div>
 									<!--oculto-->
@@ -190,7 +172,7 @@
 											<label class="label" for="hasta">Hasta</label>
 											<select id="end_month" name="end_month" class="month">
 											</select>
-											<select id="start_year" name="start_year" class="year">
+											<select id="end_year" name="end_year" class="year">
 											</select>
 
 											<div class="actualidad">
@@ -212,8 +194,7 @@
 											<h3 class="h3-form">Formación</h3>
 											<!--botones colapsable-->
 											<div class="form-section-buttons">
-												<img src="images/plus.png" class="boton-abrir" onclick="abrir('formation')" alt="abrir">
-												<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('formation')" alt="cerrar">
+												<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="formation" alt="abrir">
 											</div>
 										</div>
 									<!--oculto-->
@@ -232,7 +213,7 @@
 											<label class="label" for="hasta">Hasta</label>
 											<select id="end_month" name="end_month" class="month">
 											</select>
-											<select id="start_year" name="start_year" class="year">
+											<select id="end_year" name="end_year" class="year">
 											</select>
 												<div class="actualidad">
 											<label for="actualidad" class="present-button-p">Actualidad</label>
@@ -255,8 +236,8 @@
 											<h3 class="h3-form">Habilidades</h3>
 									<!--botones colapsable-->
 										<div class="form-section-buttons">
-											<img src="images/plus.png" class="boton-abrir boton-abrir-skills" onclick="abrir('skills')" alt="abrir">
-											<img src="images/minus-sign-in-a-circle.png" class="boton-cerrar" onclick="cerrar('skills')" alt="cerrar">
+											<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="skills" alt="abrir">
+
 										</div>
 									</div>
 								<!--oculto-->
@@ -275,7 +256,9 @@
 															<option>Alto</option>
 															<option>Nativo</option>
 													</select>
-													</div>
+												</div>
+											<button type="button" name="button" class="new-language-button">Nuevo idioma</button>
+											</div>
 												<div class="it">
 												<p>Programas informáticos</p>
 												<div class="it-element">
@@ -289,12 +272,13 @@
 															<option>Alto</option>
 													</select>
 												</div>
-
+												<button type="button" name="button" class="new-it-button">Nuevo programa informático</button>
+											</div>
 											<div class="various-skills">
 												<p>Destrezas</p>
 												<label class="label" for="skill-element1"></label>
-												<input class="skill-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Habilidad 1">
-
+												<input class="skill-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
+												<button type="button" name="button" class="new-skill-button">Nueva destreza</button>
 											</div>
 										</div>
 									</div>
@@ -333,7 +317,6 @@
 								<div><span id="description-id"></span></div>
 							</div>
 						</div>
-
 						<div class="preview-formation preview-div">
 						</div>
 

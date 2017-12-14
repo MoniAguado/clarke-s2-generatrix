@@ -4,6 +4,9 @@
 font-family: 'Cookie', cursive;
 font-family: 'Philosopher', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Cookie|Fira+Sans:400,700|Philosopher:400,700');
+* {
+	box-sizing: border-box;
+}
 
 body {
 	margin: 0;
@@ -86,12 +89,20 @@ main {
 	height: 40px;
 }
 
+.burger ul {
+	margin-top: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+
 .burger ul li {
 	list-style: none;
 	border-bottom: #31B89A;
 	border-width: 1px;
 	width: 150px;
 	height: 30px;
+	line-height: 30px;
 	background-color: #424A5F;
 	padding: 0;
 	margin: 0;
@@ -101,7 +112,7 @@ main {
 	text-decoration: none;
 	color: #E7ECED;
 	padding: 10px;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 
 .list-burger {
@@ -196,7 +207,7 @@ main {
 	height: 106px;
 }
 
-.design-options-font, .design-options-colour, .design-options-theme  {
+.design-options-font, .design-options-colour, .design-options-theme {
 	cursor: context-menu;
 	border-color: #424A5F;
 	border-width: 3px;
@@ -221,9 +232,11 @@ main {
 .design-options-font:hover .fonts {
 	display: block;
 }
+
 .design-options-colour:hover .colours {
 	display: block;
 }
+
 .design-options-theme:hover .themes {
 	display: block;
 }
@@ -241,12 +254,15 @@ main {
 	list-style: none;
 	border-radius: 7px;
 }
+
 .font:hover {
 	background: #55607F;
 }
-.font + .font {
+
+.font+.font {
 	border-top: 1px solid #EAB931;
 }
+
 .red, .green, .lime, .black, .blue, .pink, .grey {
 	border-radius: 30px;
 	width: 20px;
@@ -280,18 +296,23 @@ main {
 .grey{
 	background: rgb(129, 126, 126);
 }
+
 .colour:hover {
 	background: #55607F;
 }
-.colour + .colour {
+
+.colour+.colour {
 	border-top: 1px solid #EAB931;
 }
+
 .theme:hover {
 	background: #55607F;
 }
-.theme + .theme {
+
+.theme+.theme {
 	border-top: 1px solid #EAB931;
 }
+
 /*SECTION IMAGE*/
 
 .section3photo {
@@ -301,7 +322,9 @@ main {
 	display: flex;
 	flex-direction: column;
 }
-
+.claseinput-img {
+	margin-bottom: 10px;
+}
 .foto {
 	display: none;
 }
@@ -362,7 +385,7 @@ fieldset {
 	width: 20px;
 }
 
-.claseinput, .description, .experience-text {
+.claseinput, .description, .experience-text, .extracto-text {
 	display: block;
 	border-radius: 5px;
 	background: #E7ECED;
@@ -372,10 +395,13 @@ fieldset {
 	width: 80%;
 }
 
-.description, .experience-text {
+.description, .experience-text, .extracto-text {
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
+}
+.fill {
+	margin:0 0 0 6px;
 }
 
 /*EXPERIENCE*/
@@ -572,10 +598,10 @@ footer {
 
 @media all and (min-width:768px) {
 	.title-on-cover-main {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.instructions-paragraph p {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.steps-band {
 		padding: 8em 0em;
@@ -588,7 +614,7 @@ footer {
 		width: 45%;
 	}
 	.span-step {
-		font-size: 25px;
+		font-size: 20px;
 		padding-top: 2em;
 	}
 	.footer-list {
@@ -601,7 +627,14 @@ footer {
 		padding-right: 10px;
 	}
 	.claseinput, .h3-form {
-		font-size: 30px;
+		font-size: 22px;
+	}
+	.sube {
+		font-size: 22px;
+	}
+	.claseinput-img {
+		font-size: 15px;
+		margin-bottom: 10px;
 	}
 	.boton-abrir, .boton-cerrar {
 		width: 30px;
@@ -645,6 +678,7 @@ footer {
 		background-color: #E7ECED;
 	}
 }
+
 @media all and (min-width:622px){
 	.formation-dates, .experience-dates {
 		display: flex;
@@ -667,4 +701,7 @@ footer {
 	}
 	.actualidad {
 		margin-left: 20px;
+}
+#end_month, #end_year {
+	margin: 0.5px;
 }
