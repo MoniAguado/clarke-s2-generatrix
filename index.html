@@ -140,7 +140,7 @@
 									<label class="label" for="address"></label>
 									<input class="claseinput" id="address" type="text" name="address" placeholder="Dirección">
 										<div class="rrss">
-									<textarea class="extracto-text" maxlength=650px name="extracto" rows="8" cols="80" placeholder="Extracto"></textarea>
+									<textarea class="extracto-text" maxlength=650px name="extracto" id="extracto" rows="8" cols="80" placeholder="Extracto"></textarea>
 											<p>RRSS</p>
 											<input class="claseinput" id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
 											<input class="claseinput" id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
@@ -160,6 +160,7 @@
 									<div class="form-section-buttons">
 										<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="experience" alt="abrir">
 									</div>
+								</div>
 									<!--oculto-->
 									<div id="experience">
 										<div class="experience-element" id="experience-element">
@@ -188,10 +189,10 @@
 											<textarea class="experience-text" id="description" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
 											<button type="button" name="button" class="save-experience-button">Guardar</button>
 										</div>
-									<button type="button" name="button" class="new-experience-button">Nueva experiencia profesional</button>
-								</div>
-									<hr class="line">
-								</fieldset>
+										<button type="button" name="button" class="new-experience-button">Nueva experiencia profesional</button>
+									</div>
+								<hr class="line">
+							</fieldset>
 
 			<!-- FORMATION -->
 								<fieldset class="formation">
@@ -310,11 +311,6 @@
 			</section>
 			</section>
 
-
-
-
-
-
 			<section class="col2" id="previo">
 				<h2 class="preview-title"> Previsualización </h2>
 <!-- DATOS PERSONALES + IMAGEN -->
@@ -329,15 +325,15 @@
 								<div class="preview-data-div preview-text">
 									<div class="nombre-preview"><span id="name-preview-id"></span></div>
 									<div class="apellido-preview"><span id="surname-preview-id"></span></div>
-									<div class="cargo-preview">Social Media<span id="jobtitle-preview-id"></span></div>
+									<div class="cargo-preview"><span id="jobtitle-preview-id"></span></div>
 								</div>
 							</div>
 							<div class="cuadro-direccion">
 								<div class="preview-data-div preview-text">
-									<div class="telefono-preview">663444526<span id="phone-preview-id"></span></div>
-									<div class="nacimiento-preview">17/17/1985<span id="birthdate-preview-id"></span></div>
-									<div class="email">maguado85@gmail.com<span id="email-preview-id"></span></div>
-									<div class="direccion">Alberto Aguilera 5, 31 izda<span id="address-preview-id"></span></div>
+									<div class="telefono-preview"><span id="phone-preview-id"></span></div>
+									<div class="nacimiento-preview"><span id="birthdate-preview-id"></span></div>
+									<div class="email"><span id="email-preview-id"></span></div>
+									<div class="direccion"><span id="address-preview-id"></span></div>
 								</div>
 							</div>
 						</div>
@@ -349,7 +345,7 @@
 							<h1>Extracto</h1>
 						</div>
 							<div class="cuadro-extract preview-text">
-									<div class="preview-extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									<div class="preview-extract" id="extracto-preview-id">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 									</div>
 									<div class="preview-rrss">
 										<div><span id="twitter-preview-id">@moniaguado</span></div>
@@ -399,15 +395,15 @@
 						<div class="item-skills-preview preview-text">
 							<div class="languages-preview">
 								<img src="images/speak.png" class="talk-icon">
-								<div class="language-selection"><span id="language-selection-id">Inglés:<br>Alto</span></div>
+								<div class="language-selection"><span id="language-name1-preview-id"></span><span> | </span><span id="language-level1-preview-id"></span></div>
 							</div>
 							<div class="it-preview">
 								<img src="images/computer-monitor-and-mouse.png" class="it-icon">
-								<div class="it-selection"><span id="it-selection-id">Front-end:<br> Alto</span></div>
+								<div class="it-selection"><span id="it-name1-preview-id"></span><span> | </span ><span id="it-level1-preview-id"></span></div>
 							</div>
 							<div class="bonus-preview">
 								<img src="images/settings.png" class="bonus-icon">
-								<div class="bonus-selection"><span id="bonus-selection-id">Ukelele<br>Estrategia</span></div>
+								<div class="bonus-selection"><span id="skill-element1-preview-id"></span></div>
 							</div>
 						</div>
 					</div>

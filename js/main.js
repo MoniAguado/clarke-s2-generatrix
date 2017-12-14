@@ -171,11 +171,12 @@ for (var i = 0; i < yearsAll.length; i++) {
 function printPersonalDataToPreview() {
  	document.getElementById('name-preview-id').innerHTML = document.getElementById('name').value;
 	document.getElementById('surname-preview-id').innerHTML = document.getElementById('surname').value;
+	document.getElementById('jobtitle-preview-id').innerHTML = document.getElementById('profesion').value;
 	document.getElementById('phone-preview-id').innerHTML = document.getElementById('telephone').value;
 	document.getElementById('birthdate-preview-id').innerHTML = document.getElementById('date').value;
 	document.getElementById('email-preview-id').innerHTML = document.getElementById('email').value;
 	document.getElementById('address-preview-id').innerHTML = document.getElementById('address').value;
-
+	document.getElementById('extracto-preview-id').innerHTML = document.getElementById('extracto').value;
 	document.getElementById('twitter-preview-id').innerHTML = document.getElementById('Twitter').value;
 	document.getElementById('linkedin-preview-id').innerHTML = document.getElementById('Linkedin').value;
 	document.getElementById('facebook-preview-id').innerHTML = document.getElementById('Facebook').value;
@@ -266,7 +267,7 @@ document.querySelector('.new-formation-button').addEventListener('click',addItem
 var idLanguageModifier = 2;
 function addItemLanguage() {
 	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
-	repeatedItemLanguage+= '<input class="language-name" id="language-name' + idLanguageModifier + '" type="text" name="language-name" placeholder="Idioma ' + idLanguageModifier +'">';
+	repeatedItemLanguage+= '<input class="language-name claseinput" id="language-name' + idLanguageModifier + '" type="text" name="language-name" placeholder="Idioma ' + idLanguageModifier +'">';
 	repeatedItemLanguage+= '<select id="level" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option><option>Nativo</option></select>';
 	repeatedItemLanguage+= '</div>';
 
@@ -285,7 +286,7 @@ newLanguageButton.addEventListener('click',addItemLanguage);
 // // GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)__________________________
 var idItModifier = 2;
 function addItemIt() {
-	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><select id="it-level' + idItModifier + '" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option></select></div>';
+	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name claseinput" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><select id="it-level' + idItModifier + '" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option></select></div>';
 
 	var itElement = document.querySelector('.it-element');
 
