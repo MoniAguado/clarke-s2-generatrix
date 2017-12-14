@@ -656,7 +656,7 @@ h1 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
-	margin: 0;
+	margin-top: 10px;
 }
 .preview-extract {
 	width: 60%;
