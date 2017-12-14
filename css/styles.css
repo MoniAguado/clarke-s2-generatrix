@@ -1,9 +1,11 @@
 /*azul marino: #424A5F; AZUL: #55607F; AZUL CLARO: #E7ECED; AMARILLO: #EAB931; VERDE: #31B89A */
 
-/*font-family: 'Fira Sans', sans-serif;
+/*font-family: 'annie', sans-serif;
 font-family: 'Cookie', cursive;
 font-family: 'Philosopher', sans-serif;*/
-@import url('https://fonts.googleapis.com/css?family=Cookie|Fira+Sans:400,700|Philosopher:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Philosopher:400,700');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope%7CLeckerli+One');
+
 * {
 	box-sizing: border-box;
 }
@@ -553,14 +555,14 @@ fieldset {
 	font-family: 'arial';
 	font-size: 1em;
 }
-/*Fira*/
-.fira .preview-title{
-	font-family: 'Fira';
+/*annie*/
+.annie .preview-title{
+	font-family: 'Leckerli One';
 	font-size: 1em;
 	font-weight: 700;
 }
-.fira .preview-text{
-	font-family: 'Fira';
+.annie .preview-text{
+	font-family: 'Annie Use Your Telescope';
 	font-size: 1em;
 }
 /*Philosopher*/

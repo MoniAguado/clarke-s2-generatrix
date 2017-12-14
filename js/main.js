@@ -17,7 +17,7 @@ var preview = document.querySelector('.showpreview');
 var fonts = document.querySelectorAll('.font');
 
 function cleanFontClasses() {
-  preview.classList.remove('cookie', 'fira', 'philosopher');
+  preview.classList.remove('cookie', 'annie', 'philosopher');
 }
 
 function applyFont(event){
