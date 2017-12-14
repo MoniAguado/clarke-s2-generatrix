@@ -494,6 +494,7 @@ fieldset {
 	background-size: 100%;
 	display: flex;
 	flex-direction: column;
+	padding: 8%;
 }
 
 .preview-header {
@@ -553,6 +554,8 @@ fieldset {
 .preview-photo-div .thumb {
 	width: 100%;
 	border-radius: 100px;
+	width: 70px;
+	height: 70px;
 }
 
 .preview-data {
