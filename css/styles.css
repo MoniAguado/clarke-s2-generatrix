@@ -21,6 +21,17 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.background-header {
+	background-image: url("../images/cover_mobile2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+}
+.cover {
+	height: 300px;
+}
+
 main {
 	flex: 1;
 	padding-top: 80px;
@@ -736,25 +747,40 @@ footer {
 }
 
 @media all and (min-width:768px) {
+	.background-header {
+		background-image: url("../images/desktop.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 500px;
+	}
+	.cover {
+		height: 600px;
+	}
+
 	.title-on-cover-main {
-		font-size: 40px;
+		font-size: 45px;
+		padding: 35px 0 35px 0;
+		top:50px;
 	}
 	.instructions-paragraph p {
 		font-size: 20px;
 	}
 	.steps-band {
-		padding: 8em 0em;
+		padding: 2.5em 0em 2em 0em;
 		width: auto;
 	}
 	.img-step-element {
-		min-width: 90%;
+			height:120px;
+			margin: auto;
+			width: auto;
 	}
 	.step-element {
 		width: 45%;
 	}
 	.span-step {
 		font-size: 20px;
-		padding-top: 2em;
+		padding-top: 1.2em;
 	}
 	.footer-list {
 		display: flex;
