@@ -7,7 +7,6 @@ font-family: 'Philosopher', sans-serif;*/
 * {
 	box-sizing: border-box;
 }
-
 body {
 	margin: 0;
 	width: 100%;
@@ -142,6 +141,7 @@ main {
 .main-img-section1 {
 	width: 100%;
 	height: auto;
+	margin-top: -5px;
 }
 
 .instructions-paragraph {
@@ -175,7 +175,7 @@ main {
 .img-step-element {
 	display: block;
 	width: 80px;
-	height: 80px;
+	height: 120px;
 	margin: auto;
 	filter: opacity(0.3);
 }
@@ -190,11 +190,12 @@ main {
 
 .section2design {
 	background: #31B89A;
-	height: 106px;
+	height:auto;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 2% 0 2% 0;
 }
 
 .design-options {
@@ -208,11 +209,13 @@ main {
 
 .design-options-font, .design-options-colour, .design-options-theme {
 	cursor: context-menu;
-	border-color: #424A5F;
+	/*border-color: #424A5F;*/
+	border-color: #31B89A ;
 	border-width: 3px;
 	border-style: solid;
 	padding: 0;
-	height: 100px;
+	height: auto;
+
 }
 
 .design-img {
@@ -456,7 +459,9 @@ fieldset {
 	background-color: #E7ECED;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	margin-left: 5%;
+	width: 50%;
 }
 
 .preview-title {
@@ -534,16 +539,20 @@ footer {
 	height: auto;
 	/*86px*/
 }
+#end_month, #end_year {
+	margin: 0.8px;
+}
 
 @media all and (min-width:768px) {
 	.title-on-cover-main {
-		font-size: 40px;
+		font-size: 55px;
+		padding: 25px 0 25px 0;
 	}
 	.instructions-paragraph p {
 		font-size: 20px;
 	}
 	.steps-band {
-		padding: 8em 0em;
+		padding: 2em 0em;
 		width: auto;
 	}
 	.img-step-element {
@@ -554,7 +563,7 @@ footer {
 	}
 	.span-step {
 		font-size: 20px;
-		padding-top: 2em;
+		padding-top: 1em;
 	}
 	.footer-list {
 		display: flex;
@@ -580,20 +589,23 @@ footer {
 		height: auto;
 	}
 	.section2design {
-		height: 220px;
+		height: 150px;
 	}
 	.design-options {
-		height: 206px;
+		height: 106px;
 	}
 	.design-options-font, .design-options-colour, .design-options-theme {
-		height: 200px;
+		/*height: 200px;*/
+		padding: 0;
 	}
 	.design-img {
-		width: 200px;
-		height: 200px;
+		width: 75%;
+
+		/*height: 190px;*/
+		margin-right: 15px;
 	}
 	.fonts, .colours, .themes {
-		width: 200px;
+		width: 100px;
 		height: auto;
 	}
 	.font, .colour, .theme {
@@ -614,10 +626,10 @@ footer {
 		display: flex;
 		flex-direction: row;
 		padding: 0 3%;
-		justify-content: space-between;
 		background-color: #E7ECED;
 	}
 }
+
 
 @media all and (min-width:622px){
 	.formation-dates, .experience-dates {
@@ -643,5 +655,5 @@ footer {
 		margin-left: 20px;
 }
 #end_month, #end_year {
-	margin: 0.5px;
+	margin: 0.9px;
 }
