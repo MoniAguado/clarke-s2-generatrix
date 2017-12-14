@@ -10,16 +10,81 @@ function openClose(idContent) {
 	}
 }
 
+
+//Elegir estilos para curriculum
+var preview = document.querySelector('.showpreview');
+//Letra
+var fonts = document.querySelectorAll('.font');
+
+function cleanFontClasses() {
+  preview.classList.remove('cookie', 'annie', 'philosopher');
+}
+
+function applyFont(event){
+	var fontClass = event.currentTarget.getAttribute('data-font-class');
+  cleanFontClasses();
+  preview.classList.add(fontClass);
+}
+
+for (var i = 0; i < fonts.length; i++) {
+  fonts[i].addEventListener('click', applyFont);
+}
+//Colores
+var colours = document.querySelectorAll('.colour');
+
+function cleanColourClasses() {
+  preview.classList.remove('red-green-lime', 'black-blue-lime', 'black-pink-grey');
+}
+
+function applyColour(event){
+  var colourClass = event.currentTarget.getAttribute('data-colour-class');
+  cleanColourClasses();
+  preview.classList.add(colourClass);
+}
+
+for (var i = 0; i < colours.length; i++) {
+  colours[i].addEventListener('click', applyColour);
+}
+
+//temas
+var themes = document.querySelectorAll('.theme');
+
+function cleanThemeClasses() {
+  preview.classList.remove('dots', 'stripes', 'zigZag');
+}
+
+function applyTheme(event){
+  var themeClass = event.currentTarget.getAttribute('data-theme-class');
+  cleanThemeClasses();
+  preview.classList.add(themeClass);
+}
+
+for (var i = 0; i < themes.length; i++) {
+  themes[i].addEventListener('click', applyTheme);
+}
+
 //función para desplegar sección
 
-function abrir(idContent){
-document.getElementById(idContent).style.display = 'block';
+
+// desplegables sin onclick
+var botones = document.querySelectorAll('.boton-abrir');
+function desplegable(event){
+	// llamo al evento
+	// currentTarget coge el elemento (en este caso un boton) que dispara el evento. Le ponemos data-plus porque queremos que busque la id del elemento que tiene que mostrar
+	var plusId = event.currentTarget.getAttribute('data-idDesplegar');
+	// data-plus: identificador del elemento, que queremos que se replique en el resto de elementos
+	// hacemos una variable para crear el selector, event.currentTarget es el elemento que dispara el evento (hacer click)
+	var cuadro = document.getElementById(plusId);
+	if (cuadro.style.display == 'block'){
+		cuadro.style.display = 'none';
+	} else {
+		cuadro.style.display = 'block';
+	}
+}
+for (i=0; i<botones.length; i++){
+	botones[i].addEventListener('click', desplegable);
 }
 
-//función para cerrar sección
-function cerrar(idContent){
-document.getElementById(idContent).style.display = 'none';
-}
 
 //función para meses
 function selectMonths() {
@@ -63,6 +128,45 @@ for (var i = 0; i < yearsAll.length; i++) {
 };
 
 
+
+//
+// // hacemos clic en trigger y llamamos a la funcion
+// trigger.addEventListener('click', simularClic);
+//
+// // función para que simule un clic en input
+//
+// function simularClic(){
+// 	inputFile.click();
+// }
+//
+// function archivo(evt) {
+// 	console.log('hola')
+// 	var files = evt.target.files; // FileList object
+//
+// 	//Obtenemos la imagen del campo "file".
+// 	for (var i = 0, f; f = files[i]; i++) {
+// 		//Solo admitimos imágenes.
+// 		if (!f.type.match('image.*')) {
+// 			continue;
+// 		}
+//
+// 		var reader = new FileReader();
+//
+// 		reader.onload = (function(theFile) {
+// 			return function(e) {
+// 				// Creamos la imagen.
+// 				trigger.style = "background-image:url(" + e.target.result + ");";
+// 				document.querySelector(".preview-photo-div").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+// 			};
+// 		})(f);
+//
+// 		reader.readAsDataURL(f);
+// 	}
+// }
+//
+// inputFile.addEventListener('change', archivo);
+
+
 // SECCIÓN GUARDAR DATOS FORMULARIO EN PREVIEW (4FUNCIONES)
 function printPersonalDataToPreview() {
  	document.getElementById('name-preview-id').innerHTML = document.getElementById('name').value;
@@ -72,10 +176,9 @@ function printPersonalDataToPreview() {
 	document.getElementById('email-preview-id').innerHTML = document.getElementById('email').value;
 	document.getElementById('address-preview-id').innerHTML = document.getElementById('address').value;
 
-	// document.getElementById('Twitter-preview-id').innerHTML = document.getElementById('Twitter').value;
-	// document.getElementById('Linkedin-preview-id').innerHTML = document.getElementById('Linkedin').value;
-	// document.getElementById('Facebook-preview-id').innerHTML = document.getElementById('Facebook').value;
-	// document.getElementById('Otros-preview-id').innerHTML = document.getElementById('Otros').value;
+	document.getElementById('twitter-preview-id').innerHTML = document.getElementById('Twitter').value;
+	document.getElementById('linkedin-preview-id').innerHTML = document.getElementById('Linkedin').value;
+	document.getElementById('facebook-preview-id').innerHTML = document.getElementById('Facebook').value;
 }
 document.querySelector('.save-data-button').addEventListener('click',printPersonalDataToPreview);
 
@@ -99,34 +202,34 @@ function printProfessionalExperienceToPreview() {
 document.querySelector('.save-experience-button').addEventListener('click',printProfessionalExperienceToPreview);
 
 
-// function printFormationToPreview() {
-// 	document.getElementById('titulo-preview-id').innerHTML = document.getElementById('titulo').value;
-// 	document.getElementById('from-formation-preview-id').innerHTML =
-// 	document.getElementById('start_month-formation').value + ' ' +
-// 	document.getElementById('start_year-formation').value;
-// 	if (document.getElementById('actualidad-formation').checked) {
-// 		document.getElementById('until-formation-preview-id').innerHTML = 'Diciembre 2017';
-// 	}
-// 	else {
-// 		document.getElementById('until-formation-preview-id').innerHTML =
-// 		document.getElementById('end_month-formation').value + ' ' +
-// 		document.getElementById('end_year-formation').value;
-// 	}
-// 	document.getElementById('centro-id').innerHTML = document.getElementById('centro').value;
-// 	document.getElementById('description-formation-preview-id').innerHTML = document.getElementById('description-formation').value;
-// }
-// document.querySelector('.save-formation-button').addEventListener('click',printFormationToPreview);
+function printFormationToPreview() {
+	document.getElementById('titulo-preview-id').innerHTML = document.getElementById('titulo').value;
+	document.getElementById('from-formation-preview-id').innerHTML =
+	document.getElementById('start_month-formation').value + ' ' +
+	document.getElementById('start_year-formation').value;
+	if (document.getElementById('actualidad-formation').checked) {
+		document.getElementById('until-formation-preview-id').innerHTML = 'Diciembre 2017';
+	}
+	else {
+		document.getElementById('until-formation-preview-id').innerHTML =
+		document.getElementById('end_month-formation').value + ' ' +
+		document.getElementById('end_year-formation').value;
+	}
+	document.getElementById('centro-id').innerHTML = document.getElementById('centro').value;
+	document.getElementById('description-formation-preview-id').innerHTML = document.getElementById('description-formation').value;
+}
+document.querySelector('.save-formation-button').addEventListener('click',printFormationToPreview);
 
-// function printSkillsToPreview() {
-// 	document.getElementById('language-name1-preview-id').innerHTML = document.getElementById('language-name1').value;
-// 	document.getElementById('language-level1-preview-id').innerHTML = document.getElementById('language-level1').value;
-//
-// 	document.getElementById('it-name1-preview-id').innerHTML = document.getElementById('it-name1').value;
-// 	document.getElementById('it-level1-preview-id').innerHTML = document.getElementById('it-level1').value;
-//
-// 	document.getElementById('skill-element1-preview-id').innerHTML = document.getElementById('skill-element1').value;
-// }
-// document.querySelector('.save-skills-button').addEventListener('click',printSkillsToPreview);
+function printSkillsToPreview() {
+	document.getElementById('language-name1-preview-id').innerHTML = document.getElementById('language-name1').value;
+	document.getElementById('language-level1-preview-id').innerHTML = document.getElementById('language-level1').value;
+
+	document.getElementById('it-name1-preview-id').innerHTML = document.getElementById('it-name1').value;
+	document.getElementById('it-level1-preview-id').innerHTML = document.getElementById('it-level1').value;
+
+	document.getElementById('skill-element1-preview-id').innerHTML = document.getElementById('skill-element1').value;
+}
+document.querySelector('.save-skills-button').addEventListener('click',printSkillsToPreview);
 
 
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (experience)_______________________
@@ -159,7 +262,7 @@ function addItemFormation() {
 document.querySelector('.new-formation-button').addEventListener('click',addItemFormation);
 
 
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)________________________
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
 var idLanguageModifier = 2;
 function addItemLanguage() {
 	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
