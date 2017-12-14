@@ -457,12 +457,11 @@ fieldset {
 
 /*PREVIEW*/
 
-.section5bpreview {
+.col2 {
 	background-color: #E7ECED;
-	margin: 20px;
 }
 
-.preview-title {
+.preview-title, .config-title {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
