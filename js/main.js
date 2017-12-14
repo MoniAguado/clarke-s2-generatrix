@@ -1,16 +1,16 @@
 'use strict'
-
 // burger
 
 function openClose(idContent) {
-	var burger = document.getElementById(idContent);
-	if (burger.style.display == 'block'){
-		burger.style.display ='none';
+  var burger = document.getElementById(idContent);
+  if (burger.style.display == 'block'){
+			burger.style.display ='none';
 	} else {
 		burger.style.display = 'block';
 	}
 }
 
+<<<<<<< HEAD
 
 //Elegir estilos para curriculum
 var preview = document.querySelector('.showpreview');
@@ -66,6 +66,8 @@ for (var i = 0; i < themes.length; i++) {
 
 //función para desplegar sección
 
+=======
+>>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 // desplegables sin onclick
 var botones = document.querySelectorAll('.boton-abrir');
 function desplegable(event){
@@ -85,11 +87,13 @@ for (i=0; i<botones.length; i++){
 	botones[i].addEventListener('click', desplegable);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 //función para meses
 function selectMonths() {
 	var options = '';
-
 	var months = document.querySelectorAll('.month');
   var meses = [
     "Enero",
@@ -114,7 +118,6 @@ var monthsAll = document.querySelectorAll('.month');
 for (var i = 0; i < monthsAll.length; i++) {
 	monthsAll[i].innerHTML = options;
 };
-
 }
 selectMonths();
 //función para años
@@ -122,13 +125,14 @@ var years = 2018;
 var selectYear = '';
 
 for (var i=1950; i<years; i++) {
-	selectYear = selectYear + '<option>' + (i) + '</option>';
+  selectYear = selectYear + '<option>' + (i) + '</option>';
 }
 var yearsAll = document.querySelectorAll('.year');
 for (var i = 0; i < yearsAll.length; i++) {
 	yearsAll[i].innerHTML = selectYear;
 };
 
+<<<<<<< HEAD
 
 
 // función para completar los campos del formulario
@@ -151,11 +155,14 @@ for (var i = 0; i < yearsAll.length; i++) {
 // };
 
 // IMAGEN
+=======
+>>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 
 
 var inputFile = document.querySelector('#files');
 var trigger = document.querySelector('.trigger');
 
+// hacemos clic en trigger y llamamos a la funcion
 trigger.addEventListener('click', simularClic);
 
 // función para que simule un clic en input
@@ -164,31 +171,33 @@ function simularClic(){
 	inputFile.click();
 }
 
+
 function archivo(evt) {
-         // imagen del campo "file".
- console.log('hola')
+	console.log('hola')
 	var files = evt.target.files; // FileList object
-	       //Obtenemos la imagen del campo "file".
-  for (var i = 0, f; f = files[i]; i++) {
-          //Solo admitimos imágenes.
-  if (!f.type.match('image.*')) {
-                  continue;
-             }
- 				 }
-  var reader = new FileReader();
-  reader.onload = (function(theFile) {
-      return function(e) {
-              // Creamos la imagen.
-        document.getElementById("file").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+
+	//Obtenemos la imagen del campo "file".
+	for (var i = 0, f; f = files[i]; i++) {
+		//Solo admitimos imágenes.
+		if (!f.type.match('image.*')) {
+			continue;
+		}
+
+		var reader = new FileReader();
+
+		reader.onload = (function(theFile) {
+			return function(e) {
+				// Creamos la imagen.
 				trigger.style = "background-image:url(" + e.target.result + ");";
-        document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-                 };
-             })(f);
-        reader.readAsDataURL(f);
-       }
-  inputFile.addEventListener('change', archivo);
+				document.querySelector(".preview-photo-div").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+			};
+		})(f);
 
+		reader.readAsDataURL(f);
+	}
+}
 
+inputFile.addEventListener('change', archivo);
 
 
 
@@ -243,6 +252,5 @@ function addItemSkills() {
 
 var newSkillButton = document.querySelector('.new-skill-button');
 newSkillButton.addEventListener('click',addItemSkills);
-
 
 var openSkillsButton= document.querySelector('.boton-abrir-skills');
