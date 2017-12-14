@@ -815,12 +815,12 @@ footer {
 		padding: 0 2%;
 		background-color: #E7ECED;
 	}
-}
 .col1, .col2 {
 	width: 50%;
 }
 .col2 {
 	margin-left: 2%;
+}
 }
 @media all and (min-width:622px){
 	.formation-dates, .experience-dates {
