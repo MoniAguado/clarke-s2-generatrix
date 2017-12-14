@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <!-- FAVICON -->
 	<head profile="http://www.w3.org/2005/10/profile">
-	<link rel="icon" type="images/png" href="/images/favicon.png" />
+	<link rel="icon" type="images/png" href="/images/favicon.png">
 	<title>Generatrix</title>
 </head>
 
@@ -17,20 +17,21 @@
 	<header>
 		<div class="header">
 			<nav class="burger">
-				<img src="images/menu-color.png" class="button-burger" onclick="annieClose('list-burger')" alt="menu">
+				<img src="images/menu-color.png" class="button-burger" onclick="openClose('list-burger')" alt="menu">
 				<ul class="list-burger" id="list-burger">
 					<li><a href="index.html#diseño">Diseño</a></li>
 					<li><a href="index.html#form">Completa tu CV</a></li>
 					<li><a href="index.html#previo">Previsualización</a></li>
 				</ul>
-			</nav><a href="index.html">
-				<div class="logo"></div>
+			</nav>
+				<div class="logo" a href="index.html"></div>
 			</div>
 		</header>
 
 		<main>
 			<div class="cover">
-				<img class="main-img-section1" src="images/cover_mobile2.png" alt="Imagen de portada">
+				<div class="background-header"> </div>
+				<!-- <img class="main-img-section1" src="images/cover_mobile2.png" alt="Imagen de portada"> -->
 				<h1 class="title-on-cover-main">Diseña tu CV sin perder tiempo</h1>
 			</div>
 			<section class="section1info">
@@ -56,7 +57,7 @@
 			</section>
 
 	<!-- DESING SECTION -->
-	<section class="main-block">
+	<section class="main-block" id="diseño">
 		<section class="col1">
 		<h2 class="config-title"> Configura tu curriculum </h2>
 	<section class="config">
@@ -109,7 +110,7 @@
 						<input class="selection-image" type="file" id="files" name="files[]" class="foto"/>
 						<div class="trigger"></div>
 					</section>
-					<section class="section5form">
+					<section class="section5form" id="form">
 						<form class="personal-information" action="index.html" method="post">
 
 							<!-- PERSONAL DATA -->
@@ -303,7 +304,7 @@
 			</section>
 
 
-			<section class="col2">
+			<section class="col2" id="previo">
 				<h2 class="preview-title"> Previsualización </h2>
 
 <!-- DATOS PERSONALES + IMAGEN -->

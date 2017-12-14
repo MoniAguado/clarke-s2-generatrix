@@ -141,7 +141,6 @@ function simularClic(){
 	inputFile.click();
 }
 
-
 function archivo(evt) {
 	console.log('hola')
 	var files = evt.target.files; // FileList object
