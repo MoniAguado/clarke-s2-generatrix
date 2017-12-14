@@ -198,7 +198,7 @@ main {
 
 .section2design {
 	background: #31B89A;
-	height: 106px;
+	height: 126px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -209,9 +209,11 @@ main {
 	position: relative;
 	list-style: none;
 	display: flex;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	height: 106px;
+	width: 80%
 }
 
 .design-options-font, .design-options-colour, .design-options-theme {
@@ -462,7 +464,7 @@ fieldset {
 
 
 
-.preview-title, .config-title {
+.preview-title, .config-title, .label {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
