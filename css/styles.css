@@ -21,23 +21,11 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-.background-header {
-	background-image: url("../images/cover_mobile2.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 250px;
-}
-.cover {
-	height: 300px;
-}
-
 main {
 	flex: 1;
 	padding-top: 80px;
 	min-height: 100vh;
 }
-
 .main-block {
 	display: flex;
 	flex-direction: column;
@@ -142,12 +130,11 @@ main {
 	display: none;
 }
 
-/*.line {
-	border: 2px solid;
-	border-bottom
-}*/
-
 /* SECTION2 INFO*/
+
+.imagen-desktop {
+	display: none;
+}
 
 .title-on-cover-main {
 	color: #EAB931;
@@ -194,15 +181,18 @@ main {
 .img-step-element {
 	display: block;
 	width: 80px;
-	height: 80px;
+	height: 60px;
 	margin: auto;
 	filter: opacity(0.3);
+	margin-top: 8px;
 }
 
 .span-step {
 	display: block;
 	align-items: center;
 	font-size: 13px;
+	padding-top: 1.2em;
+
 }
 
 /* SECTION DESIGN*/
@@ -747,13 +737,15 @@ footer {
 	list-style-type: none;
 	align-self: center;
 }
-
+.footer-list a {
+	text-decoration: none;
+}
 .list-element {
 	display: block;
 	margin-right: 20px;
 	font-size: 14px;
+	color: white;
 }
-
 .mini-logo {
 	display: block;
 	margin-right: 20px;
@@ -761,6 +753,11 @@ footer {
 	width: 57px;
 	height: auto;
 	/*86px*/
+}
+.aviso {
+	margin:30px 50px;
+	text-align: justify;
+	color: #424A5F;
 }
 
 @media all and (min-width:768px){
@@ -770,28 +767,43 @@ footer {
 	}
 }
 
-@media all and (min-width:768px) {
-	.background-header {
-		background-image: url("../images/desktop.png");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		height: 500px;
+@media all and (min-width:500px){
+	.hasta {
+		display: flex;
+		flex-direction: row;
+		height: 20px;
 	}
-	.cover {
-		height: 600px;
-	}
+	.actualidad {
+		margin-left: 20px;
+}
+#end_month, #end_year {
+	margin: 0.5px;
+}
 
+@media all and (min-width:622px){
+	.formation-dates, .experience-dates {
+		display: flex;
+		flex-direction: row;
+	}
+	.actualidad {
+		margin-left: 20px;
+		margin-top: 0;
+	}
+	.present-button-p {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}
+@media all and (min-width:768px) {
 	.title-on-cover-main {
 		font-size: 45px;
 		padding: 35px 0 35px 0;
-		top:50px;
 	}
 	.instructions-paragraph p {
 		font-size: 20px;
 	}
 	.steps-band {
-		padding: 2.5em 0em 2em 0em;
+		padding: 3em 0em 2em 0em;
 		width: auto;
 	}
 	.img-step-element {
@@ -812,11 +824,8 @@ footer {
 		justify-content: space-between;
 	}
 	.list-element {
-		font-size: 20px;
+		font-size: 18px;
 		padding-right: 10px;
-	}
-	.claseinput, .h3-form {
-		font-size: 22px;
 	}
 	.sube {
 		font-size: 22px;
@@ -836,6 +845,13 @@ footer {
 	.formation-dates {
 		display: inline;
 	}
+	.imagen-desktop {
+		display: inline-block;
+		width: 100%
+	}
+	.main-img-section1{
+		display: none;
+	}
 }
 
 @media all and (min-width:1100px) {
@@ -850,30 +866,4 @@ footer {
 	.col2 {
 		margin-left: 2%;
 	}
-}
-@media all and (min-width:622px){
-	.formation-dates, .experience-dates {
-		display: flex;
-		flex-direction: row;
-	}
-	.actualidad {
-		margin-left: 20px;
-		margin-top: 0;
-	}
-	.present-button-p {
-		margin-top: 0;
-		padding-top: 0;
-	}
-}
-@media all and (min-width:500px){
-	.hasta {
-		display: flex;
-		flex-direction: row;
-		height: 20px;
-	}
-	.actualidad {
-		margin-left: 20px;
-}
-#end_month, #end_year {
-	margin: 0.5px;
 }
