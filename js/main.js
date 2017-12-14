@@ -106,7 +106,7 @@ function selectMonths() {
     "Diciembre"
   ];
 
-  for (var i = 0; i < meses.length - 1; i++){
+  for (var i = 0; i < meses.length; i++){
     options += '<option>' + meses[i]+ '</option>';
 }
 var monthsAll = document.querySelectorAll('.month');
@@ -116,6 +116,7 @@ for (var i = 0; i < monthsAll.length; i++) {
 }
 selectMonths();
 //función para años
+function añosInput () {
 var years = 2018;
 var selectYear = '';
 
@@ -126,9 +127,11 @@ var yearsAll = document.querySelectorAll('.year');
 for (var i = 0; i < yearsAll.length; i++) {
 	yearsAll[i].innerHTML = selectYear;
 };
+}
+añosInput ();
 
-
-
+var inputFile = document.querySelector('#files');
+var trigger = document.querySelector('.trigger');
 
 // // hacemos clic en trigger y llamamos a la funcion
 // trigger.addEventListener('click', simularClic);
@@ -241,6 +244,8 @@ function addItemExperience() {
 	document.querySelector('.experience-element').insertAdjacentHTML('beforeend', repeatedItemExperience);
 
 	idExperienceModifier++;
+	selectMonths();
+	añosInput ();
 }
 
 var newExperienceButton = document.querySelector('.new-experience-button');
@@ -258,6 +263,8 @@ function addItemFormation() {
 	document.querySelector('.formation-element').insertAdjacentHTML('beforeend', repeatedItemFormation);
 
 	idFormationModifier++;
+	selectMonths();
+	añosInput ();
 }
 
 document.querySelector('.new-formation-button').addEventListener('click',addItemFormation);
