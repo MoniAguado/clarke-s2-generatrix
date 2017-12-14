@@ -211,12 +211,11 @@ main {
 }
 
 .design-options-font, .design-options-colour, .design-options-theme {
-	cursor: context-menu;
 	border-color: #424A5F;
 	border-width: 3px;
 	border-style: solid;
 	padding: 0;
-	height: 100px;
+	height: 106px;
 	background-color: white;
 	z-index: 2;
 }
@@ -476,8 +475,6 @@ fieldset {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 1000px;
-	/*width: 80%;*/
 	display: flex;
 	flex-direction: column;
 }
@@ -779,27 +776,6 @@ footer {
 		width: 30px;
 		height: auto;
 	}
-	.section2design {
-		height: 220px;
-	}
-	.design-options {
-		height: 206px;
-	}
-	.design-options-font, .design-options-colour, .design-options-theme {
-		height: 200px;
-	}
-	.design-img {
-		width: 200px;
-		height: 200px;
-	}
-	.fonts, .colours, .themes {
-		width: 200px;
-		height: auto;
-	}
-	.font, .colour, .theme {
-		width: 200px;
-		height: 50px;
-	}
 	.hasta{
  	display: flex;
 	flex-direction: row;
@@ -815,12 +791,12 @@ footer {
 		padding: 0 2%;
 		background-color: #E7ECED;
 	}
-.col1, .col2 {
-	width: 50%;
-}
-.col2 {
-	margin-left: 2%;
-}
+	.col1, .col2 {
+		width: 50%;
+	}
+	.col2 {
+		margin-left: 2%;
+	}
 }
 @media all and (min-width:622px){
 	.formation-dates, .experience-dates {
