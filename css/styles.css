@@ -481,7 +481,12 @@ fieldset {
 	margin-top: 0;
 	padding-top: 1em;
 }
-
+.preview-title{
+	text-align: left;
+}
+.preview-title h1{
+	margin: 10px 0;
+}
 .preview-theme {
 	position: relative;
 	font-size: 80%;
@@ -671,6 +676,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	height: 150px;
+	margin-top: 10px;
 }
 
 .cargo-fecha-emp, .curso-fecha-escuela {
