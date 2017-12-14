@@ -555,13 +555,13 @@ fieldset {
 }
 
 /*Temas*/
-.dots .showpreview {
+.dots . {
 	background: url("../images/themes/dots.png") center  no-repeat;
 }
-.stripes .showpreview {
+.stripes . {
 	background: url("../images/themes/stripes.png") center  no-repeat;
 }
-.zigZag .showpreview {
+.zigZag . {
 	background: url("../images/themes/zigZag.png") center  no-repeat;
 }
 
