@@ -120,7 +120,7 @@
 <!-- ADD FILES -->
 			<section class="section3photo">
 				<label class="label" for="files">Sube tu foto</label>
-				<input class="claseinput" type="file" id="files" name="files[]" class="foto"/>
+				<input class="claseinput foto" type="file" id="files" name="files[]"/>
 				<div class="trigger"></div>
 			</section>
 				<section class="section5form">
@@ -140,9 +140,9 @@
 								<!--oculto-->
 								<div id="personal-information">
 									<label class="label" for="name"></label>
-									<input class="claseinput" id="name" type="text" name="name" placeholder="Nombre*" required>
+									<input class="claseinput personaldata" id="name" type="text" name="name" placeholder="Nombre*" required>
 									<label class="label" for="surname"></label>
-									<input class="claseinput" id="surname" type="text" name="surname" placeholder="Apellidos*" required>
+									<input class="claseinput personaldata" id="surname" type="text" name="surname" placeholder="Apellidos*" required>
 									<label class="label" for="telephone"></label>
 									<input class="claseinput" id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
 									<label class="label" for="date"></label>
@@ -158,6 +158,7 @@
 											<input class="claseinput" id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
 											<input class="claseinput" id="Otros" type="text" name="Otros" placeholder="Otros">
 										</div>
+										<button type="button" name="button" class="save-data-button">Guardar</button>
 									</div>
 									<hr class="line">
 							</fieldset>
@@ -175,32 +176,34 @@
 									</div>
 									<!--oculto-->
 									<div id="experience">
-										<input class="claseinput" id="puesto" type="text" name="puesto" placeholder="Puesto">
-										<section class="experience-dates">
-											<div class="desde">
-											<label class="label" for="desde">Desde</label>
-											<select id="start_month" name="start_month" class="month">
-											</select>
-											<select id="start_year" name="start_year" class="year">
-											</select>
+										<div class="experience-element" id="experience-element">
+											<input class="claseinput" id="puesto" type="text" name="puesto" placeholder="Puesto">
+											<section class="experience-dates">
+												<div class="desde">
+												<label class="label" for="desde">Desde</label>
+												<select id="start_month" name="start_month" class="month">
+												</select>
+												<select id="start_year" name="start_year" class="year">
+												</select>
+												</div>
+												<div class="hasta">
+												<label class="label" for="hasta">Hasta</label>
+												<select id="end_month" name="end_month" class="month">
+												</select>
+												<select id="end_year" name="start_year" class="year">
+												</select>
+												<div class="actualidad">
+													<label for="actualidad" class="present-button-p">Actualidad</label>
+													<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+												</div>
 											</div>
-											<div class="hasta">
-
-											<label class="label" for="hasta">Hasta</label>
-											<select id="end_month" name="end_month" class="month">
-											</select>
-											<select id="start_year" name="start_year" class="year">
-											</select>
-
-											<div class="actualidad">
-										<label for="actualidad" class="present-button-p">Actualidad</label>
-										<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+											</section>
+											<input class="claseinput" id="lugar" type="text" name="lugar" placeholder="Lugar">
+											<textarea class="experience-text" id=description name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
+											<button type="button" name="button" class="save-experience-button">Guardar</button>
 										</div>
-											</div>
-										</section>
-										<input class="claseinput" id="lugar" type="text" name="lugar" placeholder="Lugar">
-										<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
-									</div>
+									<button type="button" name="button" class="new-experience-button">Nueva experiencia profesional</button>
+								</div>
 									<hr class="line">
 								</fieldset>
 
@@ -217,32 +220,36 @@
 										</div>
 									<!--oculto-->
 									<div id="formation">
-										<label class="label" for="titulo"></label>
-										<input class="claseinput" id="titulo" type="text" name="titulation" placeholder="Título*" required>
-										<section class="formation-dates">
-											<div class="desde">
-											<label class="label" for="desde">Desde</label>
-											<select id="start_month" name="start_month" class="month">
-											</select>
-											<select id="start_year" name="start_year" class="year">
-											</select>
+										<div class="formation-element" id="formation-element">
+											<label class="label" for="titulo"></label>
+											<input class="claseinput" id="titulo" type="text" name="titulation" placeholder="Título*" required>
+											<section class="formation-dates">
+												<div class="desde">
+												<label class="label" for="desde">Desde</label>
+												<select id="start_month-formation" name="start_month" class="month">
+												</select>
+												<select id="start_year-formation" name="start_year" class="year">
+												</select>
+												</div>
+												<div class="hasta">
+													<label class="label" for="hasta">Hasta</label>
+													<select id="end_month-formation" name="end_month" class="month">
+													</select>
+													<select id="end_year-formation" name="start_year" class="year">
+													</select>
+														<div class="actualidad">
+													<label for="actualidad" class="present-button-p">Actualidad</label>
+													<input class="present-button" id="actualidad-formation" type="checkbox" name="actualidad">
+												</div>
 											</div>
-											<div class="hasta">
-											<label class="label" for="hasta">Hasta</label>
-											<select id="end_month" name="end_month" class="month">
-											</select>
-											<select id="start_year" name="start_year" class="year">
-											</select>
-												<div class="actualidad">
-											<label for="actualidad" class="present-button-p">Actualidad</label>
-											<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+										</section>
+											<label class="label" for="centro"></label>
+											<input class="claseinput" id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
+											<label class="label" for="description"></label>
+											<textarea class="description" id="description-formation" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
+											<button type="button" name="button" class="save-formation-button">Guardar</button>
 										</div>
-									</div>
-								</section>
-										<label class="label" for="centro"></label>
-										<input class="claseinput" id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
-										<label class="label" for="description"></label>
-										<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
+										<button type="button" name="button" class="new-formation-button">Nueva formación</button>
 									</div>
 									<hr class="line">
 								</fieldset>
@@ -266,7 +273,7 @@
 												<div class="language-element">
 													<label class="label" for="language-name1"></label>
 													<input class="language-name claseinput" id="language-name1" type="text" name="language-name" placeholder="Idioma 1">
-													<select id="level" name="level" class="level">
+													<select id="language-level1" name="level" class="level">
 														  <option value="nivel">Nivel</option>
 															<option >--</option>
 															<option>Básico</option>
@@ -282,7 +289,7 @@
 												<div class="it-element">
 													<label class="label" for="it-name1"></label>
 													<input class="it-name claseinput" id="it-name1" type="text" name="it-name" placeholder="Tecnología 1">
-														<select id="level" name="level" class="level">
+														<select id="it-level1" name="level" class="level">
 														  <option value="nivel">Nivel</option>
 															<option >--</option>
 															<option>Básico</option>
@@ -294,13 +301,15 @@
 											</div>
 											<div class="various-skills">
 												<p>Destrezas</p>
-												<label class="label" for="skill-element1"></label>
-												<input class="skill-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
-												<button type="button" name="button" class="new-skill-button">Nueva destreza</button>
+												<div class="skills-element">
+													<label class="label" for="skill-element1"></label>
+													<input class="skills-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
+												</div>
 											</div>
+											<button type="button" name="button" class="new-skills-button">Nueva habilidad</button>
+											<button type="button" name="button" class="save-skills-button">Guardar</button>
 										</div>
 									</div>
-								</div>
 								<hr class="line">
 							</fieldset>
 					</form>
@@ -318,12 +327,12 @@
 							<div class="preview-photo-div">
 							</div>
 							<div class="preview-data-div">
-								<div><span>Nombre: </span><span id="name-preview-id"></span></div>
-								<div><span>Apellidos: </span><span id="surname-preview-id"></span></div>
-								<div><span>Teléfono: </span><span id="phone-preview-id"></span></div>
-								<div><span>Fecha de nacimiento: </span><span id="birthdate-preview-id"></span></div>
-								<div><span>Email: </span><span id="email-preview-id"></span></div>
-								<div><span>Dirección: </span><span id="address-preview-id"></span></div>
+								<div><span id="name-preview-id" class="personal-data-preview">Nombre ejemplo</span></div>
+								<div><span id="surname-preview-id" class="personal-data-preview">Apellidos ejemplo</span></div>
+								<div><span id="phone-preview-id">Teléfono ejemplo</span></div>
+								<div><span id="birthdate-preview-id">Nacimiento ejemplo</span></div>
+								<div><span id="email-preview-id">Email ejemplo</span></div>
+								<div><span id="address-preview-id">Dirección ejemplo</span></div>
 							</div>
 						</div>
 
@@ -332,18 +341,17 @@
 									<h1>Experiencia profesional</h1>
 							</div>
 							<div class="item-experience-preview">
-								<div><span id="job-id"></span></div>
-								<div><span id="from-id"></span></div>
-								<div><span id="until-id"></span></div>
-								<div><span id="place-id"></span></div>
-								<div><span id="description-id"></span></div>
+								<div><span id="job-preview-id"></span></div>
+								<div><span id="from-preview-id"></span></div>
+								<div><span id="until-preview-id"></span></div>
+								<div><span id="place-preview-id"></span></div>
+								<div><span id="description-preview-id"></span></div>
 							</div>
 						</div>
 
+
+
 						<div class="preview-formation">
-
-
-
 
 						</div>
 
@@ -353,8 +361,6 @@
 			</section>
 		</section>
 
-			<section class="section section6buttons">
-			</section>
 	</main>
 
 	<footer>
@@ -365,7 +371,7 @@
 				<li class="list-element">Generatrix &copy; 2017</li>
 			</ul>
 			<a href="index.html">
-		<img class="mini-logo" src="images/untitled.png" alt="logo" alt="Generatrix"></a>
+		<img class="mini-logo" src="images/untitled.png" alt="Generatrix-logo"></a>
 	</footer>
  <script src="js/main.js"></script>
 </body>

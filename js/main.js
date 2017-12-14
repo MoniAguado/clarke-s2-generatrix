@@ -63,68 +63,103 @@ for (var i = 0; i < yearsAll.length; i++) {
 };
 
 
-// función para completar los campos del formulario
-// function completar () {
-//
-// 	var name= document.querySelector ('#box_number').value
-// 	var namePrompt = prompt("Introduce tu nombre");
-// 	var surnamesPrompt = prompt("Introduce tus apellidos");
-// 	var telephonePrompt = prompt("Introduce tu número de teléfono");
-// 	var dateBirthPrompt = prompt("Introduce tu fecha de nacimiento");
-// 	var emailPrompt = prompt("Introduce tu dirección de correo electrónico");
-// 	var addressPrompt = prompt("Introduce tu dirección de correo postal");
-//
-// 	document.querySelector("#nombrePrompt").innerHTML = namePrompt;
-// 	document.querySelector("#apellidoPrompt").innerHTML = surnamesPrompt;
-// 	document.querySelector("#telefonoPrompt").innerHTML = telephonePrompt;
-// 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
-// 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
-// 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
-// };
+// SECCIÓN GUARDAR DATOS FORMULARIO EN PREVIEW (4FUNCIONES)
+function printPersonalDataToPreview() {
+ 	document.getElementById('name-preview-id').innerHTML = document.getElementById('name').value;
+	document.getElementById('surname-preview-id').innerHTML = document.getElementById('surname').value;
+	document.getElementById('phone-preview-id').innerHTML = document.getElementById('telephone').value;
+	document.getElementById('birthdate-preview-id').innerHTML = document.getElementById('date').value;
+	document.getElementById('email-preview-id').innerHTML = document.getElementById('email').value;
+	document.getElementById('address-preview-id').innerHTML = document.getElementById('address').value;
+
+	// document.getElementById('Twitter-preview-id').innerHTML = document.getElementById('Twitter').value;
+	// document.getElementById('Linkedin-preview-id').innerHTML = document.getElementById('Linkedin').value;
+	// document.getElementById('Facebook-preview-id').innerHTML = document.getElementById('Facebook').value;
+	// document.getElementById('Otros-preview-id').innerHTML = document.getElementById('Otros').value;
+}
+document.querySelector('.save-data-button').addEventListener('click',printPersonalDataToPreview);
 
 
-var inputFile = document.querySelector('#files');
-var trigger = document.querySelector('.trigger');
+function printProfessionalExperienceToPreview() {
+	document.getElementById('job-preview-id').innerHTML = document.getElementById('puesto').value;
+	document.getElementById('from-preview-id').innerHTML =
+	document.getElementById('start_month').value + ' ' +
+	document.getElementById('start_year').value;
+	if (document.getElementById('actualidad').checked) {
+		document.getElementById('until-preview-id').innerHTML = 'Diciembre 2017';
+	}
+	else {
+		document.getElementById('until-preview-id').innerHTML =
+		document.getElementById('end_month').value + ' ' +
+		document.getElementById('end_year').value;
+	}
+	document.getElementById('place-preview-id').innerHTML = document.getElementById('lugar').value;
+	document.getElementById('description-preview-id').innerHTML = document.getElementById('description').value;
+}
+document.querySelector('.save-experience-button').addEventListener('click',printProfessionalExperienceToPreview);
 
-// hacemos clic en trigger y llamamos a la funcion
-// trigger.addEventListener('click', simularClic);
 
-// función para que simule un clic en input
-// function simularClic(){
-// 	inputFile.click();
+// function printFormationToPreview() {
+// 	document.getElementById('titulo-preview-id').innerHTML = document.getElementById('titulo').value;
+// 	document.getElementById('from-formation-preview-id').innerHTML =
+// 	document.getElementById('start_month-formation').value + ' ' +
+// 	document.getElementById('start_year-formation').value;
+// 	if (document.getElementById('actualidad-formation').checked) {
+// 		document.getElementById('until-formation-preview-id').innerHTML = 'Diciembre 2017';
+// 	}
+// 	else {
+// 		document.getElementById('until-formation-preview-id').innerHTML =
+// 		document.getElementById('end_month-formation').value + ' ' +
+// 		document.getElementById('end_year-formation').value;
+// 	}
+// 	document.getElementById('centro-id').innerHTML = document.getElementById('centro').value;
+// 	document.getElementById('description-formation-preview-id').innerHTML = document.getElementById('description-formation').value;
 // }
+// document.querySelector('.save-formation-button').addEventListener('click',printFormationToPreview);
 
-
-// function archivo(evt) {
-// 	console.log('hola')
-//       var files = evt.target.files; // FileList object
+// function printSkillsToPreview() {
+// 	document.getElementById('language-name1-preview-id').innerHTML = document.getElementById('language-name1').value;
+// 	document.getElementById('language-level1-preview-id').innerHTML = document.getElementById('language-level1').value;
 //
-//         //Obtenemos la imagen del campo "file".
-//       for (var i = 0, f; f = files[i]; i++) {
-//            //Solo admitimos imágenes.
-//            if (!f.type.match('image.*')) {
-//                 continue;
-//            }
+// 	document.getElementById('it-name1-preview-id').innerHTML = document.getElementById('it-name1').value;
+// 	document.getElementById('it-level1-preview-id').innerHTML = document.getElementById('it-level1').value;
 //
-//            var reader = new FileReader();
-//
-//            reader.onload = (function(theFile) {
-//                return function(e) {
-//                // Creamos la imagen.
-// 											trigger.style = "background-image:url(" + e.target.result + ");";
-//                       document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-//                };
-//            })(f);
-//
-//            reader.readAsDataURL(f);
-//        }
+// 	document.getElementById('skill-element1-preview-id').innerHTML = document.getElementById('skill-element1').value;
 // }
-
-// inputFile.addEventListener('change', archivo);
-
+// document.querySelector('.save-skills-button').addEventListener('click',printSkillsToPreview);
 
 
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (experience)_______________________
+var idExperienceModifier = 2;
+function addItemExperience() {
+	var repeatedItemExperience = '<div class="experience-element" id="experience-element' + idExperienceModifier + '"><input class="claseinput" id="puesto" type="text" name="puesto" placeholder="Puesto' + idExperienceModifier + '"><section class="experience-dates"><div class="desde"><label class="label" for="desde">Desde</label><select id="start_month' + idExperienceModifier + '" name="start_month" class="month"></select><select id="start_year' + idExperienceModifier + '" name="start_year" class="year"></select></div><div class="hasta"><label class="label" for="hasta">Hasta</label><select id="end_month' + idExperienceModifier + '" name="end_month" class="month"></select><select id="end_year' + idExperienceModifier + '" name="start_year" class="year"></select><div class="actualidad"><label for="actualidad" class="present-button-p">Actualidad</label><input class="present-button" id="actualidad' + idExperienceModifier + ' "type="checkbox" name="actualidad"></div></div></section><input class="claseinput" id="lugar'+ idExperienceModifier + '" type="text" name="lugar" placeholder="Lugar"><textarea class="experience-text" id=description' + idExperienceModifier + ' name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea><button type="button" name="button" class="save-experience-button">Guardar</button></div>';
+
+	document.querySelector('.experience-element').insertAdjacentHTML('beforeend', repeatedItemExperience);
+
+	idExperienceModifier++;
+}
+
+var newExperienceButton = document.querySelector('.new-experience-button');
+newExperienceButton.addEventListener('click',addItemExperience);
+
+
+
+
+
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (formation)_______________________
+var idFormationModifier = 2;
+function addItemFormation() {
+	var repeatedItemFormation = '<div class="formation-element" id="formation-element' + idFormationModifier + '"><label class="label" for="titulo"></label><input class="claseinput" id="titulo' + idFormationModifier + '" type="text" name="titulation" placeholder="Título*" required><section class="formation-dates"><div class="desde"><label class="label" for="desde">Desde</label><select id="start_month-formation' + idFormationModifier + '" name="start_month" class="month"></select><select id="start_year-formation' + idFormationModifier + '" name="start_year" class="year"></select></div><div class="hasta"><label class="label" for="hasta">Hasta</label><select id="end_month-formation' + idFormationModifier + '" name="end_month" class="month"></select><select id="end_year-formation' + idFormationModifier + '" name="start_year" class="year"></select><div class="actualidad"><label for="actualidad" class="present-button-p">Actualidad</label><input class="present-button" id="actualidad-formation' + idFormationModifier + '" type="checkbox" name="actualidad"></div></div></section><label class="label" for="centro"></label><input class="claseinput" id="centro' + idFormationModifier + '" type="text" name="place" placeholder="Centro de estudios*" required><label class="label" for="description"></label><textarea class="description" id="description-formation' + idFormationModifier + '" cols="30" rows="10" name="description" placeholder="Descripción"></textarea><button type="button" name="button" class="save-formation-button">Guardar</button></div>'
+
+	document.querySelector('.formation-element').insertAdjacentHTML('beforeend', repeatedItemFormation);
+
+	idFormationModifier++;
+}
+
+document.querySelector('.new-formation-button').addEventListener('click',addItemFormation);
+
+
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)________________________
 var idLanguageModifier = 2;
 function addItemLanguage() {
 	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
@@ -144,10 +179,10 @@ newLanguageButton.addEventListener('click',addItemLanguage);
 
 
 
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)
+// // GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)__________________________
 var idItModifier = 2;
 function addItemIt() {
-	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><label class="label" for="it-level ' + idItModifier + '"></label><input class="it-level" id="it-level ' + idItModifier + '" type="text" name="it-level" placeholder="Nivel de tecnología ' + idItModifier + '"></div>';
+	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><select id="it-level' + idItModifier + '" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option></select></div>';
 
 	var itElement = document.querySelector('.it-element');
 
@@ -160,36 +195,17 @@ var newItButton = document.querySelector('.new-it-button');
 newItButton.addEventListener('click',addItemIt);
 
 
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)
-// var idSkillModifier = 2;
-// function addItemSkill() {
-// 	var repeatedItemskill = '<label class="label" for="skill-element' + idSkillModifier + '"></label><input class="skill-element" id="skill-element' + idSkillModifier + '" type="text" name="skill-element" placeholder="Destreza ' + idSkillModifier + '">';
-//
-// 	var skillElement = document.querySelector('.skill-element');
-//
-// 	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
-//
-// 	idSkillModifier++;
-// }
-//
-// var newSkillButton = document.querySelector('.new-skill-button');
-// newSkillButton.addEventListener('click',addItemSkill);
-
-// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)NO FUNCIONAAAAAAAAAAAAAAAA
-var idSkillModifier = 2;
+// GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)___________________________
+var idSkillsModifier = 2;
 function addItemSkills() {
-	var repeatedItemSkill = '<label class="label" for="skill-element1"></label><input class="skill-element" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">';
+	var repeatedItemSkills = '<div class="skills-element"><label class="label" for="skill-element' + idSkillsModifier + '"></label><input class="skills-element claseinput" id="skill-element' + idSkillsModifier +'" type="text" name="skill-element" placeholder="Destreza ' + idSkillsModifier + '"></div>';
 
-	var skillElement = document.querySelector('.skill-element');
+	var skillsElement = document.querySelector('.skills-element');
 
-	skillElement.insertAdjacentHTML('beforeend', repeatedItemSkill);
+	skillsElement.insertAdjacentHTML('beforeend', repeatedItemSkills);
 
-	idSkillModifier++;
+	idSkillsModifier++;
 }
 
-var newSkillButton = document.querySelector('.new-skill-button');
-newSkillButton.addEventListener('click',addItemSkills);
-
-
-// var openSkillsButton= document.querySelector('.boton-abrir-skills');
-// openSkillsButton.addEventListener('click', abrir);
+var newSkillsButton = document.querySelector('.new-skills-button');
+newSkillsButton.addEventListener('click',addItemSkills);
