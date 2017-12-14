@@ -463,7 +463,7 @@ fieldset {
 
 /*PREVIEW*/
 
-
+/*ELECCIÓN DE DISEÑO*/
 
 .preview-title, .config-title, .label {
 	text-align: center;
@@ -471,84 +471,16 @@ fieldset {
 	margin-top: 0;
 	padding-top: 1em;
 }
-
+.preview-title{
+	text-align: left;
+}
+.preview-title h1{
+	margin: 10px 0;
+}
 .preview-theme {
 	position: relative;
 	font-size: 80%;
 	margin-bottom: 5%;
-}
-
-.showpreview {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-.preview-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: flex-start;
-	height: 80px;
-}
-
-.cuadro-photo {
-	width: 25%;
-
-}
-
-.preview-photo-div {
-	width: 70px;
-	height: 70px;
-	background-color: #31B89A;
-	border-radius: 100px;
-}
-.nombre-direccion-div{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 0 10px;
-	align-content: flex-start;
-	width: 80%;
-}
-.nombre-cargo {
-	/*background-color: #EAB931;*/
-	width: 32%;
-	height: 50px;
-	margin-top: 10px;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	padding-top: 10px;
-	font-size: 11px;
-}
-
-.cuadro-direccion {
-	width: 60%;
-	height: 50px;
-	/*background-color: #EAB931;*/
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	padding-top: 10px;
-	padding-left: 10px;
-	font-size: 9px;
-	text-align: right;
-	padding-top: 10px;
-	margin-top: 10px;
-}
-
-.preview-photo-div .thumb {
-	width: 100%;
-	border-radius: 100px;
-}
-
-.preview-data {
-	display: flex;
-	flex-direction: column;
-	width: 60%;
 }
 
 /*Cookie*/
@@ -623,6 +555,86 @@ fieldset {
 	background-position: center;
 }
 
+/*MAQUETACIÓN PREVIEW*/
+
+.showpreview {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 8%;
+}
+
+.preview-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	height: 80px;
+}
+
+.cuadro-photo {
+	width: 25%;
+
+}
+
+.preview-photo-div {
+	width: 70px;
+	height: 70px;
+	background-color: #31B89A;
+	border-radius: 100px;
+}
+.nombre-direccion-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 10px;
+	align-content: flex-start;
+	width: 80%;
+}
+.nombre-cargo {
+	/*background-color: #EAB931;*/
+	width: 32%;
+	height: 50px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 10px;
+	font-size: 11px;
+}
+
+.cuadro-direccion {
+	width: 60%;
+	height: 50px;
+	/*background-color: #EAB931;*/
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 9px;
+	text-align: right;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+.preview-photo-div .thumb {
+	width: 100%;
+	width: 70px;
+	height: 70px;
+	border-radius: 100px;
+	width: 70px;
+	height: 70px;
+}
+
+.preview-data {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
 .preview-extract-div{
 	height: 100px;
 	width: 100%;
@@ -638,7 +650,7 @@ h1 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
-	margin: 0;
+	margin-top: 10px;
 }
 .preview-extract {
 	width: 60%;
@@ -658,6 +670,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	height: 150px;
+	margin-top: 10px;
 }
 
 .cargo-fecha-emp, .curso-fecha-escuela {
@@ -694,7 +707,7 @@ h1 {
 .languages-preview, .it-preview, .bonus-preview {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 	font-size: 11px;
 }
 
@@ -703,9 +716,9 @@ h1 {
 	height: 30px;
 }
 
-#language-selection-id, #it-selection-id, #bonus-selection-id {
-	width: 60px;
-	padding-left: 5px;
+.language-selection, .it-selection, .bonus-selection {
+	width: 90%;
+	padding: 0 10px;
 }
 
 
