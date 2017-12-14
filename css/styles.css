@@ -457,12 +457,7 @@ fieldset {
 
 /*PREVIEW*/
 
-.col1, .col2 {
-	width: 50%;
-}
-.col2 {
-	margin-left: 2%;
-}
+
 
 .preview-title, .config-title {
 	text-align: center;
@@ -821,7 +816,12 @@ footer {
 		background-color: #E7ECED;
 	}
 }
-
+.col1, .col2 {
+	width: 50%;
+}
+.col2 {
+	margin-left: 2%;
+}
 @media all and (min-width:622px){
 	.formation-dates, .experience-dates {
 		display: flex;
