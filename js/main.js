@@ -1,15 +1,69 @@
 'use strict'
-
 // burger
 
 function openClose(idContent) {
-	var burger = document.getElementById(idContent);
-	if (burger.style.display == 'block'){
-		burger.style.display ='none';
+  var burger = document.getElementById(idContent);
+  if (burger.style.display == 'block'){
+			burger.style.display ='none';
 	} else {
 		burger.style.display = 'block';
 	}
 }
+
+
+//Elegir estilos para curriculum
+var preview = document.querySelector('.showpreview');
+//Letra
+var fonts = document.querySelectorAll('.font');
+
+function cleanFontClasses() {
+  preview.classList.remove('cookie', 'annie', 'philosopher');
+}
+
+function applyFont(event){
+	var fontClass = event.currentTarget.getAttribute('data-font-class');
+  cleanFontClasses();
+  preview.classList.add(fontClass);
+}
+
+for (var i = 0; i < fonts.length; i++) {
+  fonts[i].addEventListener('click', applyFont);
+}
+//Colores
+var colours = document.querySelectorAll('.colour');
+
+function cleanColourClasses() {
+  preview.classList.remove('red-green-lime', 'black-blue-lime', 'black-pink-grey');
+}
+
+function applyColour(event){
+  var colourClass = event.currentTarget.getAttribute('data-colour-class');
+  cleanColourClasses();
+  preview.classList.add(colourClass);
+}
+
+for (var i = 0; i < colours.length; i++) {
+  colours[i].addEventListener('click', applyColour);
+}
+
+//temas
+var themes = document.querySelectorAll('.theme');
+
+function cleanThemeClasses() {
+  preview.classList.remove('dots', 'stripes', 'zigZag');
+}
+
+function applyTheme(event){
+  var themeClass = event.currentTarget.getAttribute('data-theme-class');
+  cleanThemeClasses();
+  preview.classList.add(themeClass);
+}
+
+for (var i = 0; i < themes.length; i++) {
+  themes[i].addEventListener('click', applyTheme);
+}
+
+//función para desplegar sección
 
 
 // desplegables sin onclick
@@ -32,12 +86,9 @@ for (i=0; i<botones.length; i++){
 }
 
 
-
-
 //función para meses
 function selectMonths() {
 	var options = '';
-
 	var months = document.querySelectorAll('.month');
   var meses = [
     "Enero",
@@ -62,7 +113,6 @@ var monthsAll = document.querySelectorAll('.month');
 for (var i = 0; i < monthsAll.length; i++) {
 	monthsAll[i].innerHTML = options;
 };
-
 }
 selectMonths();
 //función para años
@@ -70,50 +120,54 @@ var years = 2018;
 var selectYear = '';
 
 for (var i=1950; i<years; i++) {
-	selectYear = selectYear + '<option>' + (i) + '</option>';
+  selectYear = selectYear + '<option>' + (i) + '</option>';
 }
 var yearsAll = document.querySelectorAll('.year');
 for (var i = 0; i < yearsAll.length; i++) {
 	yearsAll[i].innerHTML = selectYear;
 };
 
-// IMAGEN
+
 
 var inputFile = document.querySelector('#files');
 var trigger = document.querySelector('.trigger');
 
+// hacemos clic en trigger y llamamos a la funcion
 trigger.addEventListener('click', simularClic);
 
 // función para que simule un clic en input
+
 function simularClic(){
 	inputFile.click();
 }
 
+
 function archivo(evt) {
-         // imagen del campo "file".
- console.log('hola')
+	console.log('hola')
 	var files = evt.target.files; // FileList object
-	       //Obtenemos la imagen del campo "file".
-  for (var i = 0, f; f = files[i]; i++) {
-          //Solo admitimos imágenes.
-  if (!f.type.match('image.*')) {
-                  continue;
-             }
- 				 }
-  var reader = new FileReader();
-  reader.onload = (function(theFile) {
-      return function(e) {
-              // Creamos la imagen.
-        document.getElementById("file").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+
+	//Obtenemos la imagen del campo "file".
+	for (var i = 0, f; f = files[i]; i++) {
+		//Solo admitimos imágenes.
+		if (!f.type.match('image.*')) {
+			continue;
+		}
+
+		var reader = new FileReader();
+
+		reader.onload = (function(theFile) {
+			return function(e) {
+				// Creamos la imagen.
 				trigger.style = "background-image:url(" + e.target.result + ");";
-        document.querySelector(".preview-photo").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-                 };
-             })(f);
-        reader.readAsDataURL(f);
-       }
-  inputFile.addEventListener('change', archivo);
+				document.querySelector(".preview-photo-div").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+			};
+		})(f);
 
+		reader.readAsDataURL(f);
+	}
+}
 
+inputFile.addEventListener('change', archivo);
 
 
 
@@ -168,6 +222,5 @@ function addItemSkills() {
 
 var newSkillButton = document.querySelector('.new-skill-button');
 newSkillButton.addEventListener('click',addItemSkills);
-
 
 var openSkillsButton= document.querySelector('.boton-abrir-skills');

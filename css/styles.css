@@ -1,9 +1,11 @@
 /*azul marino: #424A5F; AZUL: #55607F; AZUL CLARO: #E7ECED; AMARILLO: #EAB931; VERDE: #31B89A */
 
-/*font-family: 'Fira Sans', sans-serif;
+/*font-family: 'annie', sans-serif;
 font-family: 'Cookie', cursive;
 font-family: 'Philosopher', sans-serif;*/
-@import url('https://fonts.googleapis.com/css?family=Cookie|Fira+Sans:400,700|Philosopher:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cookie|Philosopher:400,700');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope%7CLeckerli+One');
+
 * {
 	box-sizing: border-box;
 }
@@ -13,14 +15,14 @@ body {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 	box-sizing: border-box;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 main {
-	flex: 1;
+	flex: 2;
 	padding-top: 80px;
+	/*min-height: 100vh;*/
 }
 
 .main-block {
@@ -128,6 +130,13 @@ main {
 }*/
 
 /* SECTION2 INFO*/
+ .cover {
+		background-image: url("/images/desktop.png");
+    background-repeat: no-repeat;
+    /*background-position: center 70px;*/
+    background-size: cover;
+		flex: 1;
+}
 
 .title-on-cover-main {
 	color: #EAB931;
@@ -212,10 +221,11 @@ main {
 	/*border-color: #424A5F;*/
 	border-color: #31B89A ;
 	border-width: 3px;
-	border-style: solid;
+	/*border-style: solid;*/
 	padding: 0;
-	height: auto;
-
+	height: 100px;
+	/*background-color: white;*/
+	z-index: 2;
 }
 
 .design-img {
@@ -263,46 +273,37 @@ main {
 	border-top: 1px solid #EAB931;
 }
 
-.colour1, .colour2, .colour3, .colour4, .colour5, .colour6, .colour7, .colour8, .colour9 {
+.red, .green, .lime, .black, .blue, .pink, .grey {
 	border-radius: 30px;
 	width: 20px;
 	height: 20px;
 	border: 2px solid black;
 }
-
-.colour1 {
+.red{
 	background: rgb(221, 90, 75);
 }
-
-.colour2 {
+.green{
 	background: rgb(23, 71, 82);
 }
-
-.colour3 {
+.lime{
 	background: rgb(210, 222, 107);
 }
-
-.colour4 {
+.black{
 	background: rgb(37, 31, 33);
 }
-
-.colour5 {
+.blue{
 	background: rgb(148, 211, 201);
 }
-
-.colour6 {
+.lime{
 	background: rgb(210, 221, 107);
 }
-
-.colour7 {
+.black{
 	background: rgb(37, 31, 33);
 }
-
-.colour8 {
+.pink{
 	background: rgb(238, 91, 120);
 }
-
-.colour9 {
+.grey{
 	background: rgb(129, 126, 126);
 }
 
@@ -329,7 +330,9 @@ main {
 	text-align: center;
 	background-color: #E7ECED;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 .claseinput-img {
 	margin-bottom: 10px;
@@ -349,6 +352,11 @@ main {
 	background-position: center center;
 	border-radius: 100px;
 	border-color: #424A5F;
+}
+
+.selection-image{
+	display: none;
+
 }
 
 /*FORM*/
@@ -405,6 +413,7 @@ fieldset {
 }
 
 .description, .experience-text, .extracto-text {
+
 	resize: vertical;
 	font-size: 13.3333px;
 	/*NECESARIO porque si no se descuajeringa la caja y también cambia el tamaña y la fuente.*/
@@ -457,11 +466,8 @@ fieldset {
 
 .section5bpreview {
 	background-color: #E7ECED;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-left: 5%;
-	width: 50%;
+	margin: 20px;
+
 }
 
 .preview-title {
@@ -478,28 +484,68 @@ fieldset {
 }
 
 .showpreview {
+	background: url("../images/themes/stripes.png") center  no-repeat;
 	position: absolute;
-	z-index: 1;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
 }
 
 .preview-header {
-	margin-top: 20%;
-	margin-left: 5%;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-content: flex-start;
+	height: 80px;
 }
 
-.preview-photo {
-	width: 150px;
-	min-height: 50px;
-	background-color: #EAB931;
+.cuadro-photo {
+	width: 25%;
+
 }
 
-.preview-photo .thumb {
+.preview-photo-div {
+	width: 70px;
+	height: 70px;
+	background-color: #31B89A;
+	border-radius: 100px;
+}
+.nombre-direccion-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 10px;
+	align-content: flex-start;
+	width: 80%;
+}
+.nombre-cargo {
+	/*background-color: #EAB931;*/
+	width: 32%;
+	height: 50px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 10px;
+	font-size: 11px;
+}
+
+.cuadro-direccion {
+	width: 60%;
+	height: 50px;
+	/*background-color: #EAB931;*/
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 9px;
+	text-align: right;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+.preview-photo-div .thumb {
 	width: 100%;
 }
 
@@ -508,6 +554,159 @@ fieldset {
 	flex-direction: column;
 	width: 60%;
 }
+
+/*Cookie*/
+.cookie .preview-title{
+	font-family: 'Cookie';
+	font-size: 1.3em;
+}
+.cookie .preview-text{
+	font-family: 'arial';
+	font-size: 1em;
+}
+/*annie*/
+.annie .preview-title{
+	font-family: 'Leckerli One';
+	font-size: 1em;
+	font-weight: 700;
+}
+.annie .preview-text{
+	font-family: 'Annie Use Your Telescope';
+	font-size: 1em;
+}
+/*Philosopher*/
+.philosopher .preview-title{
+	font-family: 'Philosopher';
+	font-size: 1em;
+	font-weight: 700;
+}
+.philosopher .preview-text{
+	font-family: 'Philosopher';
+	font-size: 1em;
+}
+
+/*Colour rgb(221, 90, 75) rgb(85, 85, 85) rgb(23, 71, 82) rgb(210, 222, 107) rgb(37, 31, 33) rgb(148, 211, 201) rgb(238, 91, 120) rgb(129, 126, 126)*/
+/*red-green-lime*/
+.red-green-lime .preview-title {
+	color: rgb(221, 90, 75);
+	border-bottom: 1px solid rgb(210, 222, 107);
+}
+.red-green-lime .preview-text {
+	color: rgb(23, 71, 82);
+}
+/*black-blue-lime*/
+.black-blue-lime .preview-title {
+	color: rgb(148, 211, 201);
+	border-bottom: 1px solid rgb(210, 222, 107);
+}
+.black-blue-lime .preview-text {
+	color: rgb(37, 31, 33);
+}
+/*lack-pink-grey*/
+.black-pink-grey .preview-title {
+	color: rgb(37, 31, 33);
+	border-bottom: 1px solid rgb(238, 91, 120);
+}
+.black-pink-grey .preview-text {
+	color: rgb(129, 126, 126);
+}
+
+/*Temas*/
+.dots . {
+	background: url("../images/themes/dots.png") center  no-repeat;
+}
+.stripes . {
+	background: url("../images/themes/stripes.png") center  no-repeat;
+}
+.zigZag . {
+	background: url("../images/themes/zigZag.png") center  no-repeat;
+}
+
+.preview-extract-div{
+	height: 100px;
+	width: 100%;
+}
+
+h1 {
+	font-size: 15px;
+	padding-right: 15px;
+}
+
+.cuadro-extract{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	margin: 0;
+}
+.preview-extract {
+	width: 60%;
+	height: 70px;
+	font-size: 10px;
+	text-align: left;
+	padding-left: 5px;
+}
+.preview-rrss {
+	width: 30%;
+	text-align: right;
+	font-size: 8px;
+	padding-top: 10px;
+}
+
+.item-experience-preview, .item-formation-preview {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+}
+
+.cargo-fecha-emp, .curso-fecha-escuela {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 15px;
+	width: 95%;
+	font-size: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.responsabilidades, .record {
+	height: 20px;
+	width: 95%;
+	font-size: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+}
+
+.item-skills-preview {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 40px;
+	width: 95%;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.languages-preview, .it-preview, .bonus-preview {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 11px;
+}
+
+.talk-icon, .it-icon, .bonus-icon {
+	width: 30px;
+	height: 30px;
+}
+
+#language-selection-id, #it-selection-id, #bonus-selection-id {
+	width: 60px;
+	padding-left: 5px;
+}
+
 
 /*FOOTER*/
 
@@ -597,6 +796,7 @@ footer {
 	.design-options-font, .design-options-colour, .design-options-theme {
 		/*height: 200px;*/
 		padding: 0;
+
 	}
 	.design-img {
 		width: 75%;
@@ -627,6 +827,7 @@ footer {
 		flex-direction: row;
 		padding: 0 3%;
 		background-color: #E7ECED;
+		width:52%;
 	}
 }
 
