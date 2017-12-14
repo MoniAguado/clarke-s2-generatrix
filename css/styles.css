@@ -21,6 +21,17 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+.background-header {
+	background-image: url("../images/cover_mobile2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+}
+.cover {
+	height: 300px;
+}
+
 main {
 	flex: 1;
 	padding-top: 80px;
@@ -198,7 +209,7 @@ main {
 
 .section2design {
 	background: #31B89A;
-	height: 106px;
+	height: 126px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -209,18 +220,19 @@ main {
 	position: relative;
 	list-style: none;
 	display: flex;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	height: 106px;
+	width: 80%
 }
 
 .design-options-font, .design-options-colour, .design-options-theme {
-	cursor: context-menu;
 	border-color: #424A5F;
 	border-width: 3px;
 	border-style: solid;
 	padding: 0;
-	height: 100px;
+	height: 106px;
 	background-color: white;
 	z-index: 2;
 }
@@ -463,13 +475,18 @@ fieldset {
 
 
 
-.preview-title, .config-title {
+.preview-title, .config-title, .label {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
 	padding-top: 1em;
 }
-
+.preview-title{
+	text-align: left;
+}
+.preview-title h1{
+	margin: 10px 0;
+}
 .preview-theme {
 	position: relative;
 	font-size: 80%;
@@ -480,10 +497,9 @@ fieldset {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 1000px;
-	/*width: 80%;*/
 	display: flex;
 	flex-direction: column;
+	padding: 8%;
 }
 
 .preview-header {
@@ -545,6 +561,8 @@ fieldset {
 	width: 70px;
 	height: 70px;
 	border-radius: 100px;
+	width: 70px;
+	height: 70px;
 }
 
 .preview-data {
@@ -640,7 +658,7 @@ h1 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: flex-start;
-	margin: 0;
+	margin-top: 10px;
 }
 .preview-extract {
 	width: 60%;
@@ -660,6 +678,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	height: 150px;
+	margin-top: 10px;
 }
 
 .cargo-fecha-emp, .curso-fecha-escuela {
@@ -750,25 +769,40 @@ footer {
 }
 
 @media all and (min-width:768px) {
+	.background-header {
+		background-image: url("../images/desktop.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 500px;
+	}
+	.cover {
+		height: 600px;
+	}
+
 	.title-on-cover-main {
-		font-size: 40px;
+		font-size: 45px;
+		padding: 35px 0 35px 0;
+		top:50px;
 	}
 	.instructions-paragraph p {
 		font-size: 20px;
 	}
 	.steps-band {
-		padding: 8em 0em;
+		padding: 2.5em 0em 2em 0em;
 		width: auto;
 	}
 	.img-step-element {
-		min-width: 90%;
+			height:120px;
+			margin: auto;
+			width: auto;
 	}
 	.step-element {
 		width: 45%;
 	}
 	.span-step {
 		font-size: 20px;
-		padding-top: 2em;
+		padding-top: 1.2em;
 	}
 	.footer-list {
 		display: flex;
@@ -793,27 +827,6 @@ footer {
 		width: 30px;
 		height: auto;
 	}
-	.section2design {
-		height: 220px;
-	}
-	.design-options {
-		height: 206px;
-	}
-	.design-options-font, .design-options-colour, .design-options-theme {
-		height: 200px;
-	}
-	.design-img {
-		width: 200px;
-		height: 200px;
-	}
-	.fonts, .colours, .themes {
-		width: 200px;
-		height: auto;
-	}
-	.font, .colour, .theme {
-		width: 200px;
-		height: 50px;
-	}
 	.hasta{
  	display: flex;
 	flex-direction: row;
@@ -829,12 +842,12 @@ footer {
 		padding: 0 2%;
 		background-color: #E7ECED;
 	}
-.col1, .col2 {
-	width: 50%;
-}
-.col2 {
-	margin-left: 2%;
-}
+	.col1, .col2 {
+		width: 50%;
+	}
+	.col2 {
+		margin-left: 2%;
+	}
 }
 @media all and (min-width:622px){
 	.formation-dates, .experience-dates {
