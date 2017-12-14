@@ -542,6 +542,8 @@ fieldset {
 
 .preview-photo-div .thumb {
 	width: 100%;
+	width: 70px;
+	height: 70px;
 	border-radius: 100px;
 }
 
