@@ -472,17 +472,13 @@ fieldset {
 	margin-bottom: 5%;
 }
 
-<<<<<<< HEAD
 .showpreview {
 	background: url("../images/themes/stripes.png") center  no-repeat;
-=======
-/*.showpreview {
->>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 	position: absolute;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
-}*/
+}
 
 .preview-header {
 	display: flex;
@@ -548,7 +544,6 @@ fieldset {
 	width: 60%;
 }
 
-<<<<<<< HEAD
 /*Cookie*/
 .cookie .preview-title{
 	font-family: 'Cookie';
@@ -616,7 +611,6 @@ fieldset {
 	background: url("../images/themes/zigZag.png") center  no-repeat;
 }
 
-=======
 .preview-extract-div{
 	height: 100px;
 	width: 100%;
@@ -703,7 +697,6 @@ h1 {
 }
 
 
->>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 /*FOOTER*/
 
 footer {

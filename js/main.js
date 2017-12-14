@@ -10,7 +10,6 @@ function openClose(idContent) {
 	}
 }
 
-<<<<<<< HEAD
 
 //Elegir estilos para curriculum
 var preview = document.querySelector('.showpreview');
@@ -66,8 +65,7 @@ for (var i = 0; i < themes.length; i++) {
 
 //función para desplegar sección
 
-=======
->>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
+
 // desplegables sin onclick
 var botones = document.querySelectorAll('.boton-abrir');
 function desplegable(event){
@@ -87,10 +85,7 @@ for (i=0; i<botones.length; i++){
 	botones[i].addEventListener('click', desplegable);
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 //función para meses
 function selectMonths() {
 	var options = '';
@@ -132,31 +127,6 @@ for (var i = 0; i < yearsAll.length; i++) {
 	yearsAll[i].innerHTML = selectYear;
 };
 
-<<<<<<< HEAD
-
-
-// función para completar los campos del formulario
-// function completar () {
-//
-// 	var name= document.querySelector ('#box_number').value
-// 	var namePrompt = prompt("Introduce tu nombre");
-// 	var surnamesPrompt = prompt("Introduce tus apellidos");
-// 	var telephonePrompt = prompt("Introduce tu número de teléfono");
-// 	var dateBirthPrompt = prompt("Introduce tu fecha de nacimiento");
-// 	var emailPrompt = prompt("Introduce tu dirección de correo electrónico");
-// 	var addressPrompt = prompt("Introduce tu dirección de correo postal");
-//
-// 	document.querySelector("#nombrePrompt").innerHTML = namePrompt;
-// 	document.querySelector("#apellidoPrompt").innerHTML = surnamesPrompt;
-// 	document.querySelector("#telefonoPrompt").innerHTML = telephonePrompt;
-// 	document.querySelector("#nacimientoPrompt").innerHTML = dateBirthPrompt;
-// 	document.querySelector("#correoElectronicoPrompt").innerHTML = emailPrompt;
-// 	document.querySelector("#direccionPrompt").innerHTML = addressPrompt;
-// };
-
-// IMAGEN
-=======
->>>>>>> 3d8f5169d4a4bceee88900db313357dc90fbf3cc
 
 
 var inputFile = document.querySelector('#files');
