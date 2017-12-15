@@ -410,6 +410,9 @@ fieldset {
 	margin: 5px;
 	width: 80%;
 }
+#date {
+	color:#757575;
+}
 
 .description, .experience-text, .extracto-text {
 
@@ -441,7 +444,7 @@ fieldset {
 	color: rgb(117, 117, 117);
 }*/
 
-.formation-dates-p, .experience-dates-p, .present-button-p {
+.formation-dates-p, .experience-dates-p {
 	display: inline;
 	color: black;
 	font-size: 14px;
@@ -457,6 +460,13 @@ fieldset {
 .actualidad{
 	margin-top: 4px;
 }
+.label, .present-button-p  {
+	font-family: 5px;
+	color: #31B89A;
+}
+.until {
+	margin-left: 2px;
+}
 #experience {
 	display: none;
 }
@@ -465,7 +475,7 @@ fieldset {
 
 /*ELECCIÓN DE DISEÑO*/
 
-.preview-title, .config-title, .label {
+.preview-title, .config-title {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
@@ -771,13 +781,13 @@ footer {
 	.hasta {
 		display: flex;
 		flex-direction: row;
-		height: 20px;
+		height: 19px;
 	}
 	.actualidad {
-		margin-left: 20px;
+		margin-left: 5px;
 }
-#end_month, #end_year {
-	margin: 0.5px;
+#end_month1, #end_year1, #end_month-formation1, #end_year-formation1 {
+	margin-left: 2px;
 }
 
 @media all and (min-width:622px){
@@ -786,7 +796,6 @@ footer {
 		flex-direction: row;
 	}
 	.actualidad {
-		margin-left: 20px;
 		margin-top: 0;
 	}
 	.present-button-p {
@@ -837,13 +846,6 @@ footer {
 	.boton-abrir, .boton-cerrar {
 		width: 30px;
 		height: auto;
-	}
-	.hasta{
- 	display: flex;
-	flex-direction: row;
-	}
-	.formation-dates {
-		display: inline;
 	}
 	.imagen-desktop {
 		display: inline-block;
