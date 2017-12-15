@@ -871,6 +871,9 @@ footer {
 		padding: 0 2%;
 		background-color: #E7ECED;
 	}
+	.showpreview {
+		height: 130vh;
+	}
 	.col1, .col2 {
 		width: 50%;
 	}
