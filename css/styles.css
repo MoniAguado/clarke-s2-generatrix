@@ -882,4 +882,33 @@ footer {
 	.col2 {
 		margin-left: 2%;
 	}
+	.cookie .preview-title{
+		font-family: 'Cookie';
+		font-size: 1.2em;
+	}
+	.cookie .preview-text{
+		font-family: 'arial';
+		font-size: .7em;
+	}
+	/*annie*/
+	.annie .preview-title{
+		font-family: 'Leckerli One';
+		font-size: .1em;
+		font-weight: 700;
+	}
+	.annie .preview-text{
+		font-family: 'Annie Use Your Telescope';
+		font-size: .8em;
+	}
+	/*Philosopher*/
+	.philosopher .preview-title{
+		font-family: 'Philosopher';
+		font-size: 1em;
+		font-weight: 700;
+	}
+	.philosopher .preview-text{
+		font-family: 'Philosopher';
+		font-size: .8em;
+	}
+
 }
