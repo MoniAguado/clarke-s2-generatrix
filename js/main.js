@@ -186,21 +186,24 @@ function printPersonalDataToPreview() {
 document.querySelector('.save-data-button').addEventListener('click',printPersonalDataToPreview);
 
 
-function printProfessionalExperienceToPreview() {
-	document.getElementById('job-preview-id').innerHTML = document.getElementById('puesto').value;
-	document.getElementById('from-preview-id').innerHTML =
-	document.getElementById('start_month').value + ' ' +
-	document.getElementById('start_year').value;
-	if (document.getElementById('actualidad').checked) {
-		document.getElementById('until-preview-id').innerHTML = 'Diciembre 2017';
+function printProfessionalExperienceToPreview(event) {
+
+var dataIdValue = event.currentTarget.getAttribute('data-id');
+
+	document.getElementById('job-preview-id-' + dataIdValue).innerHTML = document.getElementById('puesto' + dataIdValue).value;
+	document.getElementById('from-preview-id-' + dataIdValue).innerHTML =
+	document.getElementById('start_month' + dataIdValue).value + ' ' +
+	document.getElementById('start_year' + dataIdValue).value;
+	if (document.getElementById('actualidad' + dataIdValue).checked) {
+		document.getElementById('until-preview-id' + dataIdValue).innerHTML = 'Diciembre 2017';
 	}
 	else {
-		document.getElementById('until-preview-id').innerHTML =
-		document.getElementById('end_month').value + ' ' +
-		document.getElementById('end_year').value;
+		document.getElementById('until-preview-id' + dataIdValue).innerHTML =
+		document.getElementById('end_month' + dataIdValue).value + ' ' +
+		document.getElementById('end_year' + dataIdValue).value;
 	}
-	document.getElementById('place-preview-id').innerHTML = document.getElementById('lugar').value;
-	document.getElementById('description-preview-id').innerHTML = document.getElementById('description').value;
+	document.getElementById('place-preview-id' + dataIdValue).innerHTML = document.getElementById('lugar' + dataIdValue).value;
+	document.getElementById('description-preview-id' + dataIdValue).innerHTML = document.getElementById('description' + dataIdValue).value;
 }
 document.querySelector('.save-experience-button').addEventListener('click',printProfessionalExperienceToPreview);
 
@@ -223,28 +226,32 @@ function printFormationToPreview() {
 }
 document.querySelector('.save-formation-button').addEventListener('click',printFormationToPreview);
 
-function printSkillsToPreview() {
-	document.getElementById('language-name1-preview-id').innerHTML = document.getElementById('language-name1').value;
-	document.getElementById('language-level1-preview-id').innerHTML = document.getElementById('language-level1').value;
+function printSkillsToPreview(event) {
 
-	document.getElementById('it-name1-preview-id').innerHTML = document.getElementById('it-name1').value;
-	document.getElementById('it-level1-preview-id').innerHTML = document.getElementById('it-level1').value;
+var dataIdValue = event.currentTarget.getAttribute('data-id');
 
-	document.getElementById('skill-element1-preview-id').innerHTML = document.getElementById('skill-element1').value;
+	document.getElementById('language-name' + dataIdValue + '-preview-id').innerHTML = document.getElementById('language-name' + dataIdValue + '').value;
+
+
+	// document.getElementById('language-level1-preview-id').innerHTML = document.getElementById('language-level1').value;
+	//
+	// document.getElementById('it-name1-preview-id').innerHTML = document.getElementById('it-name1').value;
+	// document.getElementById('it-level1-preview-id').innerHTML = document.getElementById('it-level1').value;
+	//
+	// document.getElementById('skill-element1-preview-id').innerHTML = document.getElementById('skill-element1').value;
 }
 document.querySelector('.save-skills-button').addEventListener('click',printSkillsToPreview);
+
 
 
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (experience)_______________________
 var idExperienceModifier = 2;
 function addItemExperience() {
-	var repeatedItemExperience = '<div class="experience-element" id="experience-element' + idExperienceModifier + '"><input class="claseinput" id="puesto" type="text" name="puesto" placeholder="Puesto' + idExperienceModifier + '"><section class="experience-dates"><div class="desde"><label class="label" for="desde">Desde</label><select id="start_month' + idExperienceModifier + '" name="start_month" class="month"></select><select id="start_year' + idExperienceModifier + '" name="start_year" class="year"></select></div><div class="hasta"><label class="label" for="hasta">Hasta</label><select id="end_month' + idExperienceModifier + '" name="end_month" class="month"></select><select id="end_year' + idExperienceModifier + '" name="start_year" class="year"></select><div class="actualidad"><label for="actualidad" class="present-button-p">Actualidad</label><input class="present-button" id="actualidad' + idExperienceModifier + ' "type="checkbox" name="actualidad"></div></div></section><input class="claseinput" id="lugar'+ idExperienceModifier + '" type="text" name="lugar" placeholder="Lugar"><textarea class="experience-text" id=description' + idExperienceModifier + ' name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea><button type="button" name="button" class="save-experience-button">Guardar</button></div>';
+	var repeatedItemExperience = '<div class="experience-element" id="experience-element' + idExperienceModifier + '"><input class="claseinput" id="puesto' + idExperienceModifier + '" type="text" name="puesto" placeholder="Puesto' + idExperienceModifier + '"><section class="experience-dates"><div class="desde"><label class="label" for="desde">Desde</label><select id="start_month' + idExperienceModifier + '" name="start_month" class="month"></select><select id="start_year' + idExperienceModifier + '" name="start_year" class="year"></select></div><div class="hasta"><label class="label" for="hasta">Hasta</label><select id="end_month' + idExperienceModifier + '" name="end_month" class="month"></select><select id="end_year' + idExperienceModifier + '" name="start_year" class="year"></select><div class="actualidad"><label for="actualidad" class="present-button-p">Actualidad</label><input class="present-button" id="actualidad' + idExperienceModifier + ' "type="checkbox" name="actualidad"></div></div></section><input class="claseinput" id="lugar'+ idExperienceModifier + '" type="text" name="lugar" placeholder="Lugar"><textarea class="experience-text" id=description' + idExperienceModifier + ' name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea><button type="button" name="button" class="save-experience-button" id="save-experience-button-' + idExperienceModifier + '" data-id="' + idExperienceModifier + '">Guardar</button></div>';
 
 	document.querySelector('.experience-element').insertAdjacentHTML('beforeend', repeatedItemExperience);
 
-	idExperienceModifier++;
-	selectMonths();
-	añosInput ();
+	document.getElementById('save-experience-button-' + idExperienceModifier).addEventListener('click',printProfessionalExperienceToPreview);
 }
 
 var newExperienceButton = document.querySelector('.new-experience-button');
