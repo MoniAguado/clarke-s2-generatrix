@@ -208,34 +208,34 @@
 									<div id="formation">
 										<div class="formation-element" id="formation-element">
 											<label class="label" for="titulo"></label>
-											<input class="claseinput" id="titulo" type="text" name="titulation" placeholder="Título*" required>
+											<input class="claseinput" id="titulo1" type="text" name="titulation" placeholder="Título*" required>
 											<section class="formation-dates">
 												<div class="desde">
 												<label class="label" for="desde">Desde</label>
-												<select id="start_month-formation" name="start_month" class="month">
+												<select id="start_month-formation1" name="start_month" class="month">
 												</select>
-												<select id="start_year-formation" name="start_year" class="year">
+												<select id="start_year-formation1" name="start_year" class="year">
 												</select>
 												</div>
 												<div class="hasta">
 													<label class="label" for="hasta">Hasta</label>
-													<select id="end_month-formation" name="end_month" class="month">
+													<select id="end_month-formation1" name="end_month" class="month">
 													</select>
-													<select id="end_year-formation" name="start_year" class="year">
+													<select id="end_year-formation1" name="start_year" class="year">
 													</select>
 														<div class="actualidad">
 													<label for="actualidad" class="present-button-p">Actualidad</label>
-													<input class="present-button" id="actualidad-formation" type="checkbox" name="actualidad">
+													<input class="present-button" id="actualidad-formation1" type="checkbox" name="actualidad">
 												</div>
 											</div>
 										</section>
 											<label class="label" for="centro"></label>
-											<input class="claseinput" id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
+											<input class="claseinput" id="centro1" type="text" name="place" placeholder="Centro de estudios*" required>
 											<label class="label" for="description"></label>
-											<textarea class="description" id="description-formation" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
-											<button type="button" name="button" class="save-formation-button">Guardar</button>
+											<textarea class="description" id="description-formation1" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
+											<button type="button" name="button" class="save-formation-button" id="save-formation-button1" data-id="1">Guardar</button>
 										</div>
-										<button type="button" name="button" class="new-formation-button">Nueva formación</button>
+										<button type="button" name="button" class="new-formation-button" data-id="1">Nueva formación</button>
 									</div>
 									<hr class="line">
 								</fieldset>
@@ -266,6 +266,7 @@
 															<option>Alto</option>
 															<option>Nativo</option>
 													</select>
+													<button type="button" name="button" class="save-languages-button" id="save-languages-button1"  data-id="1">Guardar</button>
 												</div>
 											<button type="button" name="button" class="new-language-button">Nuevo idioma</button>
 											</div>
@@ -282,6 +283,7 @@
 															<option>Intermedio</option>
 															<option>Alto</option>
 													</select>
+													<button type="button" name="button" class="save-it-button" id="save-it-button1" data-id="1">Guardar</button>
 												</div>
 												<button type="button" name="button" class="new-it-button">Nuevo programa informático</button>
 											</div>
@@ -290,10 +292,10 @@
 												<div class="skills-element">
 													<label class="label" for="skill-element1"></label>
 													<input class="skills-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
+													<button type="button" name="button" class="save-skills-button" data-id="1">Guardar</button>
 												</div>
 											</div>
 											<button type="button" name="button" class="new-skills-button">Nueva habilidad</button>
-											<button type="button" name="button" class="save-skills-button">Guardar</button>
 										</div>
 										<!-- <div class="various-skills">
 											<p>Destrezas</p>
@@ -382,18 +384,6 @@
 								<div><span id="description-preview-id2"></span></div>
 							</div>
 						</div>
-						<div class="item-experience-preview preview-text">
-							<div class="cargo-fecha-emp">
-								<div><span id="job-preview-id-3"></span></div>
-								<div><span id="from-preview-id-3"></span></div>
-								<div><span id="until-preview-id3"></span></div>
-								<div><span id="place-preview-id3"></span></div>
-							</div>
-							<div class="responsabilidades">
-								<div><span id="description-preview-id3"></span></div>
-							</div>
-						</div>
-					</div>
 
 <!-- FORMACIÓN -->
 					<div class="preview-formation preview-div">
@@ -402,13 +392,24 @@
 						</div>
 						<div class="item-formation-preview preview-text">
 							<div class="curso-fecha-escuela">
-								<div><span id="titulo-preview-id">Front-end</span></div>
-								<div><span id="from-formation-preview-id">10/2017</span></div>
-								<div><span id="until-formation-preview-id">Actualidad</span></div>
-								<div><span id="centro-id">Adalab</span></div>
+								<div><span id="titulo-preview-id1">Front-end</span></div>
+								<div><span id="from-formation-preview-id1">10/2017</span></div>
+								<div><span id="until-formation-preview-id1">Actualidad</span></div>
+								<div><span id="centro-id1">Adalab</span></div>
 							</div>
 							<div class="record">
-								<div><span id="description-formation-preview-id">Estudios de programacion front-end en la Fundación Adalab. HTML, CSS, Javascript.</span></div>
+								<div><span id="description-formation-preview-id1">Estudios de programacion front-end en la Fundación Adalab. HTML, CSS, Javascript.</span></div>
+							</div>
+						</div>
+						<div class="item-formation-preview preview-text">
+							<div class="curso-fecha-escuela">
+								<div><span id="titulo-preview-id2">Front-end</span></div>
+								<div><span id="from-formation-preview-id2">10/2017</span></div>
+								<div><span id="until-formation-preview-id2">Actualidad</span></div>
+								<div><span id="centro-id2">Adalab</span></div>
+							</div>
+							<div class="record">
+								<div><span id="description-formation-preview-id2">Estudios de programacion front-end en la Fundación Adalab. HTML, CSS, Javascript.</span></div>
 							</div>
 						</div>
 					</div>
@@ -418,15 +419,19 @@
 							<div class="languages-preview">
 								<img src="images/speak.png" class="talk-icon">
 								<div class="language-selection"><span id="language-name1-preview-id"></span><span> | </span><span id="language-level1-preview-id"></span></div>
+								<div class="language-selection"><span id="language-name2-preview-id"></span><span> | </span><span id="language-level2-preview-id"></span></div>
 							</div>
 							<div class="it-preview">
 								<img src="images/computer-monitor-and-mouse.png" class="it-icon">
 								<div class="it-selection"><span id="it-name1-preview-id"></span><span> | </span ><span id="it-level1-preview-id"></span></div>
+								<div class="it-selection"><span id="it-name2-preview-id"></span><span> | </span ><span id="it-level2-preview-id"></span></div>
 							</div>
 							<div class="bonus-preview">
 								<img src="images/settings.png" class="bonus-icon">
 								<div class="bonus-selection"><span id="skill-element1-preview-id"></span></div>
+								<div class="bonus-selection"><span id="skill-element2-preview-id"></span></div>
 							</div>
+
 						</div>
 					</div>
 			</section>

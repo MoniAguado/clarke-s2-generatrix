@@ -208,38 +208,57 @@ var dataIdValue = event.currentTarget.getAttribute('data-id');
 document.querySelector('.save-experience-button').addEventListener('click',printProfessionalExperienceToPreview);
 
 
-function printFormationToPreview() {
-	document.getElementById('titulo-preview-id').innerHTML = document.getElementById('titulo').value;
-	document.getElementById('from-formation-preview-id').innerHTML =
-	document.getElementById('start_month-formation').value + ' ' +
-	document.getElementById('start_year-formation').value;
-	if (document.getElementById('actualidad-formation').checked) {
-		document.getElementById('until-formation-preview-id').innerHTML = 'Diciembre 2017';
-	}
-	else {
-		document.getElementById('until-formation-preview-id').innerHTML =
-		document.getElementById('end_month-formation').value + ' ' +
-		document.getElementById('end_year-formation').value;
-	}
-	document.getElementById('centro-id').innerHTML = document.getElementById('centro').value;
-	document.getElementById('description-formation-preview-id').innerHTML = document.getElementById('description-formation').value;
-}
-document.querySelector('.save-formation-button').addEventListener('click',printFormationToPreview);
-
-function printSkillsToPreview(event) {
+function printFormationToPreview(event) {
 
 var dataIdValue = event.currentTarget.getAttribute('data-id');
 
-	document.getElementById('language-name' + dataIdValue + '-preview-id').innerHTML = document.getElementById('language-name' + dataIdValue + '').value;
-
-
-	// document.getElementById('language-level1-preview-id').innerHTML = document.getElementById('language-level1').value;
-	//
-	// document.getElementById('it-name1-preview-id').innerHTML = document.getElementById('it-name1').value;
-	// document.getElementById('it-level1-preview-id').innerHTML = document.getElementById('it-level1').value;
-	//
-	// document.getElementById('skill-element1-preview-id').innerHTML = document.getElementById('skill-element1').value;
+	document.getElementById('titulo-preview-id' + dataIdValue).innerHTML = document.getElementById('titulo' + dataIdValue).value;
+	document.getElementById('from-formation-preview-id' + dataIdValue).innerHTML =
+	document.getElementById('start_month-formation' + dataIdValue).value + ' ' +
+	document.getElementById('start_year-formation' + dataIdValue).value;
+	if (document.getElementById('actualidad-formation' + dataIdValue).checked) {
+		document.getElementById('until-formation-preview-id' + dataIdValue).innerHTML = 'Diciembre 2017';
+	}
+	else {
+		document.getElementById('until-formation-preview-id' + dataIdValue).innerHTML =
+		document.getElementById('end_month-formation' + dataIdValue).value + ' ' +
+		document.getElementById('end_year-formation' + dataIdValue).value;
+	}
+	document.getElementById('centro-id' + dataIdValue).innerHTML = document.getElementById('centro' +dataIdValue).value;
+	document.getElementById('description-formation-preview-id' + dataIdValue).innerHTML = document.getElementById('description-formation' + dataIdValue).value;
 }
+document.querySelector('.save-formation-button').addEventListener('click',printFormationToPreview);
+
+
+
+function printLanguagesToPreview(event) {
+var dataIdValue = event.currentTarget.getAttribute('data-id');
+
+	document.getElementById('language-name' + dataIdValue + '-preview-id').innerHTML = document.getElementById('language-name' + dataIdValue).value;
+
+	document.getElementById('language-level' + dataIdValue + '-preview-id').innerHTML = document.getElementById('language-level' + dataIdValue).value;
+}
+document.querySelector('.save-languages-button').addEventListener('click',printLanguagesToPreview);
+
+
+function printItToPreview(event) {
+var dataIdValue = event.currentTarget.getAttribute('data-id');
+
+	document.getElementById('it-name' + dataIdValue + '-preview-id').innerHTML = document.getElementById('it-name' + dataIdValue).value;
+
+	document.getElementById('it-level' + dataIdValue + '-preview-id').innerHTML = document.getElementById('it-level' + dataIdValue).value;
+}
+document.querySelector('.save-it-button').addEventListener('click',printItToPreview);
+
+
+
+
+function printSkillsToPreview(event) {
+var dataIdValue = event.currentTarget.getAttribute('data-id');
+
+	document.getElementById('skill-element' + dataIdValue + '-preview-id').innerHTML = document.getElementById('skill-element' + dataIdValue).value;
+}
+
 document.querySelector('.save-skills-button').addEventListener('click',printSkillsToPreview);
 
 
@@ -253,6 +272,7 @@ function addItemExperience() {
 
 	document.getElementById('save-experience-button-' + idExperienceModifier).addEventListener('click',printProfessionalExperienceToPreview);
 
+	idExperienceModifier++;
 	añosInput ();
 	selectMonths();
 }
@@ -261,22 +281,24 @@ var newExperienceButton = document.querySelector('.new-experience-button');
 newExperienceButton.addEventListener('click',addItemExperience);
 
 
-
-
-
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (formation)_______________________
 var idFormationModifier = 2;
 function addItemFormation() {
-	var repeatedItemFormation = '<div class="formation-element" id="formation-element' + idFormationModifier + '"><label class="label" for="titulo"></label><input class="claseinput" id="titulo' + idFormationModifier + '" type="text" name="titulation" placeholder="Título*" required><section class="formation-dates"><div class="desde"><label class="label" for="desde">Desde</label><select id="start_month-formation' + idFormationModifier + '" name="start_month" class="month"></select><select id="start_year-formation' + idFormationModifier + '" name="start_year" class="year"></select></div><div class="hasta"><label class="label" for="hasta">Hasta</label><select id="end_month-formation' + idFormationModifier + '" name="end_month" class="month"></select><select id="end_year-formation' + idFormationModifier + '" name="start_year" class="year"></select><div class="actualidad"><label for="actualidad" class="present-button-p">Actualidad</label><input class="present-button" id="actualidad-formation' + idFormationModifier + '" type="checkbox" name="actualidad"></div></div></section><label class="label" for="centro"></label><input class="claseinput" id="centro' + idFormationModifier + '" type="text" name="place" placeholder="Centro de estudios*" required><label class="label" for="description"></label><textarea class="description" id="description-formation' + idFormationModifier + '" cols="30" rows="10" name="description" placeholder="Descripción"></textarea><button type="button" name="button" class="save-formation-button">Guardar</button></div>'
+	var repeatedItemFormation = '<div class="formation-element" id="formation-element' + idFormationModifier + '"><label class="label" for="titulo"></label><input class="claseinput" id="titulo' + idFormationModifier + '" type="text" name="titulation" placeholder="Título*" required><section class="formation-dates"><div class="desde"><label class="label" for="desde">Desde</label><select id="start_month-formation' + idFormationModifier + '" name="start_month" class="month"></select><select id="start_year-formation' + idFormationModifier + '" name="start_year" class="year"></select></div><div class="hasta"><label class="label" for="hasta">Hasta</label><select id="end_month-formation' + idFormationModifier + '" name="end_month" class="month"></select><select id="end_year-formation' + idFormationModifier + '" name="start_year" class="year"></select><div class="actualidad"><label for="actualidad" class="present-button-p">Actualidad</label><input class="present-button" id="actualidad-formation' + idFormationModifier + '" type="checkbox" name="actualidad"></div></div></section><label class="label" for="centro"></label><input class="claseinput" id="centro' + idFormationModifier + '" type="text" name="place" placeholder="Centro de estudios*" required><label class="label" for="description"></label><textarea class="description" id="description-formation' + idFormationModifier + '" cols="30" rows="10" name="description" placeholder="Descripción"></textarea><button type="button" name="button" class="save-formation-button" id="save-formation-button' + idFormationModifier + '" data-id="' + idFormationModifier + '">Guardar</button></div>'
 
 	document.querySelector('.formation-element').insertAdjacentHTML('beforeend', repeatedItemFormation);
 
+	document.getElementById('save-formation-button' + idFormationModifier).addEventListener('click',printFormationToPreview);
+
 	idFormationModifier++;
-	selectMonths();
 	añosInput ();
+	selectMonths();
 }
 
-document.querySelector('.new-formation-button').addEventListener('click',addItemFormation);
+var newFormationButton = document.querySelector('.new-formation-button');
+newFormationButton.addEventListener('click',addItemFormation);
+
+
 
 
 // // GENERAR NUEVOS ELEMENTOS A PETICIÓN (idiomas)
@@ -284,12 +306,12 @@ var idLanguageModifier = 2;
 function addItemLanguage() {
 	var repeatedItemLanguage = '<div class="language-element"><label class="label" for="language-name' + idLanguageModifier + '"></label>';
 	repeatedItemLanguage+= '<input class="language-name claseinput" id="language-name' + idLanguageModifier + '" type="text" name="language-name" placeholder="Idioma ' + idLanguageModifier +'">';
-	repeatedItemLanguage+= '<select id="level" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option><option>Nativo</option></select>';
-	repeatedItemLanguage+= '</div>';
+	repeatedItemLanguage+= '<select id="language-level' + idLanguageModifier  +'" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option><option>Nativo</option></select><button type="button" name="button" class="save-languages-button" id="save-languages-button' + idLanguageModifier +'" data-id="' + idLanguageModifier + '">Guardar</button></div>';
 
 	var languageElement = document.querySelector('.language-element');
-
 	languageElement.insertAdjacentHTML('beforeend', repeatedItemLanguage);
+
+	document.getElementById('save-languages-button' + idLanguageModifier).addEventListener('click',printLanguagesToPreview);
 
 	idLanguageModifier++;
 }
@@ -302,11 +324,13 @@ newLanguageButton.addEventListener('click',addItemLanguage);
 // // GENERAR NUEVOS ELEMENTOS A PETICIÓN (it)__________________________
 var idItModifier = 2;
 function addItemIt() {
-	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name claseinput" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><select id="it-level' + idItModifier + '" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option></select></div>';
+	var repeatedItemIt = '<div class="it-element"><label class="label" for="it-name' + idItModifier + '"></label><input class="it-name claseinput" id="it-name' + idItModifier + '" type="text" name="it-name" placeholder="Tecnología ' + idItModifier + '"><select id="it-level' + idItModifier + '" name="level" class="level"><option value="nivel">Nivel</option><option >--</option><option>Básico</option><option>Intermedio</option><option>Alto</option></select><button type="button" name="button" class="save-it-button" id="save-it-button' + idItModifier + '" data-id="' + idItModifier + '">Guardar</button></div>';
 
 	var itElement = document.querySelector('.it-element');
 
 	itElement.insertAdjacentHTML('beforeend', repeatedItemIt);
+
+	document.getElementById('save-it-button' + idItModifier).addEventListener('click',printItToPreview);
 
 	idItModifier++;
 }
@@ -318,11 +342,13 @@ newItButton.addEventListener('click',addItemIt);
 // GENERAR NUEVOS ELEMENTOS A PETICIÓN (skills)___________________________
 var idSkillsModifier = 2;
 function addItemSkills() {
-	var repeatedItemSkills = '<div class="skills-element"><label class="label" for="skill-element' + idSkillsModifier + '"></label><input class="skills-element claseinput" id="skill-element' + idSkillsModifier +'" type="text" name="skill-element" placeholder="Destreza ' + idSkillsModifier + '"></div>';
+	var repeatedItemSkills = '<div class="skills-element"><label class="label" for="skill-element' + idSkillsModifier + '"></label><input class="skills-element claseinput" id="skill-element' + idSkillsModifier +'" type="text" name="skill-element" placeholder="Destreza ' + idSkillsModifier + '"><button type="button" name="button" class="save-skills-button" id="save-skills-button' + idSkillsModifier + '" data-id="' + idSkillsModifier + '">Guardar</button></div>';
 
 	var skillsElement = document.querySelector('.skills-element');
 
 	skillsElement.insertAdjacentHTML('beforeend', repeatedItemSkills);
+
+	document.getElementById('save-skills-button' + idSkillsModifier).addEventListener('click',printSkillsToPreview);
 
 	idSkillsModifier++;
 }
