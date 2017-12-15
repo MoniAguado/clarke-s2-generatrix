@@ -24,16 +24,16 @@
 					<li><a href="index.html#previo">Previsualización</a></li>
 				</ul>
 			</nav>
-				<div class="logo" a href="index.html"></div>
+				<a href="index.html"><div class="logo"></div></a>
 			</div>
 		</header>
 
 		<main>
 			<div class="cover">
-				<div class="background-header"> </div>
-				<!-- <img class="main-img-section1" src="images/cover_mobile2.png" alt="Imagen de portada"> -->
-				<h1 class="title-on-cover-main">Diseña tu CV sin perder tiempo</h1>
+				<img class="main-img-section1" src="images/cover_mobile2.png" alt="Imagen de portada">
+				<img class="imagen-desktop" src="images/desktop.png">
 			</div>
+			<h1 class="title-on-cover-main">Diseña tu CV sin perder tiempo</h1>
 			<section class="section1info">
 				<div class="steps-band">
 					<div class="step-element">
@@ -59,7 +59,7 @@
 	<!-- DESING SECTION -->
 	<section class="main-block" id="diseño">
 		<section class="col1">
-		<h2 class="config-title"> Configura tu curriculum </h2>
+		<h2 class="config-title"> Configura tu currículum </h2>
 	<section class="config">
 			<section class="section2design">
 				<ul class="design-options">
@@ -126,7 +126,7 @@
 								<!--oculto-->
 								<div id="personal-information">
 									<label class="label" for="name"></label>
-									<input class="claseinput" id="name" type="text" name="name" placeholder="Nombre*" required>
+									<input class="claseinput personaldata" id="name" type="text" name="name" placeholder="Nombre*" required>
 									<label class="label" for="surname"></label>
 									<input class="claseinput" id="surname" type="text" name="surname" placeholder="Apellidos*" required>
 									<label class="label" for="profesion"></label>
@@ -134,21 +134,20 @@
 									<label class="label" for="telephone"></label>
 									<input class="claseinput" id="telephone" type="tel" name="telephone" placeholder="Teléfono*" required>
 									<label class="label" for="date"></label>
-									<input class="claseinput" id="date" type="number" name="date" placeholder="Fecha de nacimiento">
+									<input class="claseinput" id="date" type="date" name="date" placeholder="Fecha de nacimiento">
 									<label class="label" for="email"></label>
 									<input class="claseinput" id="email" type="email" name="email" placeholder="Email*" required>
 									<label class="label" for="address"></label>
 									<input class="claseinput" id="address" type="text" name="address" placeholder="Dirección">
 										<div class="rrss">
-									<textarea class="extracto-text" maxlength=650px name="extracto" rows="8" cols="80" placeholder="Extracto"></textarea>
+									<textarea class="extracto-text" maxlength=650px name="extracto" id="extracto" rows="8" cols="80" placeholder="Extracto"></textarea>
 											<p>RRSS</p>
 											<input class="claseinput" id="Twitter" type="text" name="Twitter" placeholder="@Twitter">
 											<input class="claseinput" id="Linkedin" type="text" name="Linkedin" placeholder="linkedin.com/xxxxx">
 											<input class="claseinput" id="Facebook" type="text" name="Facebook" placeholder="facebook.com/xxxxx">
-											<input class="claseinput" id="Otros" type="text" name="Otros" placeholder="Otros">
 										</div>
+										<button type="button" name="button" class="save-data-button">Guardar</button>
 									</div>
-								</div>
 								<hr class="line">
 							</fieldset>
 
@@ -162,78 +161,84 @@
 										<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="experience" alt="abrir">
 									</div>
 								</div>
-								<!--oculto-->
-								<div id="experience">
-									<input class="claseinput" id="puesto" type="text" name="puesto" placeholder="Puesto">
-									<section class="experience-dates">
-										<div class="desde">
-											<label class="label" for="desde">Desde</label>
-											<select id="start_month" name="start_month" class="month">
-											</select>
-											<select id="start_year" name="start_year" class="year">
-											</select>
-										</div>
-										<div class="hasta">
-
-											<label class="label" for="hasta">Hasta</label>
-											<select id="end_month" name="end_month" class="month">
-											</select>
-											<select id="end_year" name="end_year" class="year">
-											</select>
-
-											<div class="actualidad">
-												<label for="actualidad" class="present-button-p">Actualidad</label>
-												<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
+									<!--oculto-->
+									<div id="experience">
+										<div class="experience-element" id="experience-element">
+											<input class="claseinput" id="puesto1" type="text" name="puesto" placeholder="Puesto">
+											<section class="experience-dates">
+												<div class="desde">
+												<label class="label" for="desde">Desde</label>
+												<select id="start_month1" name="start_month" class="month">
+												</select>
+												<select id="start_year1" name="start_year" class="year">
+												</select>
+												</div>
+												<div class="hasta">
+												<label class="label" for="hasta">Hasta</label>
+												<select id="end_month1" name="end_month" class="month">
+												</select>
+												<select id="end_year1" name="start_year" class="year">
+												</select>
+												<div class="actualidad">
+													<label for="actualidad" class="present-button-p">Actualidad</label>
+													<input class="present-button" id="actualidad1" type="checkbox" name="actualidad">
+												</div>
 											</div>
+											</section>
+											<input class="claseinput" id="lugar1" type="text" name="lugar" placeholder="Lugar">
+											<textarea class="experience-text" id="description1" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
+											<button type="button" name="button" class="save-experience-button" data-id="1">Guardar</button>
 										</div>
-									</section>
-									<input class="claseinput" id="lugar" type="text" name="lugar" placeholder="Lugar">
-									<textarea class="experience-text" name="description" rows="8" cols="80" placeholder="Despripción del puesto"></textarea>
-								</div>
-								<hr class="line">
-							</fieldset>
-
-							<!-- FORMATION -->
-							<fieldset class="formation">
-								<legend class="legend">Formación</legend>
-								<div class="form-section-header">
-									<h3 class="h3-form">Formación</h3>
-									<!--botones colapsable-->
-									<div class="form-section-buttons">
-										<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="formation" alt="abrir">
+										<button type="button" name="button" class="new-experience-button">Nueva experiencia profesional</button>
 									</div>
-								</div>
-								<!--oculto-->
-								<div id="formation">
-									<label class="label" for="titulo"></label>
-									<input class="claseinput" id="titulo" type="text" name="titulation" placeholder="Título*" required>
-									<section class="formation-dates">
-										<div class="desde">
-											<label class="label" for="desde">Desde</label>
-											<select id="start_month" name="start_month" class="month">
-											</select>
-											<select id="start_year" name="start_year" class="year">
-											</select>
-										</div>
-										<div class="hasta">
-											<label class="label" for="hasta">Hasta</label>
-											<select id="end_month" name="end_month" class="month">
-											</select>
-											<select id="end_year" name="end_year" class="year">
-											</select>
-											<div class="actualidad">
-												<label for="actualidad" class="present-button-p">Actualidad</label>
-												<input class="present-button" id="actualidad" type="checkbox" name="actualidad">
-											</div>
-										</div>
-									</section>
-									<label class="label" for="centro"></label>
-									<input class="claseinput" id="centro" type="text" name="place" placeholder="Centro de estudios*" required>
-									<label class="label" for="description"></label>
-									<textarea class="description" id="decription" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
-								</div>
 								<hr class="line">
 							</fieldset>
+
+			<!-- FORMATION -->
+								<fieldset class="formation">
+									<legend class="legend">Formación</legend>
+										<div class="form-section-header">
+											<h3 class="h3-form">Formación</h3>
+											<!--botones colapsable-->
+											<div class="form-section-buttons">
+												<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="formation" alt="abrir">
+											</div>
+										</div>
+									<!--oculto-->
+									<div id="formation">
+										<div class="formation-element" id="formation-element">
+											<label class="label" for="titulo"></label>
+											<input class="claseinput" id="titulo1" type="text" name="titulation" placeholder="Título*" required>
+											<section class="formation-dates">
+												<div class="desde">
+												<label class="label" for="desde">Desde</label>
+												<select id="start_month-formation1" name="start_month" class="month">
+												</select>
+												<select id="start_year-formation1" name="start_year" class="year">
+												</select>
+												</div>
+												<div class="hasta">
+													<label class="label" for="hasta">Hasta</label>
+													<select id="end_month-formation1" name="end_month" class="month">
+													</select>
+													<select id="end_year-formation1" name="start_year" class="year">
+													</select>
+														<div class="actualidad">
+													<label for="actualidad" class="present-button-p">Actualidad</label>
+													<input class="present-button" id="actualidad-formation1" type="checkbox" name="actualidad">
+												</div>
+											</div>
+										</section>
+											<label class="label" for="centro"></label>
+											<input class="claseinput" id="centro1" type="text" name="place" placeholder="Centro de estudios*" required>
+											<label class="label" for="description"></label>
+											<textarea class="description" id="description-formation1" cols="30" rows="10" name="description" placeholder="Descripción"></textarea>
+											<button type="button" name="button" class="save-formation-button" id="save-formation-button1" data-id="1">Guardar</button>
+										</div>
+										<button type="button" name="button" class="new-formation-button" data-id="1">Nueva formación</button>
+									</div>
+									<hr class="line">
+								</fieldset>
 
 							<!-- SKILLS -->
 							<fieldset class="skills-fieldset">
@@ -243,55 +248,60 @@
 									<!--botones colapsable-->
 									<div class="form-section-buttons">
 										<img src="images/plus.png" id='boton-abrir' class="boton-abrir" data-idDesplegar="skills" alt="abrir">
-
 									</div>
 								</div>
 								<!--oculto-->
 								<div id="skills">
-									<div class="skills">
-										<div class="languages">
-											<p>Idiomas</p>
-											<div class="language-element">
-												<label class="label" for="language-name1"></label>
-												<input class="language-name claseinput" id="language-name1" type="text" name="language-name" placeholder="Idioma 1">
-												<select id="level" name="level" class="level">
-													<option value="nivel">Nivel</option>
-													<option >--</option>
-													<option>Básico</option>
-													<option>Intermedio</option>
-													<option>Alto</option>
-													<option>Nativo</option>
-												</select>
-											</div>
+										<div class="skills">
+											<div class="languages">
+												<p>Idiomas</p>
+												<div class="language-element">
+													<label class="label" for="language-name1"></label>
+													<input class="language-name claseinput" id="language-name1" type="text" name="language-name" placeholder="Idioma 1">
+													<select id="language-level1" name="level" class="level">
+														  <option value="nivel">Nivel</option>
+															<option >--</option>
+															<option>Básico</option>
+															<option>Intermedio</option>
+															<option>Alto</option>
+															<option>Nativo</option>
+													</select>
+													<button type="button" name="button" class="save-languages-button" id="save-languages-button1"  data-id="1">Guardar</button>
+												</div>
 											<button type="button" name="button" class="new-language-button">Nuevo idioma</button>
+											</div>
 										</div>
 												<div class="it">
 												<p>Programas informáticos</p>
 												<div class="it-element">
 													<label class="label" for="it-name1"></label>
 													<input class="it-name claseinput" id="it-name1" type="text" name="it-name" placeholder="Tecnología 1">
-														<select id="level" name="level" class="level">
+														<select id="it-level1" name="level" class="level">
 														  <option value="nivel">Nivel</option>
 															<option >--</option>
 															<option>Básico</option>
 															<option>Intermedio</option>
 															<option>Alto</option>
 													</select>
+													<button type="button" name="button" class="save-it-button" id="save-it-button1" data-id="1">Guardar</button>
 												</div>
 												<button type="button" name="button" class="new-it-button">Nuevo programa informático</button>
 											</div>
 											<div class="various-skills">
 												<p>Destrezas</p>
-												<label class="label" for="skill-element1"></label>
-												<input class="skill-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
-												<button type="button" name="button" class="new-skill-button">Nueva destreza</button>
+												<div class="skills-element">
+													<label class="label" for="skill-element1"></label>
+													<input class="skills-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
+													<button type="button" name="button" class="save-skills-button" data-id="1">Guardar</button>
+												</div>
 											</div>
+											<button type="button" name="button" class="new-skills-button">Nueva habilidad</button>
 										</div>
-										<div class="various-skills">
+										<!-- <div class="various-skills">
 											<p>Destrezas</p>
 											<label class="label" for="skill-element1"></label>
 											<input class="skill-element claseinput" id="skill-element1" type="text" name="skill-element" placeholder="Destreza 1">
-											<button type="button" name="button" class="new-skill-button">Nueva destreza</button>
+											<! <button type="button" name="button" class="new-skill-button">Nueva destreza</button> -->
 										</div>
 									</div>
 								</div>
@@ -303,10 +313,8 @@
 			</section>
 			</section>
 
-
 			<section class="col2" id="previo">
 				<h2 class="preview-title"> Previsualización </h2>
-
 <!-- DATOS PERSONALES + IMAGEN -->
 				<div class="showpreview dots">
 					<div class="preview-header preview-div">
@@ -317,17 +325,17 @@
 						<div class="nombre-direccion-div">
 							<div class="nombre-cargo">
 								<div class="preview-data-div preview-text">
-									<div class="nombre-preview">Mónica<span id="name-preview-id"></span></div>
-									<div class="apellido-preview">Aguado<span id="surname-preview-id"></span></div>
-									<div class="cargo-preview">Social Media<span id="jobtitle-preview-id"></span></div>
+									<div class="nombre-preview"><span id="name-preview-id"></span></div>
+									<div class="apellido-preview"><span id="surname-preview-id"></span></div>
+									<div class="cargo-preview"><span id="jobtitle-preview-id"></span></div>
 								</div>
 							</div>
 							<div class="cuadro-direccion">
 								<div class="preview-data-div preview-text">
-									<div class="telefono-preview">663444526<span id="phone-preview-id"></span></div>
-									<div class="nacimiento-preview">17/17/1985<span id="birthdate-preview-id"></span></div>
-									<div class="email">maguado85@gmail.com<span id="email-preview-id"></span></div>
-									<div class="direccion">Alberto Aguilera 5, 31 izda<span id="address-preview-id"></span></div>
+									<div class="telefono-preview"><span id="phone-preview-id"></span></div>
+									<div class="nacimiento-preview"><span id="birthdate-preview-id"></span></div>
+									<div class="email"><span id="email-preview-id"></span></div>
+									<div class="direccion"><span id="address-preview-id"></span></div>
 								</div>
 							</div>
 						</div>
@@ -339,7 +347,7 @@
 							<h1>Extracto</h1>
 						</div>
 							<div class="cuadro-extract preview-text">
-									<div class="preview-extract">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									<div class="preview-extract" id="extracto-preview-id">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 									</div>
 									<div class="preview-rrss">
 										<div><span id="twitter-preview-id">@moniaguado</span></div>
@@ -356,16 +364,26 @@
 						</div>
 						<div class="item-experience-preview preview-text">
 							<div class="cargo-fecha-emp">
-								<div><span id="job-id">Social Media</span></div>
-								<div><span id="from-id">11/2016</span></div>
-								<div><span id="until-id">09/2017</span></div>
-								<div><span id="place-id">Swing Swing</span></div>
+								<div><span id="job-preview-id-1">Social Media</span></div>
+								<div><span id="from-preview-id-1">11/2016</span></div>
+								<div><span id="until-preview-id1">09/2017</span></div>
+								<div><span id="place-preview-id1">Swing Swing</span></div>
 							</div>
 							<div class="responsabilidades">
-								<div><span id="descriptionexp-id">Responsable del departamento digital de la agencia gestionando dos grandes cuentas de bebidas alcohólicas y un centro comercial.</span></div>
+								<div><span id="description-preview-id1">Responsable del departamento digital de la agencia gestionando dos grandes cuentas de bebidas alcohólicas y un centro comercial.</span></div>
 							</div>
 						</div>
-					</div>
+						<div class="item-experience-preview preview-text">
+							<div class="cargo-fecha-emp">
+								<div><span id="job-preview-id-2"></span></div>
+								<div><span id="from-preview-id-2"></span></div>
+								<div><span id="until-preview-id2"></span></div>
+								<div><span id="place-preview-id2"></span></div>
+							</div>
+							<div class="responsabilidades">
+								<div><span id="description-preview-id2"></span></div>
+							</div>
+						</div>
 
 <!-- FORMACIÓN -->
 					<div class="preview-formation preview-div">
@@ -374,13 +392,24 @@
 						</div>
 						<div class="item-formation-preview preview-text">
 							<div class="curso-fecha-escuela">
-								<div><span id="course-id">Front-end</span></div>
-								<div><span id="from-id">10/2017</span></div>
-								<div><span id="until-id">Actualidad</span></div>
-								<div><span id="place-id">Adalab</span></div>
+								<div><span id="titulo-preview-id1">Front-end</span></div>
+								<div><span id="from-formation-preview-id1">10/2017</span></div>
+								<div><span id="until-formation-preview-id1">Actualidad</span></div>
+								<div><span id="centro-id1">Adalab</span></div>
 							</div>
 							<div class="record">
-								<div><span id="descriptionfor-id">Estudios de programacion front-end en la Fundación Adalab. HTML, CSS, Javascript.</span></div>
+								<div><span id="description-formation-preview-id1">Estudios de programacion front-end en la Fundación Adalab. HTML, CSS, Javascript.</span></div>
+							</div>
+						</div>
+						<div class="item-formation-preview preview-text">
+							<div class="curso-fecha-escuela">
+								<div><span id="titulo-preview-id2">Front-end</span></div>
+								<div><span id="from-formation-preview-id2">10/2017</span></div>
+								<div><span id="until-formation-preview-id2">Actualidad</span></div>
+								<div><span id="centro-id2">Adalab</span></div>
+							</div>
+							<div class="record">
+								<div><span id="description-formation-preview-id2">Estudios de programacion front-end en la Fundación Adalab. HTML, CSS, Javascript.</span></div>
 							</div>
 						</div>
 					</div>
@@ -389,32 +418,34 @@
 						<div class="item-skills-preview preview-text">
 							<div class="languages-preview">
 								<img src="images/speak.png" class="talk-icon">
-								<div class="language-selection"><span id="language-selection-id">Inglés:<br>Alto</span></div>
+								<div class="language-selection"><span id="language-name1-preview-id"></span><span> | </span><span id="language-level1-preview-id"></span></div>
+								<div class="language-selection"><span id="language-name2-preview-id"></span><span> | </span><span id="language-level2-preview-id"></span></div>
 							</div>
 							<div class="it-preview">
 								<img src="images/computer-monitor-and-mouse.png" class="it-icon">
-								<div class="it-selection"><span id="it-selection-id">Front-end:<br> Alto</span></div>
+								<div class="it-selection"><span id="it-name1-preview-id"></span><span> | </span ><span id="it-level1-preview-id"></span></div>
+								<div class="it-selection"><span id="it-name2-preview-id"></span><span> | </span ><span id="it-level2-preview-id"></span></div>
 							</div>
 							<div class="bonus-preview">
 								<img src="images/settings.png" class="bonus-icon">
-								<div class="bonus-selection"><span id="bonus-selection-id">Ukelele<br>Trabajo en equipo<br>Estrategia</span></div>
+								<div class="bonus-selection"><span id="skill-element1-preview-id"></span></div>
+								<div class="bonus-selection"><span id="skill-element2-preview-id"></span></div>
 							</div>
 						</div>
 					</div>
-
 			</section>
 		</section>
 	</main>
 
 	<footer>
 		<ul class="footer-list">
-			<li class="list-element">Política de privacidad</li>
-			<li class="list-element">Aviso de cookies</li>
-			<li class="list-element">Contacto</li>
-			<li class="list-element">Generatrix &copy; 2017</li>
+			<a href="avisolegal.html"><li class="list-element">Aviso legal</li></a>
+			<!-- <a href="index.html"><li class="list-element">Aviso de cookies</li></a> -->
+			<a href="mailto:crearcv@generatrix.com"class="list-element"><li>Contacto</li></a>
+			<a href="index.html"><li class="list-element">Generatrix &copy; 2017</li></a>
 		</ul>
 		<a href="index.html">
-			<img class="mini-logo" src="images/untitled.png" alt="logo" alt="Generatrix"></a>
+			<img class="mini-logo" src="images/logocorto.png" alt="logo" alt="Generatrix"></a>
 		</footer>
 		<script src="js/main.js"></script>
 	</body>
