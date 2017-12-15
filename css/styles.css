@@ -580,8 +580,8 @@ fieldset {
 
 .preview-photo-div {
 	margin-top: 12%;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	background-color: #31B89A;
 	border-radius: 100px;
 }
@@ -620,8 +620,8 @@ fieldset {
 
 .preview-photo-div .thumb {
 	width: 100%;
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 	border-radius: 100px;
 	width: 70px;
 	height: 70px;
