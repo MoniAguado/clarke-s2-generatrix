@@ -720,6 +720,9 @@ h1 {
 	width: 90%;
 	padding: 0 10px;
 }
+#date {
+	color: #757575;
+}
 
 
 /*FOOTER*/
@@ -758,6 +761,14 @@ footer {
 	margin:30px 50px;
 	text-align: justify;
 	color: #424A5F;
+}
+.save-data-button {
+	background-color: #EAB931;
+	color: white;
+	font-weight: bold;
+	/*border-radius: ;*/
+	border-style: solid;
+
 }
 
 @media all and (min-width:768px){
