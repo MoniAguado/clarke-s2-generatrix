@@ -463,6 +463,7 @@ fieldset {
 
 /*ELECCIÓN DE DISEÑO*/
 
+
 .preview-titleE, .config-title, .label {
 	text-align: center;
 	color: #31B89A;
@@ -575,7 +576,6 @@ fieldset {
 
 .cuadro-photo {
 	width: 25%;
-
 }
 
 .preview-photo-div {
@@ -711,6 +711,10 @@ h1 {
 	padding: 0 10px;
 }
 
+#date {
+	color: #757575;
+}
+
 
 /*FOOTER*/
 
@@ -748,6 +752,23 @@ footer {
 	margin:30px 50px;
 	text-align: justify;
 	color: #424A5F;
+}
+.save-data-button,
+.save-experience-button,
+.new-experience-button,
+.save-formation-button,
+.new-formation-button,
+.save-languages-button,
+.new-language-button,
+.save-it-button,
+.new-it-button,
+.save-skills-button,
+.new-skills-button {
+	background-color: #EAB931;
+	color: #424A5F;
+	font-weight: bold;
+	border-style: none;
+	border-radius: 5px;
 }
 
 @media all and (min-width:768px){
