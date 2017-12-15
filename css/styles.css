@@ -908,5 +908,15 @@ footer {
 		font-family: 'Philosopher';
 		font-size: .8em;
 	}
-
+	.item-skills-preview {
+		margin-top: 30px;
+	}
+	.preview-photo-div .thumb {
+		width: 70px;
+		height: 70px;
+	}
+	.preview-photo-div {
+		width: 70px;
+		height: 70px;
+	}
 }
