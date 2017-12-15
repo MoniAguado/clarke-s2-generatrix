@@ -214,7 +214,6 @@ main {
 	margin: 0;
 	padding: 0;
 	height: 106px;
-	width: 80%
 }
 
 .design-options-font, .design-options-colour, .design-options-theme {
@@ -562,6 +561,7 @@ fieldset {
 	background-size: 100%;
 	display: flex;
 	flex-direction: column;
+	height: 80vh;
 	padding: 8%;
 }
 
