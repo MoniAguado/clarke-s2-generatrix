@@ -34,7 +34,6 @@ main {
 	padding: 0;
 	background-color: #E7ECED;
 }
-
 .personal-data {
 	margin-top: 1.2em;
 }
@@ -214,7 +213,6 @@ main {
 	margin: 0;
 	padding: 0;
 	height: 106px;
-	width: 80%
 }
 
 .design-options-font, .design-options-colour, .design-options-theme {
@@ -475,7 +473,8 @@ fieldset {
 
 /*ELECCIÓN DE DISEÑO*/
 
-.preview-title, .config-title {
+
+.preview-titleE, .config-title, .label {
 	text-align: center;
 	color: #31B89A;
 	margin-top: 0;
@@ -496,31 +495,31 @@ fieldset {
 /*Cookie*/
 .cookie .preview-title{
 	font-family: 'Cookie';
-	font-size: 1.3em;
+	font-size: 1em;
 }
 .cookie .preview-text{
 	font-family: 'arial';
-	font-size: 1em;
+	font-size: .45em;
 }
 /*annie*/
 .annie .preview-title{
 	font-family: 'Leckerli One';
-	font-size: 1em;
+	font-size: .7em;
 	font-weight: 700;
 }
 .annie .preview-text{
 	font-family: 'Annie Use Your Telescope';
-	font-size: 1em;
+	font-size: .5em;
 }
 /*Philosopher*/
 .philosopher .preview-title{
 	font-family: 'Philosopher';
-	font-size: 1em;
+	font-size: .7em;
 	font-weight: 700;
 }
 .philosopher .preview-text{
 	font-family: 'Philosopher';
-	font-size: 1em;
+	font-size: .45em;
 }
 
 /*Colour rgb(221, 90, 75) rgb(85, 85, 85) rgb(23, 71, 82) rgb(210, 222, 107) rgb(37, 31, 33) rgb(148, 211, 201) rgb(238, 91, 120) rgb(129, 126, 126)*/
@@ -573,6 +572,7 @@ fieldset {
 	background-size: 100%;
 	display: flex;
 	flex-direction: column;
+	height: 80vh;
 	padding: 8%;
 }
 
@@ -586,10 +586,10 @@ fieldset {
 
 .cuadro-photo {
 	width: 25%;
-
 }
 
 .preview-photo-div {
+	margin-top: 12%;
 	width: 70px;
 	height: 70px;
 	background-color: #31B89A;
@@ -612,7 +612,6 @@ fieldset {
 	flex-direction: column;
 	align-content: center;
 	padding-top: 10px;
-	font-size: 11px;
 }
 
 .cuadro-direccion {
@@ -624,7 +623,6 @@ fieldset {
 	align-content: center;
 	padding-top: 10px;
 	padding-left: 10px;
-	font-size: 9px;
 	text-align: right;
 	padding-top: 10px;
 	margin-top: 10px;
@@ -665,21 +663,17 @@ h1 {
 .preview-extract {
 	width: 60%;
 	height: 70px;
-	font-size: 10px;
 	text-align: left;
 	padding-left: 5px;
 }
 .preview-rrss {
 	width: 30%;
 	text-align: right;
-	font-size: 8px;
-	padding-top: 10px;
 }
 
 .item-experience-preview, .item-formation-preview {
 	display: flex;
 	flex-direction: column;
-	height: 150px;
 	margin-top: 10px;
 }
 
@@ -689,7 +683,6 @@ h1 {
 	justify-content: space-between;
 	height: 15px;
 	width: 95%;
-	font-size: 11px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -697,7 +690,6 @@ h1 {
 .responsabilidades, .record {
 	height: 20px;
 	width: 95%;
-	font-size: 11px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: justify;
@@ -709,7 +701,6 @@ h1 {
 	justify-content: space-between;
 	height: 40px;
 	width: 95%;
-	font-size: 13px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -718,7 +709,6 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	font-size: 11px;
 }
 
 .talk-icon, .it-icon, .bonus-icon {
@@ -729,6 +719,10 @@ h1 {
 .language-selection, .it-selection, .bonus-selection {
 	width: 90%;
 	padding: 0 10px;
+}
+
+#date {
+	color: #757575;
 }
 
 
@@ -768,6 +762,23 @@ footer {
 	margin:30px 50px;
 	text-align: justify;
 	color: #424A5F;
+}
+.save-data-button,
+.save-experience-button,
+.new-experience-button,
+.save-formation-button,
+.new-formation-button,
+.save-languages-button,
+.new-language-button,
+.save-it-button,
+.new-it-button,
+.save-skills-button,
+.new-skills-button {
+	background-color: #EAB931;
+	color: #424A5F;
+	font-weight: bold;
+	border-style: none;
+	border-radius: 5px;
 }
 
 @media all and (min-width:768px){
@@ -861,6 +872,9 @@ footer {
 		flex-direction: row;
 		padding: 0 2%;
 		background-color: #E7ECED;
+	}
+	.showpreview {
+		height: 130vh;
 	}
 	.col1, .col2 {
 		width: 50%;
